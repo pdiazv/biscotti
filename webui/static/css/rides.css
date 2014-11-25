@@ -1,0 +1,20 @@
+
+
+.ui-ride
+{
+    border-bottom: 2px solid #ccc;
+    padding: 1em 0;
+}
+
+.ui-distance
+{
+    font-size: 90px;
+}
+
+.ui-supp-info { font-size: 20px; }
+
+.units
+{
+    font-size: 60px;
+    color: #ccc;
+}
