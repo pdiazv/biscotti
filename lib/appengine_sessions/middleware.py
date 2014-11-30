@@ -3,7 +3,7 @@ import time
 from django.conf import settings
 from django.utils.cache import patch_vary_headers
 from django.utils.http import cookie_date
-from django.utils.importlib import import_module
+from django.utils.importlib import import_moduleauth
 
 
 class SessionMiddleware(object):

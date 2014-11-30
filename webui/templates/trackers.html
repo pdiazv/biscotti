@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block header-links %}
+<li class="{% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <!-- Main component for a primary marketing message or call to action -->
+    <h2>Available trackers:</h2>
+    <table class="table">
+          <thead>
+            <tr>
+              <th>Active</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for tracker in trackers %}
+                <tr>
+                  {% if tracker.name in user_trackers %}
+                      <td>Yes</td>
+                  {% else %}
+                      <td>No</td>
+                  {% endif %}
+                  <td><a href="{{ tracker.auth_url }}">{{ tracker.name }}</a></td>
+                </tr>
+            {% endfor %}
+
+          </tbody>
+    </table>
+</div>
+
+{% endblock %}

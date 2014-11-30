@@ -1,9 +1,9 @@
-from appengine_sessions.backends import cached_db
-from appengine_sessions.backends.cached_db import SessionStore as CacheDBSession
-from appengine_sessions.backends.db import SessionStore as DatabaseSession
-from appengine_sessions.mapper import DeleteMapper
-from appengine_sessions.middleware import SessionMiddleware
-from appengine_sessions.models import Session
+from lib.appengine_sessions.backends import cached_db
+from lib.appengine_sessions.backends.cached_db import SessionStore as CacheDBSession
+from lib.appengine_sessions.backends.db import SessionStore as DatabaseSession
+from lib.appengine_sessions.mapper import DeleteMapper
+from lib.appengine_sessions.middleware import SessionMiddleware
+from lib.appengine_sessions.models import Session
 from datetime import datetime, timedelta
 from django.conf import settings
 from django.core.cache import cache

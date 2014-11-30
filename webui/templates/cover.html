@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+
+{% block header-links %}
+<li class="{% firstof control.login %}"><a href="{% url webui:login %}">Login</a></li>
+<li class="{% firstof control.signup %}"><a href="{% url webui:signup %}">Signup</a></li>
+{% endblock %}
+
 {% block content %}
 
 <div class="container">

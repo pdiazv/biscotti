@@ -1,17 +1,31 @@
 {% extends "base.html" %}
+
 {% block css %}
 <link href="/static/css/signup.css" rel="stylesheet">
 {% endblock %}
+
+{% block header-links %}
+<li class="{% firstof control.signup %}"><a href="{% url webui:signup %}">Sign Up</a></li>
+{% endblock %}
+
 {% block content %}
 <div class="container">
-    <!-- Main component for a primary marketing message or call to action -->
+    <!-- Main component for a primary marketing message or call to action >
     <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>
-          <a class="btn btn-lg btn-primary" href="{{ auth_url }}" role="button">{{ auth_label }}</a>
+          <a class="btn btn-lg btn-primary" href="{ auth_url }" role="button">{ auth_label }</a>
         </p>
-    </div>
+    </div-->
+    <form class="form-signin" role="form" action="{% url webui:add_user %}" method="POST">
+        {% csrf_token %}
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="text" id="inputName" name="userName" class="form-control" placeholder="Name" required="">
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" name="userEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+    </form>
 </div>
 
 {% endblock %}
