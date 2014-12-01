@@ -11,7 +11,9 @@ urlpatterns = patterns('webui.views',
     url(r'^main/$', views.main_employee, name='main_employee'),
 
 
-    url(r'^sv_auth$', views.strava_auth, name='strava_auth')
+    url(r'^sv_auth$', views.strava_auth, name='strava_auth'),
+
+    url(r'^tracker/(?P<tracker_name>\w+)/$', views.tracker_view, name='tracker_view'),
 )
 
 if settings.DEBUG:

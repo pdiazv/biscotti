@@ -9,6 +9,12 @@ class UserContext(object):
         return NimbbleUser.get_by_id(id=user_id)
 
 
+    def get_tracker(self, name, user_id):
+        user = self.get_user(user_id)
+        query = NimbbleTracker.query(ancestor=user.key)
+
+        return query.filter(NimbbleTracker.name == name).get()
+
     def get_user_trackers(self, user_id, limit=50):
         user = self.get_user(user_id)
         trackers = NimbbleTracker.query(ancestor=user.key).fetch(limit=limit)

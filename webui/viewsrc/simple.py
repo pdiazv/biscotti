@@ -9,7 +9,6 @@ class SimpleSignupView(TemplateView):
         return { 'control': { 'signup': 'active' } }
 
 
-
 from repository import context
 from django.shortcuts import redirect
 class SimpleAddUserView(View):

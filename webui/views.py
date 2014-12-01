@@ -6,6 +6,7 @@ google_login = auth.GoogleLoginView.as_view()
 trackers = general.TrackersView.as_view()
 
 strava_auth = auth.StravaTokenExchangeView.as_view()
+tracker_view = general.SimpleTrackerView.as_view()
 
 
 simple_signup = simple.SimpleSignupView.as_view()

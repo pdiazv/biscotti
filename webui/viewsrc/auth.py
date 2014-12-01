@@ -16,7 +16,6 @@ class GoogleLoginView(TemplateView):
         }
 
 
-
 from django.shortcuts import redirect
 from business.trackers import strava
 class StravaTokenExchangeView(View):

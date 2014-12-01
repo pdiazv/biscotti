@@ -19,14 +19,30 @@ class TrackersView(TemplateView):
     def get_context_data(self, **kwargs):
         user_id = self.request.session['user_id']
 
-        trackers = manager.TrackerManager().list()
-        user_trackers = manager.TrackerManager().user_trackers(user_id)
+        trackers = manager.TrackerManager().list(user_id)
 
         return {
             'control': { 'trackers': 'active' },
             'trackers': trackers,
-            'user_trackers': user_trackers
         }
+
+
+class SimpleTrackerView(TemplateView):
+    template_name = 'tracker.html'
+
+    def get_context_data(self, **kwargs):
+        name = kwargs['tracker_name']
+        user_id = self.request.session['user_id']
+
+        tracker = manager.TrackerManager().sample_data(name, user_id)
+
+        return {
+            'control': { 'tracker': 'active' },
+            'tracker_name': name,
+            'athlete': tracker['athlete'],
+            'activities': tracker['activities']
+        }
+
 
 
 from repository import context

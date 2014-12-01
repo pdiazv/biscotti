@@ -19,6 +19,20 @@ class StravaTracker(object):
         return client.authorization_url(client_id=conf.strava['client_id'], redirect_uri=redirect_to)
 
 
+    def sample_data(self, user_id):
+        nimbble_tracker = context.UserContext().get_tracker('strava', user_id)
+
+        client = Client(nimbble_tracker.token)
+        athlete = client.get_athlete()
+        activities = client.get_activities()
+
+        return {
+            'athlete': athlete,
+            'activities': activities
+        }
+
+
+
     def add_tracker(self, user_id, code):
         client = Client()
         token = client.exchange_code_for_token(
