@@ -26,9 +26,14 @@ class StravaTracker(object):
         athlete = client.get_athlete()
         activities = client.get_activities()
 
+        result = []
+
+        for activity in activities:
+            result.append(activity)
+
         return {
             'athlete': athlete,
-            'activities': activities
+            'activities': result
         }
 
 
