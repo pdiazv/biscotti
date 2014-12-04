@@ -37,6 +37,8 @@ class SimpleTrackerView(TemplateView):
         tracker = manager.TrackerManager().sample_data(name, user_id)
 
         return {
+            'athlete_template': 'trackers/{0}_athlete.html'.format(name),
+            'data_template': 'trackers/{0}_data.html'.format(name),
             'control': { 'tracker': 'active' },
             'tracker_name': name,
             'athlete': tracker['athlete'],

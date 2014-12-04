@@ -15,68 +15,12 @@
     <h1>{{ tracker_name }}</h1>
     <section>
         <h3>Athlete Info</h3>
-        <div class="panel-group" id="athleteInfo" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="athleteHeader">
-              <div class="row">
-                <div class="col-sm-1"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseAthlete{{ forloop.counter }}" aria-expanded="true" aria-controls="collapse{{ forloop.counter }}"><span class="glyphicon glyphicon-chevron-right"></span></a></div>
-                <div class="col-md-2"><span>{{ athlete.firstname }} {{ athlete.lastname }}</span></div>
-              </div>
-            </div>
-            <div id="collapseAthlete{{ forloop.counter }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                  <pre>{{ athlete.raw }}</pre>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% include athlete_template %}
     </section>
 
     <section>
         <h3>Activities - {{ activities|length }}</h3>
-
-        <div class="ui-activities">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel-bold">
-                        <div class="panel-heading" role="tab" data-toggle="collapse" class="collapsed" data-parent="#accordion" id="heading{{ forloop.counter }}">
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <div class="col-md-2"><span>name</span></div>
-                                <div class="col-md-2"><span>start_date</span></div>
-                                <div class="col-md-2"><span>location_city</span></div>
-                                <div class="col-md-1"><span>distance</span></div>
-                                <div class="col-md-1"><span>average</span></div>
-                                <div class="col-md-1"><span>max</span></div>
-                                <div class="col-md-1"><span>calories</span></div>
-                            </div>
-                        </div>
-                  </div>
-            {% for activity in activities %}
-                  <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" data-toggle="collapse" class="collapsed" data-parent="#accordion" id="heading{{ forloop.counter }}">
-                            <div class="row">
-                                <div class="col-md-1"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse{{ forloop.counter }}" aria-expanded="true" aria-controls="collapse{{ forloop.counter }}"><span class="glyphicon glyphicon-chevron-right"></span></a></div>
-                                <div class="col-md-2"><span>{{ activity.name }}</span></div>
-                                <div class="col-md-2"><span>{{ activity.start_date }}</span></div>
-                                <div class="col-md-2"><span>{{ activity.location_city }}</span></div>
-                                <div class="col-md-1"><span>{{ activity.distance }}</span></div>
-                                <div class="col-md-1"><span>{{ activity.average_speed }}</span></div>
-                                <div class="col-md-1"><span>{{ activity.max_speed }}</span></div>
-                                <div class="col-md-1"><span>{{ activity.calories }}</span></div>
-                            </div>
-                        </div>
-                        <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ forloop.counter }}">
-                          <div class="panel-body">
-                            <pre>{{ activity.raw }}</pre>
-                          </div>
-                        </div>
-                  </div>
-            {% endfor %}
-            </div>
-        </div>
-
-
-
+        {% include data_template %}
     </section>
 </div>
 

@@ -1,0 +1,15 @@
+<div class="panel-group" id="athleteInfo" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="athleteHeader">
+      <div class="row">
+        <div class="col-sm-1"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseAthlete{{ forloop.counter }}" aria-expanded="true" aria-controls="collapse{{ forloop.counter }}"><span class="glyphicon glyphicon-chevron-right"></span></a></div>
+        <div class="col-md-2"><span>{{ athlete.firstname }} {{ athlete.lastname }}</span></div>
+      </div>
+    </div>
+    <div id="collapseAthlete{{ forloop.counter }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+          <pre>{{ athlete.raw }}</pre>
+      </div>
+    </div>
+  </div>
+</div>
