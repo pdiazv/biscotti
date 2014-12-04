@@ -45,6 +45,9 @@ class TrackerManager(object):
 
 
     def get_sample_url(self, tracker_name, user_id):
+        if tracker_name == 'strava':
+            return strava.StravaTracker().get_data_url()
+
         return '#'
 
 

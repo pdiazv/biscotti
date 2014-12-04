@@ -20,6 +20,12 @@ class StravaTracker(object):
         return client.authorization_url(client_id=conf.strava['client_id'], redirect_uri=redirect_to)
 
 
+    def get_data_url(self):
+        data_url = reverse('{0}:{1}'.format(conf.auth_namespace, conf.data_view), kwargs={'tracker_name': 'strava'})
+
+        return data_url
+
+
     def sample_data(self, user_id):
         return StravaSampleDataProvider().get_data(user_id)
 
