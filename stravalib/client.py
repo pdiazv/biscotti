@@ -195,7 +195,7 @@ class Client(object):
         else:
             raw = self.protocol.get('/athletes/{athlete_id}', athlete_id=athlete_id)
 
-        return model.Athlete.deserialize(raw, bind_client=self)
+        return raw #model.Athlete.deserialize(raw, bind_client=self)
 
 
     def get_athlete_friends(self, athlete_id=None, limit=None):
@@ -1228,7 +1228,7 @@ class BatchedResultsIterator(object):
 
         entities = []
         for raw in raw_results:
-            entities.append(self.entity.deserialize(raw, bind_client=self.bind_client))
+            entities.append(raw)#self.entity.deserialize(raw, bind_client=self.bind_client))
 
         self._buffer = collections.deque(entities)
 

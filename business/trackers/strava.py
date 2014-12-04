@@ -4,6 +4,7 @@ from django.core.urlresolvers import reverse
 from stravalib.client import Client
 from business import conf
 from repository import context
+import json
 
 
 class StravaTracker(object):
@@ -20,23 +21,7 @@ class StravaTracker(object):
 
 
     def sample_data(self, user_id):
-        nimbble_tracker = context.UserContext().get_tracker('strava', user_id)
-
-        client = Client(nimbble_tracker.token)
-        athlete = client.get_athlete()
-        activities = client.get_activities()
-
-        result = []
-
-        for activity in activities:
-            result.append(activity)
-
-        return {
-            'athlete': athlete,
-            'activities': result
-        }
-
-
+        return StravaSampleDataProvider().get_data(user_id)
 
     def add_tracker(self, user_id, code):
         client = Client()
@@ -55,4 +40,25 @@ class StravaTracker(object):
         })
 
 
+class StravaSampleDataProvider(object):
+    def get_data(self, user_id):
+        nimbble_tracker = context.UserContext().get_tracker('strava', user_id)
 
+        client = Client(nimbble_tracker.token)
+        athlete = client.get_athlete()
+        activities = client.get_activities()
+
+        athlete['raw'] = json.dumps(athlete, indent=4)
+
+        return {
+            'athlete': athlete,
+            'activities': self.get_activity_list(activities),
+        }
+
+    def get_activity_list(self, activities):
+        result = []
+        for act in activities:
+            act['raw'] = json.dumps(act, indent=4)
+            result.append(act)
+
+        return result
