@@ -17,7 +17,7 @@ inbound_services:
 handlers:
 - url: /static
   static_dir: webui/static
-  expiration: '1m'
+  application_readable: True
 
 - url: /favicon.ico
   static_files: favicon.ico

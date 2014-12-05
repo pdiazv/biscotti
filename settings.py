@@ -121,11 +121,14 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#    'pipeline.finders.PipelineFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
@@ -162,6 +165,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pipeline',
     'ui',
     'webui',
     'appengine_sessions',
@@ -199,6 +203,33 @@ LOGGING = {
         },
     }
 }
+
+
+
+PIPELINE_CSS = {
+    'colors': {
+        'source_filenames': (
+          'css/core.css',
+          'css/colors/*.css',
+          'css/layers.css'
+        ),
+        'output_filename': 'css/colors.css',
+        'extra_context': {
+            'media': 'screen,projection',
+        },
+    },
+}
+
+PIPELINE_JS = {
+    'stats': {
+        'source_filenames': (
+          'bstrap/js/bootstrap.min.js',
+          'bstrap/js/docs.min.js',
+        ),
+        'output_filename': 'js/stats.js',
+    }
+}
+
 
 ALLOWED_HOSTS = [
     'localgears.appspot.com',

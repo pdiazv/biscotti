@@ -15,6 +15,10 @@
     <!-- Custom styles for this template -->
     <link href="/static/css/navbar.css" rel="stylesheet">
 
+    {% load compressed %}
+    {% compressed_css 'colors' %}
+    {% compressed_js 'stats' %}
+
     {% block css %} {% endblock %}
   </head>
 
@@ -51,8 +55,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/static/bstrap/js/bootstrap.min.js"></script>
-    <script src="/static/bstrap/js/docs.min.js"></script>
+    <!--script src="/static/bstrap/js/bootstrap.min.js"></script>
+    <script src="/static/bstrap/js/docs.min.js"></script-->
 
     {% block scripts %} {% endblock %}
   </body>

@@ -42,7 +42,7 @@ class StravaTracker(object):
         return context.UserContext().add_tracker(user_id, {
             'name': 'strava',
             'token': token,
-            'client_id': str(athlete.id)
+            'client_id': str(athlete['id'])
         })
 
 
