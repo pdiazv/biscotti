@@ -9,6 +9,9 @@ class DefaultView(TemplateView):
         return {'control': { 'home': 'active' } }
 
 
+
+
+
 from business import manager
 
 class TrackersView(TemplateView):

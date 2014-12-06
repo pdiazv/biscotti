@@ -1,5 +1,5 @@
 
-from datetime import datetime
+from datetime import datetime, timedelta
 from repository.models import NimbbleUser, NimbbleTracker, NimbbleActivity
 
 
@@ -21,7 +21,7 @@ class DemoContext(object):
 
 
     def add_employee(self, data):
-        return UserManager().add(**data)
+        return UserCtxManager().add(**data)
 
 
     def add_activities(self, user_key, data):
@@ -43,31 +43,52 @@ class DemoContext(object):
 class UserContext(object):
 
     def get_user(self, user_id):
-        return UserManager().get(user_id)
+        return UserCtxManager().get(user_id)
 
 
     def add_user(self, user):
-        key = UserManager().add(**user)
+        key = UserCtxManager().add(**user)
         return key.id()
 
 
     def get_tracker(self, name, user_id):
         user = self.get_user(user_id)
-        return TrackerManager().get(user.key, name)
+        return TrackerCtxManager().get(user.key, name)
 
 
     def get_user_trackers(self, user_id, limit=50):
         user = self.get_user(user_id)
-        return TrackerManager().list_by_user(user.key, limit)
+        return TrackerCtxManager().list_by_user(user.key, limit)
 
 
     def add_tracker(self, user_id, tracker):
         user = self.get_user(user_id)
-        return TrackerManager().add(user.key, tracker)
+        return TrackerCtxManager().add(user.key, tracker)
 
 
 
-class UserManager(object):
+class ActivityContext(object):
+
+    def recent(self, *args, **kwargs):
+
+        end_date = datetime.today()
+        if 'end_date' in kwargs:
+            end_date = datetime.strptime(kwargs['end_date'], '%m/%d/%Y')
+
+        starting_date = end_date - timedelta(days=30)
+        if 'starting_date' in kwargs:
+            starting_date = datetime.strptime(kwargs['starting_date'], '%m/%d/%Y')
+
+        query = NimbbleActivity.query()
+        query.filter(NimbbleActivity.datetime >= starting_date and NimbbleActivity.datetime <= end_date)
+
+        return query.fetch(limit=15)
+
+
+
+
+
+class UserCtxManager(object):
     def get(self, user_id):
         return NimbbleUser.get_by_id(id=user_id)
 
@@ -86,7 +107,7 @@ class UserManager(object):
 
 
 
-class TrackerManager(object):
+class TrackerCtxManager(object):
 
     def get(self, user_key, name):
         query = NimbbleTracker.query(ancestor=user_key)
