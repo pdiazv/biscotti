@@ -6,7 +6,7 @@ from repository.models import NimbbleUser, NimbbleTracker
 class UserContext(object):
 
     def add_employee(self, data):
-        pass
+        return self.add_user(**data)
 
 
     def add_activity(self, user_id, data):
