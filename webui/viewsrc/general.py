@@ -8,10 +8,6 @@ class DefaultView(TemplateView):
     def get_context_data(self, **kwargs):
         return {'control': { 'home': 'active' } }
 
-
-
-
-
 from business import manager
 
 class TrackersView(TemplateView):
@@ -46,17 +42,14 @@ class SimpleTrackerView(TemplateView):
             'activities': tracker['activities']
         }
 
-
-
-from repository import context
+from business import feed
 class MainEmployeeView(TemplateView):
     template_name = 'main.html'
 
     def get_context_data(self, **kwargs):
-        user_id = self.request.session['user_id']
-        user = context.UserContext().get_user(user_id)
+        recent = feed.ActivityFeed().recent()
 
         return {
             'control': { 'home': 'active' },
-            'employee': { 'name': user.name }
+            'recent': recent
         }

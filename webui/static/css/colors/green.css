@@ -1,1 +1,19 @@
-.green { color: #449d44; }
+.ui-header { min-height: 100px; background: #ffffff; }
+.ui-info { font-weight: bold; }
+
+.ui-feed
+{
+    height: 600px;
+    border: 1px solid #ccc;
+    border-top: 10px solid #ccc;
+    background: #ffffff;
+    margin: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ui-activity
+{
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0 5px 0;
+}

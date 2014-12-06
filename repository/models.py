@@ -37,6 +37,16 @@ class NimbbleActivity(ndb.Model):
     points = ndb.FloatProperty()
     data = ndb.JsonProperty()
 
+
+    def serialize(self):
+        user = self.key.parent().get()
+
+        act_dic = self.to_dict()
+        act_dic['user'] = user.to_dict()
+
+        return act_dic
+
+
     @classmethod
     def delete_all(cls):
         ndb.delete_multi(cls.query().fetch(keys_only=True))

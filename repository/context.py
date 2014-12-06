@@ -82,7 +82,7 @@ class ActivityContext(object):
         query = NimbbleActivity.query()
         query.filter(NimbbleActivity.datetime >= starting_date and NimbbleActivity.datetime <= end_date)
 
-        return query.fetch(limit=15)
+        return query.order(-NimbbleActivity.datetime).fetch(limit=15)
 
 
 
