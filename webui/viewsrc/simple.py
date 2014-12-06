@@ -15,18 +15,13 @@ class SimpleAddUserView(View):
     def post(self, request, *args, **kwargs):
         data = request.POST
 
-
-        user = { 'name': 'Pedro', 'email': 'pdiaz', 'group': 'group1' }
-        user_id = context.DemoContext().add_employee(user)
-
+        user_id = context.UserContext().add_user({
+            'name':data['userName'],
+            'email': data['userEmail'],
+        })
         request.session['user_id'] = user_id
         return redirect('webui:main_employee')
-'''
-        user_id = context.UserContext().add_user(
-            name=data['userName'],
-            email=data['userEmail'],
-        )
-'''
+
 
 
 class SimpleAddActivityView(View):

@@ -17,6 +17,10 @@ class NimbbleUser(ndb.Model):
     pic = ndb.StringProperty()
     created_date = ndb.DateTimeProperty(auto_now_add=True)
 
+    @classmethod
+    def delete_all(cls):
+        ndb.delete_multi(cls.query().fetch(keys_only=True))
+
 
 class NimbbleTracker(ndb.Model):
     name = ndb.StringProperty()           # strava, runtastic...
@@ -32,3 +36,11 @@ class NimbbleActivity(ndb.Model):
     duration = ndb.TimeProperty()
     points = ndb.FloatProperty()
     data = ndb.JsonProperty()
+
+    @classmethod
+    def delete_all(cls):
+        ndb.delete_multi(cls.query().fetch(keys_only=True))
+
+    @classmethod
+    def add_all(cls, activities):
+        ndb.put_multi(activities)

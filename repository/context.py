@@ -3,25 +3,41 @@ from datetime import datetime
 from repository.models import NimbbleUser, NimbbleTracker, NimbbleActivity
 
 
-
 class DemoContext(object):
+
+    def parse_sample_data(self, data):
+
+        NimbbleUser.delete_all()
+        NimbbleActivity.delete_all()
+
+        for record in data:
+            user_key = self.add_employee(record['employee'])
+            self.add_activities(user_key, record['activities'])
+
+        return {
+            'user_count': NimbbleUser.query().count(limit=200),
+            'activity_count': NimbbleActivity.query().count(limit=500)
+        }
+
+
     def add_employee(self, data):
         return UserManager().add(**data)
 
 
-    def add_activities(self, user_id, data):
-        [self.add_activity(user_id, activity) for activity in data]
+    def add_activities(self, user_key, data):
+        acts = [self.get_activity(user_key, activity) for activity in data]
+
+        NimbbleActivity.add_all(acts)
 
 
-    def add_activity(self, user_id, data):
-        user = UserManager().get(user_id)
-        nimbble_activity = NimbbleActivity(parent=user.key)
+    def get_activity(self, user_key, data):
+        nimbble_activity = NimbbleActivity(parent=user_key)
 
         data['datetime'] = datetime.strptime(data['datetime'], '%m/%d/%Y')
         data['duration'] = datetime.strptime(data['duration'], '%H:%M:%S').time()
         nimbble_activity.populate(**data)
 
-        nimbble_activity.put()
+        return nimbble_activity
 
 
 class UserContext(object):
@@ -30,8 +46,9 @@ class UserContext(object):
         return UserManager().get(user_id)
 
 
-    def add_user(self, *args, **kwargs):
-        return UserManager().add(kwargs)
+    def add_user(self, user):
+        key = UserManager().add(**user)
+        return key.id()
 
 
     def get_tracker(self, name, user_id):
@@ -59,13 +76,13 @@ class UserManager(object):
         existing = NimbbleUser.query().filter(NimbbleUser.name == kwargs['name']).get()
 
         if existing:
-            return existing.key.id()
+            return existing.key
 
         user = NimbbleUser()
         user.populate(**kwargs)
 
         key = user.put()
-        return key.id()
+        return key
 
 
 

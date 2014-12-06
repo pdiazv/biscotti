@@ -331,9 +331,11 @@ for(var d in departments) {
 	for(var i = 0; i < departments[d]['size']; i++) {
 		var uiName = uiNames.shift();
 		var newUser = {
-			'name': uiName['name'] + ' ' + uiName['surname'],
-			'email': uiName['name'] + '.' + uiName['surname'] +'@email.com',
-			'group': departments[d]['group'],
+            'employee': {
+                'name': uiName['name'] + ' ' + uiName['surname'],
+                'email': uiName['name'] + '.' + uiName['surname'] + '@email.com',
+                'group': departments[d]['group']
+            },
 			'activities': []
 		};
 		var activities = Math.floor(Math.random() * 30);
