@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 from repository.models import NimbbleUser, NimbbleTracker
 
 

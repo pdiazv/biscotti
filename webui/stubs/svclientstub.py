@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 from stravalib.client import Client
 
 class SvClientStub(Client):

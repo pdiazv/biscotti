@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 from webui.viewsrc import strava
 
 

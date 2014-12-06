@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 from django.core.urlresolvers import reverse
 from stravalib.client import Client
 from business import conf

@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 #from enum import Enum
 from google.appengine.ext import ndb
 
@@ -28,8 +26,8 @@ class NimbbleTracker(ndb.Model):
 
 class NimbbleActivity(ndb.Model):
     datetime = ndb.DateTimeProperty(required=True)
-    type = ndb.StringProperty(required=True)
-    source = ndb.StringProperty(required=True)
+    type = ndb.StringProperty(required=True)   #run-bike
+    source = ndb.StringProperty(required=True) #strava-runtastics
     distance = ndb.FloatProperty()
     duration = ndb.TimeProperty()
     points = ndb.FloatProperty()
