@@ -15,6 +15,8 @@ class ReferenceTracker(ndb.Model):
 class NimbbleUser(ndb.Model):
     name = ndb.StringProperty()
     email = ndb.StringProperty()
+    group = ndb.StringProperty()
+    pic = ndb.StringProperty()
     created_date = ndb.DateTimeProperty(auto_now_add=True)
 
 
