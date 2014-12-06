@@ -11,4 +11,5 @@ tracker_view = general.SimpleTrackerView.as_view()
 
 simple_signup = simple.SimpleSignupView.as_view()
 add_user = simple.SimpleAddUserView.as_view()
+add_activity = simple.SimpleAddActivityView.as_view()
 
