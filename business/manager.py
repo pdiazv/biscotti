@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 from business.trackers import strava
 from repository import context
 

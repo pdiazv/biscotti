@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 from django.views.generic import TemplateView, View
 from django.core.urlresolvers import reverse
 from google.appengine.api import users

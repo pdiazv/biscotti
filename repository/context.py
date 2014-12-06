@@ -1,7 +1,7 @@
-__author__ = 'pdiazv'
 
 from datetime import datetime
 from repository.models import NimbbleUser, NimbbleTracker, NimbbleActivity
+
 
 
 class DemoContext(object):

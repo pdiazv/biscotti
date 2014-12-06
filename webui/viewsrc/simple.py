@@ -1,5 +1,3 @@
-__author__ = 'pdiazv'
-
 from django.views.generic import TemplateView, View
 
 class SimpleSignupView(TemplateView):
