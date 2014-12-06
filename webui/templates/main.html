@@ -10,6 +10,10 @@
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
         <h1>Welcome {{ employee.name }}</h1>
+        <form class="form-signin" role="form" action="{% url webui:add_activity %}" method="POST">
+            {% csrf_token %}
+            <button class="btn btn-lg btn-primary btn-block" type="submit">add</button>
+        </form>
     </div>
 </div>
 
