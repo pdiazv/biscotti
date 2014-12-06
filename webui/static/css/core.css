@@ -1,1 +1,17 @@
-.core-sample { font-size: 120%; }
+
+body {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e515e;
+  background: #ecf2f6;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #49b2fb;
+}
+
+.text-center { text-align: center; }

@@ -207,13 +207,14 @@ LOGGING = {
 
 
 PIPELINE_CSS = {
-    'colors': {
+    'application': {
         'source_filenames': (
+          'css/layout.css',
           'css/core.css',
           'css/colors/*.css',
           'css/layers.css'
         ),
-        'output_filename': 'css/colors.css',
+        'output_filename': 'css/application.css',
         'extra_context': {
             'media': 'screen,projection',
         },
@@ -234,3 +235,5 @@ PIPELINE_JS = {
 ALLOWED_HOSTS = [
     'localgears.appspot.com',
 ]
+
+

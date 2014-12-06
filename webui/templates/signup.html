@@ -9,16 +9,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <!-- Main component for a primary marketing message or call to action >
-    <div class="jumbotron">
-        <p>
-          <a class="btn btn-lg btn-primary" href="{ auth_url }" role="button">{ auth_label }</a>
-        </p>
-    </div-->
+  <header class="header">
+    <h1>
+      Please sign in
+      <small>Welcome to the nimbble demo.</small>
+    </h1>
+  </header>
     <form class="form-signin" role="form" action="{% url webui:add_user %}" method="POST">
         {% csrf_token %}
-        <h2 class="form-signin-heading">Please sign in</h2>
         <label for="inputName" class="sr-only">Name</label>
         <input type="text" id="inputName" name="userName" class="form-control" placeholder="Name" required="">
         <label for="inputEmail" class="sr-only">Email address</label>
@@ -26,6 +24,6 @@
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
     </form>
-</div>
+
 
 {% endblock %}
