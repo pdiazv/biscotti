@@ -5,6 +5,14 @@ from repository.models import NimbbleUser, NimbbleTracker
 
 class UserContext(object):
 
+    def add_employee(self, data):
+        pass
+
+
+    def add_activity(self, user_id, data):
+        pass
+
+
     def get_user(self, user_id):
         return NimbbleUser.get_by_id(id=user_id)
 
@@ -38,6 +46,7 @@ class UserContext(object):
         return key.id()
 
 
+    # TODO: rename tracker to plugin or something along those lines.
     def add_tracker(self, user_id, tracker):
         user = self.get_user(user_id)
 
