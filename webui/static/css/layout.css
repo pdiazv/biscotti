@@ -7,6 +7,8 @@
   width: 100%;
 }
 
+/* Sidebar */
+
 aside.sidebar {
   position: fixed;
   width: 200px;
@@ -83,6 +85,8 @@ aside.sidebar ul li.logo a:hover  {
   display: inline-block;
   background: transparent url('../images/logo-white.png') no-repeat center center;
 }
+
+/* Header */
 
 header.header {
   display: block;
