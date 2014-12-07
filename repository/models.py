@@ -43,6 +43,7 @@ class NimbbleActivity(ndb.Model):
 
         act_dic = self.to_dict()
         act_dic['user'] = user.to_dict()
+        act_dic['user']['id'] = user.key.id()
 
         return act_dic
 

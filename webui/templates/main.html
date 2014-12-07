@@ -14,7 +14,7 @@
         <div class="row col-md-6 ui-feed">
             <div class="col-md-12">
                 {% for activity in recent %}
-                    <div class="row ui-activity js-activity">
+                    <div class="row ui-activity js-activity" data-user-id="{{ activity.user.id }}">
                         <div class="ui-info">{{ activity.user.name }} - {{ activity.datetime }}</div>
                         <div class="col-md-4">
                             <div>{{ activity.type }}</div>
