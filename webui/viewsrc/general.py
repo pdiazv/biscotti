@@ -53,3 +53,18 @@ class MainEmployeeView(TemplateView):
             'control': { 'home': 'active' },
             'recent': recent
         }
+
+from repository import context
+class MainUserView(TemplateView):
+    template_name = 'user.html'
+
+    def get_context_data(self, **kwargs):
+        user_id = kwargs['user_id']
+
+        user = context.UserContext().get_user(long(user_id))
+        activities = feed.ActivityFeed().activities_by_user(user.key)
+
+        return {    
+            'nimbbleUser': user,
+            'activities': activities
+        }

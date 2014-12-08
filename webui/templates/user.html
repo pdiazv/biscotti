@@ -1,21 +1,17 @@
 {% extends "base.html" %}
 
 {% block header-links %}
-<li class="{% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
 {% endblock %}
 
 {% block content %}
-
-
 <div class="container-fluid">
-    <div class="row ui-header"></div>
+    <div class="row ui-header">{{ nimbbleUser.name }}</div>
     <!-- Main component for a primary marketing message or call to action -->
     <div class="row">
         <div class="row col-md-6 ui-feed">
             <div class="col-md-12">
-                {% for activity in recent %}
-                    <div class="row ui-activity js-activity" data-user-id="{{ activity.user.id }}">
-                        <div class="ui-info"><a href="{% url webui:user_view activity.user.id %}">{{ activity.user.name }}</a> - {{ activity.datetime }}</div>
+                {% for activity in activities %}
+                    <div class="row ui-activity js-activity">
                         <div class="col-md-4">
                             <div>{{ activity.type }}</div>
                             <div><a href="#">{{ activity.source }}</a></div>
@@ -38,5 +34,6 @@
     </div>
 
 </div>
+
 
 {% endblock %}

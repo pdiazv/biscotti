@@ -2,11 +2,11 @@ from repository import context, cache
 
 class ActivityFeed(object):
 
-    cache_key = 'recent:global'
 
     def recent(self, *args, **kwargs):
+        cache_key = 'recent:global'
         nimbble_cache = cache.NimbbleCache()
-        result = nimbble_cache.getItem(self.cache_key)
+        result = nimbble_cache.getItem(cache_key)
 
         if result:
             return result
@@ -14,7 +14,21 @@ class ActivityFeed(object):
         activities = context.ActivityContext().recent(**kwargs)
         result = [activity.serialize() for activity in activities]
 
-        nimbble_cache.setItem(self.cache_key, result)
+        nimbble_cache.setItem(cache_key, result)
 
         return result
 
+    def activities_by_user(self, user_key):
+        cache_key = 'user:' + str(user_key.id())
+        nimbble_cache = cache.NimbbleCache()
+        result = nimbble_cache.getItem(cache_key)
+
+        if result:
+            return result
+
+        activities = context.ActivityContext().by_user(user_key)
+        result = [activity.serialize() for activity in activities]
+
+        nimbble_cache.setItem(cache_key, result)
+
+        return result        

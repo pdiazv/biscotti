@@ -84,8 +84,9 @@ class ActivityContext(object):
 
         return query.order(-NimbbleActivity.datetime).fetch(limit=15)
 
-
-
+    def by_user(self, user_key):
+        query = NimbbleActivity.query(ancestor=user_key)
+        return query.order(-NimbbleActivity.datetime).fetch(limit=15)
 
 
 class UserCtxManager(object):
