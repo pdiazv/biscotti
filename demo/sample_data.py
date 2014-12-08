@@ -1,6185 +1,5976 @@
 source = [
     {
         "employee": {
+            "group": "Development",
             "name": "Kenneth George",
-            "email": "Kenneth.George@email.com",
-            "group": "Development"
+            "email": "Kenneth.George@email.com"
         },
         "activities": [
             {
-                "datetime": "11/12/2014",
-                "type": "Swimming",
-                "source": "Nike+",
-                "duration": "00:42:08",
-                "distance": 0.5056,
-                "points": 23.004800000000003
-            },
-            {
+                "distance": 5.3159999999999998,
                 "datetime": "11/08/2014",
-                "type": "Running",
                 "source": "Fitbug",
-                "duration": "00:05:44",
-                "distance": 0.6880000000000001,
-                "points": 8.600000000000001
+                "points": 66.450000000000003,
+                "duration": "00:44:18",
+                "type": "Running"
             },
             {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:08:44",
-                "distance": 8.248,
-                "points": 103.1
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:24:15",
-                "distance": 7.275,
-                "points": 40.0125
-            },
-            {
+                "distance": 26.045000000000002,
                 "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:18:57",
-                "distance": 5.6850000000000005,
-                "points": 31.267500000000002
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:08:10",
-                "distance": 2.45,
-                "points": 13.475000000000001
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:57:09",
-                "distance": 17.145,
-                "points": 94.2975
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:33:04",
-                "distance": 3.968,
-                "points": 49.6
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
                 "source": "BodyMedia",
-                "duration": "00:31:04",
-                "distance": 9.32,
-                "points": 51.260000000000005
+                "points": 143.2475,
+                "duration": "01:26:49",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Fitbug"
             },
             {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:44:15",
-                "distance": 5.3100000000000005,
-                "points": 66.375
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:47:22",
-                "distance": 14.21,
-                "points": 78.155
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "01:03:37",
-                "distance": 0.7634000000000001,
-                "points": 34.734700000000004
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:45:16",
-                "distance": 13.58,
-                "points": 74.69
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:26:48",
-                "distance": 8.040000000000001,
-                "points": 44.220000000000006
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:52:40",
-                "distance": 33.8,
-                "points": 185.89999999999998
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:35:46",
-                "distance": 11.492,
-                "points": 143.65
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:26:16",
-                "distance": 7.88,
-                "points": 43.339999999999996
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:55:06",
-                "distance": 6.612,
-                "points": 82.65
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:34:36",
-                "distance": 28.38,
-                "points": 156.09
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:15:13",
-                "distance": 1.826,
-                "points": 22.825
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Swimming",
-                "source": "Nike+",
-                "duration": "00:11:47",
-                "distance": 0.1414,
-                "points": 6.4337
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:01:43",
-                "distance": 7.406000000000001,
-                "points": 92.575
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:45:22",
-                "distance": 5.444,
-                "points": 68.05
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:05:39",
-                "distance": 1.695,
-                "points": 9.3225
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "01:02:25",
-                "distance": 7.49,
-                "points": 93.625
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "01:41:02",
-                "distance": 30.310000000000002,
-                "points": 166.705
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:07:19",
-                "distance": 2.195,
-                "points": 12.0725
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:16:00",
-                "distance": 1.92,
-                "points": 24
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:48:16",
-                "distance": 5.792,
-                "points": 72.39999999999999
+                "name": "BodyMedia"
             }
         ]
     },
     {
         "employee": {
+            "group": "Development",
             "name": "Billy Berry",
-            "email": "Billy.Berry@email.com",
-            "group": "Development"
+            "email": "Billy.Berry@email.com"
         },
         "activities": [
             {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "01:17:25",
-                "distance": 23.225,
-                "points": 127.73750000000001
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:44:25",
-                "distance": 5.33,
-                "points": 66.625
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:18:37",
-                "distance": 9.434000000000001,
-                "points": 117.92500000000001
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:59:43",
-                "distance": 7.166,
-                "points": 89.575
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "01:31:00",
-                "distance": 10.92,
-                "points": 136.5
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:10:41",
-                "distance": 3.205,
-                "points": 17.6275
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
+                "distance": 5.585,
+                "datetime": "11/21/2014",
                 "source": "FatSecret",
-                "duration": "00:29:06",
-                "distance": 3.492,
-                "points": 43.65
+                "points": 30.717500000000001,
+                "duration": "00:18:37",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:16:08",
-                "distance": 4.84,
-                "points": 26.619999999999997
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:36:01",
-                "distance": 28.805,
-                "points": 158.4275
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Swimming",
-                "source": "BodyMedia",
-                "duration": "00:58:16",
-                "distance": 0.6992,
-                "points": 31.8136
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "01:26:38",
-                "distance": 10.396,
-                "points": 129.95000000000002
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:12:50",
-                "distance": 1.54,
-                "points": 19.25
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "01:53:13",
-                "distance": 1.3586,
-                "points": 61.8163
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Andrew Keller",
-            "email": "Andrew.Keller@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/18/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "01:50:20",
-                "distance": 33.1,
-                "points": 182.05
-            },
-            {
+                "distance": 31.710000000000001,
                 "datetime": "11/02/2014",
-                "type": "Bicycling",
                 "source": "Nike+",
-                "duration": "00:40:48",
-                "distance": 12.24,
-                "points": 67.32000000000001
+                "points": 174.405,
+                "duration": "01:45:42",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/07/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:41:00",
-                "distance": 12.3,
-                "points": 67.65
+                "distance": 6.5819999999999999,
+                "datetime": "11/28/2014",
+                "source": "DailyMile",
+                "points": 82.274999999999991,
+                "duration": "00:54:51",
+                "type": "Running"
             },
             {
+                "distance": 3.8679999999999999,
+                "datetime": "11/28/2014",
+                "source": "Nike+",
+                "points": 48.350000000000001,
+                "duration": "00:32:14",
+                "type": "Running"
+            },
+            {
+                "distance": 2.1200000000000001,
                 "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:47:29",
-                "distance": 14.245000000000001,
-                "points": 78.34750000000001
+                "source": "strava",
+                "points": 26.5,
+                "duration": "00:17:40",
+                "type": "Running"
             },
             {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:12:45",
-                "distance": 1.53,
-                "points": 19.125
+                "distance": 4.8280000000000003,
+                "datetime": "11/02/2014",
+                "source": "Jawbone UP",
+                "points": 60.350000000000001,
+                "duration": "00:40:14",
+                "type": "Running"
             },
             {
-                "datetime": "11/03/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:26:55",
-                "distance": 0.323,
-                "points": 14.6965
-            },
-            {
+                "distance": 5.1950000000000003,
                 "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:38:37",
-                "distance": 11.585,
-                "points": 63.7175
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
                 "source": "strava",
-                "duration": "00:07:04",
-                "distance": 2.12,
-                "points": 11.66
+                "points": 28.572500000000002,
+                "duration": "00:17:19",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/20/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:18:37",
-                "distance": 23.585,
-                "points": 129.7175
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "01:09:00",
-                "distance": 20.7,
-                "points": 113.85
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:02:20",
-                "distance": 0.028,
-                "points": 1.274
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:12:42",
-                "distance": 1.524,
-                "points": 19.05
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:08:02",
-                "distance": 2.41,
-                "points": 13.255
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:16:17",
-                "distance": 22.885,
-                "points": 125.8675
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:51:50",
-                "distance": 6.22,
-                "points": 77.75
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:23:58",
-                "distance": 2.876,
-                "points": 35.949999999999996
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:41:20",
-                "distance": 12.4,
-                "points": 68.2
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:59:15",
-                "distance": 7.11,
-                "points": 88.875
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "00:05:29",
-                "distance": 0.0658,
-                "points": 2.9939
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Bicycling",
+                "distance": 9.7859999999999996,
+                "datetime": "11/10/2014",
                 "source": "Nike+",
-                "duration": "00:34:04",
-                "distance": 10.22,
-                "points": 56.21
+                "points": 122.32499999999999,
+                "duration": "01:21:33",
+                "type": "Running"
             },
             {
-                "datetime": "11/02/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:35:41",
-                "distance": 10.705,
-                "points": 58.8775
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:17:58",
-                "distance": 2.156,
-                "points": 26.950000000000003
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:55:28",
-                "distance": 6.656000000000001,
-                "points": 83.2
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:59:03",
-                "distance": 17.715,
-                "points": 97.4325
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:36:03",
-                "distance": 4.3260000000000005,
-                "points": 54.075
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:02:44",
-                "distance": 0.328,
-                "points": 4.1000000000000005
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:34:22",
-                "distance": 0.41240000000000004,
-                "points": 18.764200000000002
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:03:17",
-                "distance": 0.394,
-                "points": 4.925
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:38:01",
-                "distance": 11.405,
-                "points": 62.7275
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Jeffrey Grant",
-            "email": "Jeffrey.Grant@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:20:11",
-                "distance": 6.055,
-                "points": 33.302499999999995
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:58:58",
-                "distance": 17.69,
-                "points": 97.295
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:14:38",
-                "distance": 4.39,
-                "points": 24.145
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:04:29",
-                "distance": 0.538,
-                "points": 6.7250000000000005
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:34:56",
-                "distance": 4.192,
-                "points": 52.400000000000006
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:08:58",
-                "distance": 1.076,
-                "points": 13.450000000000001
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:52:11",
-                "distance": 13.462,
-                "points": 168.275
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:32:38",
-                "distance": 3.916,
-                "points": 48.949999999999996
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "01:28:10",
-                "distance": 10.58,
-                "points": 132.25
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:33:24",
-                "distance": 10.02,
-                "points": 55.11
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:53:29",
-                "distance": 13.618,
-                "points": 170.225
-            },
-            {
+                "distance": 12.425000000000001,
                 "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:19:10",
-                "distance": 2.3000000000000003,
-                "points": 28.750000000000004
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:45:59",
-                "distance": 31.795,
-                "points": 174.8725
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:04:18",
-                "distance": 1.29,
-                "points": 7.095000000000001
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
                 "source": "runtastic",
-                "duration": "01:15:14",
-                "distance": 9.028,
-                "points": 112.85000000000001
+                "points": 68.337500000000006,
+                "duration": "00:41:25",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:39:30",
-                "distance": 4.74,
-                "points": 59.25
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Wayne Gilbert",
-            "email": "Wayne.Gilbert@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:49:32",
-                "distance": 5.944,
-                "points": 74.3
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:06:14",
-                "distance": 0.748,
-                "points": 9.35
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:35:59",
-                "distance": 4.3180000000000005,
-                "points": 53.97500000000001
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:37:22",
-                "distance": 11.21,
-                "points": 61.655
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:56:52",
-                "distance": 6.824,
-                "points": 85.3
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:32:20",
-                "distance": 3.88,
-                "points": 48.5
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:44:15",
-                "distance": 13.275,
-                "points": 73.0125
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:09:16",
-                "distance": 2.7800000000000002,
-                "points": 15.290000000000001
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:18:13",
-                "distance": 5.465,
-                "points": 30.057499999999997
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:43:25",
-                "distance": 31.025000000000002,
-                "points": 170.63750000000002
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Eugene Brown",
-            "email": "Eugene.Brown@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:16:24",
-                "distance": 1.968,
-                "points": 24.6
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "01:47:32",
-                "distance": 32.26,
-                "points": 177.42999999999998
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Swimming",
-                "source": "runtastic",
-                "duration": "00:49:30",
-                "distance": 0.5940000000000001,
-                "points": 27.027000000000005
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:42:48",
-                "distance": 5.136,
-                "points": 64.2
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:39:22",
-                "distance": 11.81,
-                "points": 64.955
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:45:23",
-                "distance": 5.446,
-                "points": 68.075
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:41:46",
-                "distance": 12.530000000000001,
-                "points": 68.915
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:41:42",
-                "distance": 5.0040000000000004,
-                "points": 62.550000000000004
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "01:21:50",
-                "distance": 9.82,
-                "points": 122.75
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:19:42",
-                "distance": 5.91,
-                "points": 32.505
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:32:04",
-                "distance": 9.620000000000001,
-                "points": 52.910000000000004
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:39:27",
-                "distance": 29.835,
-                "points": 164.0925
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:21:59",
-                "distance": 24.595,
-                "points": 135.27249999999998
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:31:22",
-                "distance": 3.7640000000000002,
-                "points": 47.050000000000004
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:05:29",
-                "distance": 1.645,
-                "points": 9.0475
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:29:26",
-                "distance": 26.830000000000002,
-                "points": 147.565
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Angela Cook",
-            "email": "Angela.Cook@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:39:10",
-                "distance": 4.7,
-                "points": 58.75
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:41:09",
-                "distance": 4.938,
-                "points": 61.724999999999994
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:13:20",
-                "distance": 1.6,
-                "points": 20
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:24:35",
-                "distance": 7.375,
-                "points": 40.5625
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:12:09",
-                "distance": 3.645,
-                "points": 20.0475
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Linda Herrera",
-            "email": "Linda.Herrera@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:28:44",
-                "distance": 8.620000000000001,
-                "points": 47.410000000000004
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:56:52",
-                "distance": 35.06,
-                "points": 192.83
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:10:16",
-                "distance": 1.232,
-                "points": 15.4
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:58:44",
-                "distance": 7.048,
-                "points": 88.1
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:52:46",
-                "distance": 33.83,
-                "points": 186.065
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:38:57",
-                "distance": 29.685000000000002,
-                "points": 163.2675
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:38:21",
-                "distance": 11.505,
-                "points": 63.2775
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:39:01",
-                "distance": 4.682,
-                "points": 58.525000000000006
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Ashley Hill",
-            "email": "Ashley.Hill@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:04:34",
-                "distance": 0.548,
-                "points": 6.8500000000000005
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:51:32",
-                "distance": 6.184,
-                "points": 77.3
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:15:12",
-                "distance": 4.5600000000000005,
-                "points": 25.080000000000002
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:15:43",
-                "distance": 4.715,
-                "points": 25.932499999999997
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:22:05",
-                "distance": 24.625,
-                "points": 135.4375
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:58:27",
-                "distance": 7.014,
-                "points": 87.675
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:30:53",
-                "distance": 9.265,
-                "points": 50.9575
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:05:07",
-                "distance": 1.5350000000000001,
-                "points": 8.4425
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Emma Allen",
-            "email": "Emma.Allen@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:18:49",
-                "distance": 2.258,
-                "points": 28.225
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:20:48",
-                "distance": 24.240000000000002,
-                "points": 133.32000000000002
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:27:28",
-                "distance": 3.2960000000000003,
-                "points": 41.2
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:29:54",
-                "distance": 3.588,
-                "points": 44.85
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:38:41",
-                "distance": 11.605,
-                "points": 63.8275
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:44:00",
-                "distance": 12.48,
-                "points": 156
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:01:59",
-                "distance": 0.595,
-                "points": 3.2725
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:44:41",
-                "distance": 0.5362,
-                "points": 24.397100000000002
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:21:42",
-                "distance": 6.51,
-                "points": 35.805
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Kathleen Sanders",
-            "email": "Kathleen.Sanders@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:41:23",
-                "distance": 4.966,
-                "points": 62.075
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:30:48",
-                "distance": 9.24,
-                "points": 50.82
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:37:44",
-                "distance": 11.32,
-                "points": 62.260000000000005
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:16:20",
-                "distance": 1.96,
-                "points": 24.5
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:46:29",
-                "distance": 5.578,
-                "points": 69.72500000000001
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Joshua Palmer",
-            "email": "Joshua.Palmer@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:42:59",
-                "distance": 5.158,
-                "points": 64.47500000000001
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:55:17",
-                "distance": 16.585,
-                "points": 91.2175
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:34:50",
-                "distance": 4.18,
-                "points": 52.25
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Zachary Crawford",
-            "email": "Zachary.Crawford@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:36:05",
-                "distance": 11.53,
-                "points": 144.125
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:46:34",
-                "distance": 12.788,
-                "points": 159.85
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:13:26",
-                "distance": 1.612,
-                "points": 20.150000000000002
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:37:52",
-                "distance": 4.5440000000000005,
-                "points": 56.800000000000004
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:52:59",
-                "distance": 15.895,
-                "points": 87.4225
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:00:37",
-                "distance": 7.274,
-                "points": 90.925
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:38:48",
-                "distance": 4.656,
-                "points": 58.199999999999996
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:36:16",
-                "distance": 10.88,
-                "points": 59.84
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:48:09",
-                "distance": 5.7780000000000005,
-                "points": 72.22500000000001
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:52:49",
-                "distance": 15.845,
-                "points": 87.14750000000001
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:28:49",
-                "distance": 3.458,
-                "points": 43.225
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:00:35",
-                "distance": 0.07,
-                "points": 0.8750000000000001
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:52:49",
-                "distance": 6.338,
-                "points": 79.225
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:58:45",
-                "distance": 7.05,
-                "points": 88.125
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:54:04",
-                "distance": 16.22,
-                "points": 89.21
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:05:21",
-                "distance": 0.642,
-                "points": 8.025
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:41:02",
-                "distance": 4.924,
-                "points": 61.550000000000004
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:24:38",
-                "distance": 7.390000000000001,
-                "points": 40.645
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:54:30",
-                "distance": 16.35,
-                "points": 89.92500000000001
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Lawrence Payne",
-            "email": "Lawrence.Payne@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/18/2014",
-                "type": "Swimming",
-                "source": "runtastic",
-                "duration": "01:16:02",
-                "distance": 0.9124,
-                "points": 41.5142
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:19:24",
-                "distance": 2.328,
-                "points": 29.099999999999998
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "01:27:00",
-                "distance": 10.44,
-                "points": 130.5
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "01:50:32",
-                "distance": 13.264000000000001,
-                "points": 165.8
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:28:30",
-                "distance": 8.55,
-                "points": 47.025000000000006
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:42:43",
-                "distance": 12.815,
-                "points": 70.4825
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:23:04",
-                "distance": 6.92,
-                "points": 38.06
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Swimming",
-                "source": "Jawbone UP",
-                "duration": "00:03:46",
-                "distance": 0.045200000000000004,
-                "points": 2.0566
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:38:35",
-                "distance": 11.575000000000001,
-                "points": 63.66250000000001
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:33:03",
-                "distance": 9.915000000000001,
-                "points": 54.532500000000006
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "01:14:58",
-                "distance": 22.490000000000002,
-                "points": 123.69500000000001
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:17:34",
-                "distance": 0.21080000000000002,
-                "points": 9.5914
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:02:01",
-                "distance": 0.242,
-                "points": 3.025
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:35:24",
-                "distance": 10.620000000000001,
-                "points": 58.410000000000004
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:03:30",
-                "distance": 1.05,
-                "points": 5.775
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "01:36:48",
-                "distance": 11.616,
-                "points": 145.2
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:10:05",
-                "distance": 3.025,
-                "points": 16.6375
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:30:03",
-                "distance": 27.015,
-                "points": 148.5825
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:38:41",
-                "distance": 29.605,
-                "points": 162.82750000000001
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:37:38",
-                "distance": 4.516,
-                "points": 56.45
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:19:50",
-                "distance": 9.58,
-                "points": 119.75
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:36:08",
-                "distance": 4.336,
-                "points": 54.2
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Teresa Holland",
-            "email": "Teresa.Holland@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:43:27",
-                "distance": 13.035,
-                "points": 71.6925
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:16:09",
-                "distance": 1.938,
-                "points": 24.224999999999998
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "00:43:41",
-                "distance": 0.5242,
-                "points": 23.8511
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "00:49:28",
-                "distance": 0.5936,
-                "points": 27.0088
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:21:09",
-                "distance": 2.5380000000000003,
-                "points": 31.725
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:14:59",
-                "distance": 1.798,
-                "points": 22.475
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:59:59",
-                "distance": 7.198,
-                "points": 89.97500000000001
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:26:31",
-                "distance": 7.955,
-                "points": 43.7525
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:31:50",
-                "distance": 3.8200000000000003,
-                "points": 47.75
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:00:00",
-                "distance": 0,
-                "points": 0
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "01:23:33",
-                "distance": 10.026,
-                "points": 125.325
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:43:34",
-                "distance": 13.07,
-                "points": 71.885
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:11:16",
-                "distance": 1.352,
-                "points": 16.900000000000002
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Brittany Baker",
-            "email": "Brittany.Baker@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:28:03",
-                "distance": 3.366,
-                "points": 42.075
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:29:57",
-                "distance": 10.794,
-                "points": 134.925
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:49:17",
-                "distance": 5.914,
-                "points": 73.925
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:27:15",
-                "distance": 26.175,
-                "points": 143.9625
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:20:14",
-                "distance": 2.428,
-                "points": 30.349999999999998
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:40:32",
-                "distance": 4.864,
-                "points": 60.8
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "01:19:26",
-                "distance": 9.532,
-                "points": 119.15
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "01:27:44",
-                "distance": 1.0528,
-                "points": 47.9024
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:53:51",
-                "distance": 13.662,
-                "points": 170.775
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:58:07",
-                "distance": 17.435,
-                "points": 95.8925
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "01:30:50",
-                "distance": 10.9,
-                "points": 136.25
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:21:49",
-                "distance": 0.26180000000000003,
-                "points": 11.911900000000001
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:25:48",
-                "distance": 7.74,
-                "points": 42.57
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Samantha Gardner",
-            "email": "Samantha.Gardner@email.com",
-            "group": "Development"
-        },
-        "activities": [
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:06:50",
-                "distance": 2.05,
-                "points": 11.274999999999999
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:17:26",
-                "distance": 2.092,
-                "points": 26.150000000000002
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:39:45",
-                "distance": 11.925,
-                "points": 65.5875
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:39:02",
-                "distance": 4.684,
-                "points": 58.550000000000004
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:33:30",
-                "distance": 4.0200000000000005,
-                "points": 50.25000000000001
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:28:22",
-                "distance": 0.34040000000000004,
-                "points": 15.4882
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Swimming",
-                "source": "runtastic",
-                "duration": "00:02:52",
-                "distance": 0.0344,
-                "points": 1.5652
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Swimming",
-                "source": "BodyMedia",
-                "duration": "00:36:42",
-                "distance": 0.4404,
-                "points": 20.0382
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:06:03",
-                "distance": 1.815,
-                "points": 9.9825
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "01:35:24",
-                "distance": 1.1448,
-                "points": 52.0884
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "01:44:31",
-                "distance": 31.355,
-                "points": 172.45250000000001
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:11:26",
-                "distance": 1.372,
-                "points": 17.150000000000002
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:08:37",
-                "distance": 8.234,
-                "points": 102.925
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:22:19",
-                "distance": 6.695,
-                "points": 36.822500000000005
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:02:17",
-                "distance": 0.274,
-                "points": 3.4250000000000003
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "01:56:14",
-                "distance": 13.948,
-                "points": 174.35
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:52:59",
-                "distance": 0.6358,
-                "points": 28.928900000000002
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:11:34",
-                "distance": 8.588000000000001,
-                "points": 107.35000000000001
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:55:23",
-                "distance": 16.615000000000002,
-                "points": 91.38250000000001
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:09:55",
-                "distance": 2.975,
-                "points": 16.3625
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:18:52",
-                "distance": 5.66,
-                "points": 31.130000000000003
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:41:22",
-                "distance": 12.41,
-                "points": 68.255
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:16:07",
-                "distance": 4.835,
-                "points": 26.5925
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Jesse Chen",
-            "email": "Jesse.Chen@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:29:50",
-                "distance": 8.950000000000001,
-                "points": 49.22500000000001
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:21:41",
-                "distance": 9.802,
-                "points": 122.52499999999999
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:13:51",
-                "distance": 4.155,
-                "points": 22.852500000000003
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:45:48",
-                "distance": 5.496,
-                "points": 68.7
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "00:05:43",
-                "distance": 0.06860000000000001,
-                "points": 3.1213
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "00:41:13",
-                "distance": 0.49460000000000004,
-                "points": 22.5043
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:05:59",
-                "distance": 0.718,
-                "points": 8.975
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:14:43",
-                "distance": 1.766,
-                "points": 22.075
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:57:30",
-                "distance": 17.25,
-                "points": 94.875
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:49:41",
-                "distance": 14.905000000000001,
-                "points": 81.9775
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:27:27",
-                "distance": 8.235,
-                "points": 45.2925
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:51:53",
-                "distance": 0.6226,
-                "points": 28.328300000000002
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:29:34",
-                "distance": 8.870000000000001,
-                "points": 48.785000000000004
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:59:18",
-                "distance": 17.79,
-                "points": 97.845
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:58:30",
-                "distance": 17.55,
-                "points": 96.525
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:26:24",
-                "distance": 3.168,
-                "points": 39.6
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:29:29",
-                "distance": 8.845,
-                "points": 48.6475
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Nicholas Lynch",
-            "email": "Nicholas.Lynch@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/21/2014",
-                "type": "Swimming",
-                "source": "BodyMedia",
-                "duration": "01:11:35",
-                "distance": 0.859,
-                "points": 39.0845
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:43:27",
-                "distance": 0.5214,
-                "points": 23.723699999999997
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:47:18",
-                "distance": 14.19,
-                "points": 78.045
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:31:22",
-                "distance": 3.7640000000000002,
-                "points": 47.050000000000004
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:54:15",
-                "distance": 6.51,
-                "points": 81.375
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:34:12",
-                "distance": 4.104,
-                "points": 51.300000000000004
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:26:28",
-                "distance": 25.94,
-                "points": 142.67000000000002
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Tyler Cole",
-            "email": "Tyler.Cole@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "01:35:05",
-                "distance": 11.41,
-                "points": 142.625
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:53:23",
-                "distance": 16.015,
-                "points": 88.08250000000001
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:44:03",
-                "distance": 13.215,
-                "points": 72.6825
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:58:24",
-                "distance": 17.52,
-                "points": 96.36
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:58:58",
-                "distance": 7.0760000000000005,
-                "points": 88.45
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:24:50",
-                "distance": 2.98,
-                "points": 37.25
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:13:07",
-                "distance": 1.574,
-                "points": 19.675
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:41:26",
-                "distance": 30.43,
-                "points": 167.365
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:06:16",
-                "distance": 1.8800000000000001,
-                "points": 10.34
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:48:13",
-                "distance": 14.465,
-                "points": 79.5575
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Anna Jones",
-            "email": "Anna.Jones@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:31:12",
-                "distance": 3.744,
-                "points": 46.800000000000004
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:32:17",
-                "distance": 27.685000000000002,
-                "points": 152.2675
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:45:47",
-                "distance": 5.494,
-                "points": 68.675
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Megan Thompson",
-            "email": "Megan.Thompson@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "01:45:04",
-                "distance": 31.52,
-                "points": 173.35999999999999
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:06:35",
-                "distance": 0.79,
-                "points": 9.875
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Karen Cox",
-            "email": "Karen.Cox@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:20:14",
-                "distance": 2.428,
-                "points": 30.349999999999998
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:04:42",
-                "distance": 1.41,
-                "points": 7.755
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:48:42",
-                "distance": 13.044,
-                "points": 163.05
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "01:21:52",
-                "distance": 0.9824,
-                "points": 44.699200000000005
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:06:54",
-                "distance": 2.07,
-                "points": 11.385
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:53:16",
-                "distance": 6.392,
-                "points": 79.9
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:02:18",
-                "distance": 0.276,
-                "points": 3.45
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Swimming",
-                "source": "Nike+",
-                "duration": "00:35:15",
-                "distance": 0.42300000000000004,
-                "points": 19.2465
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:02:15",
-                "distance": 0.27,
-                "points": 3.375
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Diane Burton",
-            "email": "Diane.Burton@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:32:55",
-                "distance": 3.95,
-                "points": 49.375
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:45:57",
-                "distance": 13.785,
-                "points": 75.8175
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:38:55",
-                "distance": 11.675,
-                "points": 64.2125
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:51:40",
-                "distance": 15.5,
-                "points": 85.25
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:02:42",
-                "distance": 0.81,
-                "points": 4.455
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:30:30",
-                "distance": 3.66,
-                "points": 45.75
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:59:27",
-                "distance": 17.835,
-                "points": 98.0925
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Swimming",
-                "source": "Jawbone UP",
-                "duration": "01:04:07",
-                "distance": 0.7694000000000001,
-                "points": 35.00770000000001
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:49:24",
-                "distance": 5.928,
-                "points": 74.1
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "01:14:42",
-                "distance": 8.964,
-                "points": 112.05000000000001
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:21:15",
-                "distance": 9.75,
-                "points": 121.875
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "00:50:17",
-                "distance": 0.6034,
-                "points": 27.454700000000003
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:37:13",
-                "distance": 11.165000000000001,
-                "points": 61.407500000000006
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:17:36",
-                "distance": 2.112,
-                "points": 26.400000000000002
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:52:53",
-                "distance": 15.865,
-                "points": 87.25750000000001
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:41:21",
-                "distance": 4.962,
-                "points": 62.025
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:05:49",
-                "distance": 0.6980000000000001,
-                "points": 8.725000000000001
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:47:41",
-                "distance": 12.922,
-                "points": 161.525
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:18:08",
-                "distance": 5.44,
-                "points": 29.92
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:35:00",
-                "distance": 4.2,
-                "points": 52.5
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:20:05",
-                "distance": 6.025,
-                "points": 33.1375
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "01:53:52",
-                "distance": 13.664,
-                "points": 170.79999999999998
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:09:33",
-                "distance": 2.865,
-                "points": 15.7575
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:47:40",
-                "distance": 5.72,
-                "points": 71.5
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:49:08",
-                "distance": 14.74,
-                "points": 81.07000000000001
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:47:52",
-                "distance": 5.744,
-                "points": 71.8
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Kathy Watkins",
-            "email": "Kathy.Watkins@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:56:33",
-                "distance": 6.7860000000000005,
-                "points": 84.825
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:46:47",
-                "distance": 14.035,
-                "points": 77.1925
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:11:24",
-                "distance": 3.42,
-                "points": 18.81
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:37:35",
-                "distance": 4.51,
-                "points": 56.375
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Linda Schmidt",
-            "email": "Linda.Schmidt@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:01:42",
-                "distance": 0.51,
-                "points": 2.805
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "01:49:34",
-                "distance": 13.148,
-                "points": 164.35
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:52:59",
-                "distance": 13.558,
-                "points": 169.475
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:09:49",
-                "distance": 2.945,
-                "points": 16.197499999999998
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:57:16",
-                "distance": 35.18,
-                "points": 193.49
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Swimming",
-                "source": "runtastic",
-                "duration": "00:24:07",
-                "distance": 0.2894,
-                "points": 13.1677
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:04:25",
-                "distance": 0.53,
-                "points": 6.625
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "01:42:38",
-                "distance": 1.2316,
-                "points": 56.037800000000004
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:56:35",
-                "distance": 16.975,
-                "points": 93.36250000000001
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:48:17",
-                "distance": 14.485,
-                "points": 79.66749999999999
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:43:58",
-                "distance": 5.276,
-                "points": 65.95
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "01:20:06",
-                "distance": 24.03,
-                "points": 132.16500000000002
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Swimming",
-                "source": "runtastic",
-                "duration": "00:46:10",
-                "distance": 0.554,
-                "points": 25.207
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:09:05",
-                "distance": 2.725,
-                "points": 14.9875
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:06:32",
-                "distance": 7.984,
-                "points": 99.8
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:01:57",
-                "distance": 7.434,
-                "points": 92.925
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "01:33:41",
-                "distance": 11.242,
-                "points": 140.525
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:44:15",
-                "distance": 5.3100000000000005,
-                "points": 66.375
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:13:37",
-                "distance": 0.16340000000000002,
-                "points": 7.434700000000001
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:08:27",
-                "distance": 1.014,
-                "points": 12.675
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:21:56",
-                "distance": 6.58,
-                "points": 36.19
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:00:18",
-                "distance": 0.09,
-                "points": 0.495
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:19:40",
-                "distance": 2.36,
-                "points": 29.5
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Swimming",
-                "source": "Nike+",
-                "duration": "01:41:35",
-                "distance": 1.219,
-                "points": 55.4645
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:02:27",
-                "distance": 0.029400000000000003,
-                "points": 1.3377000000000001
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:17:08",
-                "distance": 2.056,
-                "points": 25.7
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:22:23",
-                "distance": 9.886000000000001,
-                "points": 123.57500000000002
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Edward Kennedy",
-            "email": "Edward.Kennedy@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:05:28",
-                "distance": 0.656,
-                "points": 8.200000000000001
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:09:51",
-                "distance": 2.955,
-                "points": 16.2525
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:28:22",
-                "distance": 8.51,
-                "points": 46.805
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:52:23",
                 "distance": 6.2860000000000005,
-                "points": 78.575
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:39:39",
-                "distance": 4.758,
-                "points": 59.475
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:54:35",
-                "distance": 13.75,
-                "points": 171.875
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:28:39",
-                "distance": 3.438,
-                "points": 42.975
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:42:40",
-                "distance": 12.8,
-                "points": 70.4
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "00:59:14",
-                "distance": 0.7108,
-                "points": 32.3414
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:33:27",
-                "distance": 4.014,
-                "points": 50.175000000000004
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:29:35",
-                "distance": 3.5500000000000003,
-                "points": 44.375
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "00:58:35",
-                "distance": 0.7030000000000001,
-                "points": 31.986500000000003
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:44:40",
-                "distance": 5.36,
-                "points": 67
-            },
-            {
                 "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:35:31",
-                "distance": 4.2620000000000005,
-                "points": 53.275000000000006
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "01:53:12",
-                "distance": 13.584,
-                "points": 169.79999999999998
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:21:06",
-                "distance": 9.732,
-                "points": 121.64999999999999
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "01:08:25",
-                "distance": 20.525000000000002,
-                "points": 112.88750000000002
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
                 "source": "BodyMedia",
-                "duration": "00:54:55",
-                "distance": 6.59,
-                "points": 82.375
+                "points": 78.575000000000003,
+                "duration": "00:52:23",
+                "type": "Running"
             },
             {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:09:53",
-                "distance": 1.186,
-                "points": 14.825
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:58:56",
-                "distance": 14.272,
-                "points": 178.4
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "01:54:14",
-                "distance": 13.708,
-                "points": 171.35
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Swimming",
-                "source": "BodyMedia",
-                "duration": "00:45:57",
-                "distance": 0.5514,
-                "points": 25.0887
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:54:02",
-                "distance": 16.21,
-                "points": 89.155
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Laura Barrett",
-            "email": "Laura.Barrett@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/24/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:05:54",
-                "distance": 0.0708,
-                "points": 3.2214
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:20:44",
-                "distance": 6.22,
-                "points": 34.21
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:33:10",
-                "distance": 9.950000000000001,
-                "points": 54.72500000000001
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "01:23:56",
-                "distance": 25.18,
-                "points": 138.49
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:02:41",
-                "distance": 0.805,
-                "points": 4.4275
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:40:28",
-                "distance": 12.14,
-                "points": 66.77000000000001
-            },
-            {
+                "distance": 12.415000000000001,
                 "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:40:16",
-                "distance": 12.08,
-                "points": 66.44
+                "source": "Fitbug",
+                "points": 68.282499999999999,
+                "duration": "00:41:23",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:36:02",
-                "distance": 4.324,
-                "points": 54.05
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:57:16",
-                "distance": 6.872,
-                "points": 85.9
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:12:47",
-                "distance": 1.534,
-                "points": 19.175
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:16:38",
-                "distance": 4.99,
-                "points": 27.445
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:17:52",
-                "distance": 5.36,
-                "points": 29.48
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:05:41",
-                "distance": 19.705000000000002,
-                "points": 108.37750000000001
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:01:05",
-                "distance": 0.325,
-                "points": 1.7875
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:10:29",
-                "distance": 3.145,
-                "points": 17.2975
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:36:11",
-                "distance": 0.43420000000000003,
-                "points": 19.7561
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:07:44",
-                "distance": 8.128,
-                "points": 101.6
-            },
-            {
+                "distance": 1.45,
                 "datetime": "11/08/2014",
-                "type": "Bicycling",
                 "source": "BodyMedia",
-                "duration": "01:13:03",
-                "distance": 21.915,
-                "points": 120.5325
+                "points": 18.125,
+                "duration": "00:12:05",
+                "type": "Running"
             },
             {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:16:42",
-                "distance": 2.004,
-                "points": 25.05
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:13:44",
-                "distance": 1.6480000000000001,
-                "points": 20.6
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:25:16",
-                "distance": 3.032,
-                "points": 37.9
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:18:26",
-                "distance": 5.53,
-                "points": 30.415000000000003
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:32:52",
-                "distance": 3.944,
-                "points": 49.3
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:00:22",
-                "distance": 0.11,
-                "points": 0.605
-            },
-            {
+                "distance": 21.925000000000001,
                 "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:26:32",
-                "distance": 10.384,
-                "points": 129.8
+                "source": "strava",
+                "points": 120.58750000000001,
+                "duration": "01:13:05",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
+                "distance": 0.44359999999999999,
+                "datetime": "11/02/2014",
                 "source": "Jawbone UP",
-                "duration": "00:30:44",
-                "distance": 9.22,
-                "points": 50.71
+                "points": 20.183799999999998,
+                "duration": "00:36:58",
+                "type": "Swimming"
             },
             {
+                "distance": 0.089800000000000005,
+                "datetime": "11/15/2014",
+                "source": "BodyMedia",
+                "points": 4.0859000000000005,
+                "duration": "00:07:29",
+                "type": "Swimming"
+            },
+            {
+                "distance": 16.93,
+                "datetime": "11/26/2014",
+                "source": "Jawbone UP",
+                "points": 93.114999999999995,
+                "duration": "00:56:26",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.38980000000000004,
                 "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:48:27",
-                "distance": 14.535,
-                "points": 79.9425
+                "source": "Nike+",
+                "points": 17.735900000000001,
+                "duration": "00:32:29",
+                "type": "Swimming"
             },
             {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:13:19",
-                "distance": 1.598,
-                "points": 19.975
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:38:57",
-                "distance": 4.674,
-                "points": 58.425000000000004
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Jesse Holmes",
-            "email": "Jesse.Holmes@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:20:58",
-                "distance": 2.516,
-                "points": 31.45
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:30:58",
-                "distance": 3.716,
-                "points": 46.45
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:50:22",
-                "distance": 6.0440000000000005,
-                "points": 75.55000000000001
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:12:01",
-                "distance": 3.605,
-                "points": 19.8275
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:38:31",
-                "distance": 11.555,
-                "points": 63.552499999999995
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:26:35",
-                "distance": 7.9750000000000005,
-                "points": 43.862500000000004
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:15:51",
-                "distance": 1.9020000000000001,
-                "points": 23.775000000000002
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:31:59",
-                "distance": 9.595,
-                "points": 52.7725
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:57:29",
-                "distance": 14.098,
-                "points": 176.22500000000002
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:30:17",
-                "distance": 3.634,
-                "points": 45.425
-            },
-            {
+                "distance": 8.886000000000001,
                 "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:06:42",
-                "distance": 0.804,
-                "points": 10.05
+                "source": "runtastic",
+                "points": 111.07500000000002,
+                "duration": "01:14:03",
+                "type": "Running"
             },
             {
-                "datetime": "11/15/2014",
-                "type": "Swimming",
-                "source": "Jawbone UP",
-                "duration": "00:47:45",
-                "distance": 0.5730000000000001,
-                "points": 26.071500000000004
+                "distance": 0.17800000000000002,
+                "datetime": "11/10/2014",
+                "source": "Nike+",
+                "points": 8.0990000000000002,
+                "duration": "00:14:50",
+                "type": "Swimming"
+            },
+            {
+                "distance": 17.949999999999999,
+                "datetime": "11/08/2014",
+                "source": "Nike+",
+                "points": 98.724999999999994,
+                "duration": "00:59:50",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 7.3200000000000003,
+                "datetime": "11/11/2014",
+                "source": "Nike+",
+                "points": 40.260000000000005,
+                "duration": "00:24:24",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.5099999999999998,
+                "datetime": "11/13/2014",
+                "source": "BodyMedia",
+                "points": 81.375,
+                "duration": "00:54:15",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Fitbug"
             }
         ]
     },
     {
         "employee": {
-            "name": "Denise Ramirez",
-            "email": "Denise.Ramirez@email.com",
-            "group": "Sales"
+            "group": "Development",
+            "name": "Andrew Keller",
+            "email": "Andrew.Keller@email.com"
         },
         "activities": [
             {
-                "datetime": "11/14/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:48:17",
-                "distance": 0.5794,
-                "points": 26.3627
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:58:45",
-                "distance": 17.625,
-                "points": 96.9375
-            },
-            {
+                "distance": 5.3899999999999997,
                 "datetime": "11/06/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:00:07",
-                "distance": 0.035,
-                "points": 0.1925
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:07:20",
-                "distance": 8.08,
-                "points": 101
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:59:58",
-                "distance": 7.196,
-                "points": 89.95
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Swimming",
-                "source": "Nike+",
-                "duration": "00:51:21",
-                "distance": 0.6162000000000001,
-                "points": 28.037100000000002
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:27:12",
-                "distance": 3.2640000000000002,
-                "points": 40.800000000000004
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:23:16",
-                "distance": 2.7920000000000003,
-                "points": 34.900000000000006
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:31:44",
-                "distance": 3.8080000000000003,
-                "points": 47.6
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "01:52:05",
-                "distance": 33.625,
-                "points": 184.9375
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:49:52",
-                "distance": 5.984,
-                "points": 74.8
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
                 "source": "BodyMedia",
-                "duration": "01:14:26",
-                "distance": 8.932,
-                "points": 111.65
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Sharon Franklin",
-            "email": "Sharon.Franklin@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:52:38",
-                "distance": 13.516,
-                "points": 168.95
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:11:22",
-                "distance": 21.41,
-                "points": 117.755
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:52:13",
-                "distance": 15.665000000000001,
-                "points": 86.1575
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:55:13",
-                "distance": 6.626,
-                "points": 82.825
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:57:25",
-                "distance": 17.225,
-                "points": 94.73750000000001
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:06:40",
-                "distance": 2,
-                "points": 11
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:10:52",
-                "distance": 1.304,
-                "points": 16.3
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:28:45",
-                "distance": 3.45,
-                "points": 43.125
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:40:40",
-                "distance": 4.88,
-                "points": 61
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:17:16",
-                "distance": 5.18,
-                "points": 28.49
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:20:23",
-                "distance": 6.115,
-                "points": 33.6325
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:42:47",
-                "distance": 0.5134000000000001,
-                "points": 23.359700000000004
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:59:04",
-                "distance": 17.72,
-                "points": 97.46
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:44:12",
-                "distance": 5.304,
-                "points": 66.3
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:37:55",
-                "distance": 4.55,
-                "points": 56.875
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Swimming",
-                "source": "Jawbone UP",
-                "duration": "01:01:44",
-                "distance": 0.7408,
-                "points": 33.7064
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:44:51",
-                "distance": 13.455,
-                "points": 74.0025
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:23:14",
-                "distance": 9.988,
-                "points": 124.85
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:00:18",
-                "distance": 0.036000000000000004,
-                "points": 0.45000000000000007
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:18:18",
-                "distance": 2.196,
-                "points": 27.450000000000003
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "00:51:52",
-                "distance": 0.6224000000000001,
-                "points": 28.319200000000002
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:46:32",
-                "distance": 5.5840000000000005,
-                "points": 69.80000000000001
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:34:11",
-                "distance": 28.255,
-                "points": 155.4025
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Bruce Gilbert",
-            "email": "Bruce.Gilbert@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:49:51",
-                "distance": 14.955,
-                "points": 82.2525
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:16:28",
-                "distance": 1.976,
-                "points": 24.7
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Swimming",
-                "source": "runtastic",
-                "duration": "00:20:43",
-                "distance": 0.24860000000000002,
-                "points": 11.311300000000001
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:32:01",
-                "distance": 9.605,
-                "points": 52.8275
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:21:17",
-                "distance": 6.385,
-                "points": 35.1175
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:56:22",
-                "distance": 16.91,
-                "points": 93.005
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:32:18",
-                "distance": 3.876,
-                "points": 48.449999999999996
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "01:13:47",
-                "distance": 8.854000000000001,
-                "points": 110.67500000000001
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:02:26",
-                "distance": 0.73,
-                "points": 4.015
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:09:39",
-                "distance": 8.358,
-                "points": 104.47500000000001
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:10:33",
-                "distance": 1.266,
-                "points": 15.825
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:22:33",
-                "distance": 0.2706,
-                "points": 12.3123
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:43:10",
-                "distance": 5.18,
-                "points": 64.75
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:19:39",
-                "distance": 5.8950000000000005,
-                "points": 32.4225
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:02:16",
-                "distance": 0.272,
-                "points": 3.4000000000000004
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "01:51:33",
-                "distance": 33.465,
-                "points": 184.0575
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:01:36",
-                "distance": 0.48,
-                "points": 2.6399999999999997
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:07:36",
-                "distance": 2.2800000000000002,
-                "points": 12.540000000000001
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:07:36",
-                "distance": 2.2800000000000002,
-                "points": 12.540000000000001
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:46:15",
-                "distance": 5.55,
-                "points": 69.375
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:58:17",
-                "distance": 6.994,
-                "points": 87.425
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:33:44",
-                "distance": 11.248000000000001,
-                "points": 140.60000000000002
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:48:48",
-                "distance": 5.856,
-                "points": 73.2
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:04:49",
-                "distance": 0.578,
-                "points": 7.225
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:13:37",
-                "distance": 1.6340000000000001,
-                "points": 20.425
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:55:40",
-                "distance": 16.7,
-                "points": 91.85
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Maria Ruiz",
-            "email": "Maria.Ruiz@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:00:05",
-                "distance": 0.01,
-                "points": 0.125
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:52:00",
-                "distance": 33.6,
-                "points": 184.8
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "01:00:03",
-                "distance": 7.206,
-                "points": 90.075
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "01:34:46",
-                "distance": 11.372,
-                "points": 142.15
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:40:51",
-                "distance": 4.902,
-                "points": 61.275
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:02:36",
-                "distance": 7.5120000000000005,
-                "points": 93.9
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:01:12",
-                "distance": 0.14400000000000002,
-                "points": 1.8000000000000003
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:56:00",
-                "distance": 34.800000000000004,
-                "points": 191.40000000000003
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:37:51",
-                "distance": 11.355,
-                "points": 62.4525
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:19:13",
-                "distance": 5.765,
-                "points": 31.7075
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:35:13",
-                "distance": 10.565,
-                "points": 58.107499999999995
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:43:57",
-                "distance": 13.185,
-                "points": 72.5175
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:06:58",
-                "distance": 0.836,
-                "points": 10.45
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:24:49",
-                "distance": 2.978,
-                "points": 37.225
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:08:58",
-                "distance": 1.076,
-                "points": 13.450000000000001
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:33:06",
-                "distance": 0.3972,
-                "points": 18.0726
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:24:15",
-                "distance": 0.29100000000000004,
-                "points": 13.2405
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:07:27",
-                "distance": 2.235,
-                "points": 12.292499999999999
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "01:33:32",
-                "distance": 11.224,
-                "points": 140.3
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "01:41:26",
-                "distance": 30.43,
-                "points": 167.365
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:40:54",
-                "distance": 4.908,
-                "points": 61.35
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:13:11",
-                "distance": 3.955,
-                "points": 21.7525
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:30:09",
-                "distance": 3.618,
-                "points": 45.225
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:41:18",
-                "distance": 12.39,
-                "points": 68.14500000000001
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:23:31",
-                "distance": 7.055,
-                "points": 38.802499999999995
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Frances Kennedy",
-            "email": "Frances.Kennedy@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:56:52",
-                "distance": 6.824,
-                "points": 85.3
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:45:52",
-                "distance": 5.5040000000000004,
-                "points": 68.80000000000001
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:00:14",
-                "distance": 7.228,
-                "points": 90.35
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:36:05",
-                "distance": 10.825000000000001,
-                "points": 59.53750000000001
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:29:11",
-                "distance": 3.5020000000000002,
-                "points": 43.775000000000006
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:44:33",
-                "distance": 13.365,
-                "points": 73.50750000000001
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:33:45",
-                "distance": 4.05,
-                "points": 50.625
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:41:07",
-                "distance": 12.335,
-                "points": 67.8425
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:39:21",
-                "distance": 11.805,
-                "points": 64.9275
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:51:00",
-                "distance": 15.3,
-                "points": 84.15
-            },
-            {
-                "datetime": "11/12/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:55:07",
-                "distance": 16.535,
-                "points": 90.9425
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:31:29",
-                "distance": 3.778,
-                "points": 47.225
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:30:39",
-                "distance": 9.195,
-                "points": 50.572500000000005
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:43:59",
-                "distance": 13.195,
-                "points": 72.5725
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:34:32",
-                "distance": 4.144,
-                "points": 51.800000000000004
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:16:21",
-                "distance": 9.162,
-                "points": 114.525
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:24:04",
-                "distance": 2.888,
-                "points": 36.1
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Henry Bradley",
-            "email": "Henry.Bradley@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:45:44",
-                "distance": 5.488,
-                "points": 68.60000000000001
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:09:20",
-                "distance": 2.8000000000000003,
-                "points": 15.400000000000002
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:48:23",
-                "distance": 32.515,
-                "points": 178.8325
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:37:59",
-                "distance": 4.558,
-                "points": 56.974999999999994
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "01:10:08",
-                "distance": 21.04,
-                "points": 115.72
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Judith Barnett",
-            "email": "Judith.Barnett@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:08:15",
-                "distance": 20.475,
-                "points": 112.61250000000001
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:34:53",
-                "distance": 10.465,
-                "points": 57.5575
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:50:29",
-                "distance": 6.058,
-                "points": 75.725
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:27:54",
-                "distance": 26.37,
-                "points": 145.035
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:09:24",
-                "distance": 1.1280000000000001,
-                "points": 14.100000000000001
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:52:04",
-                "distance": 33.62,
-                "points": 184.91
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:46:06",
-                "distance": 13.83,
-                "points": 76.065
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:03:09",
-                "distance": 0.378,
-                "points": 4.725
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
+                "points": 29.645,
                 "duration": "00:17:58",
-                "distance": 5.39,
-                "points": 29.645
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/16/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:27:14",
-                "distance": 3.2680000000000002,
-                "points": 40.85
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Swimming",
-                "source": "Jawbone UP",
-                "duration": "00:59:30",
-                "distance": 0.7140000000000001,
-                "points": 32.487
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:40:21",
-                "distance": 12.105,
-                "points": 66.5775
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:08:25",
-                "distance": 8.21,
-                "points": 102.62500000000001
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:34:31",
-                "distance": 4.142,
-                "points": 51.775000000000006
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:12:49",
-                "distance": 1.538,
-                "points": 19.225
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:16:00",
-                "distance": 4.8,
-                "points": 26.4
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:02:45",
-                "distance": 0.8250000000000001,
-                "points": 4.5375000000000005
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "00:09:03",
-                "distance": 0.1086,
-                "points": 4.9413
-            },
-            {
+                "distance": 11.295,
                 "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:47:38",
-                "distance": 5.716,
-                "points": 71.45
+                "source": "DailyMile",
+                "points": 62.122500000000002,
+                "duration": "00:37:39",
+                "type": "Bicycling"
             },
             {
+                "distance": 4.274,
+                "datetime": "11/01/2014",
+                "source": "Jawbone UP",
+                "points": 53.424999999999997,
+                "duration": "00:35:37",
+                "type": "Running"
+            },
+            {
+                "distance": 0.39119999999999999,
                 "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:38:05",
-                "distance": 4.57,
-                "points": 57.125
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:32:48",
-                "distance": 3.936,
-                "points": 49.2
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:41:01",
-                "distance": 4.922,
-                "points": 61.525
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:18:22",
-                "distance": 2.204,
-                "points": 27.55
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:11:57",
-                "distance": 1.434,
-                "points": 17.925
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:38:19",
-                "distance": 4.598,
-                "points": 57.475
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:37:07",
-                "distance": 4.454,
-                "points": 55.675
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Melissa Reid",
-            "email": "Melissa.Reid@email.com",
-            "group": "Sales"
-        },
-        "activities": [
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:45:06",
-                "distance": 13.530000000000001,
-                "points": 74.415
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "00:21:21",
-                "distance": 0.25620000000000004,
-                "points": 11.657100000000002
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:50:21",
-                "distance": 6.042,
-                "points": 75.52499999999999
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:03:09",
-                "distance": 7.578,
-                "points": 94.72500000000001
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:05:21",
-                "distance": 7.8420000000000005,
-                "points": 98.025
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:54:25",
-                "distance": 16.325,
-                "points": 89.7875
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:41:08",
-                "distance": 4.936,
-                "points": 61.7
-            },
-            {
-                "datetime": "11/20/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:23:37",
-                "distance": 7.085,
-                "points": 38.9675
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:09:02",
-                "distance": 1.084,
-                "points": 13.55
-            },
-            {
-                "datetime": "11/30/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:53:00",
-                "distance": 33.9,
-                "points": 186.45
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:17:06",
-                "distance": 2.052,
-                "points": 25.650000000000002
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:20:48",
-                "distance": 2.496,
-                "points": 31.2
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
                 "source": "Fitbug",
-                "duration": "01:05:13",
-                "distance": 19.565,
-                "points": 107.6075
+                "points": 17.799599999999998,
+                "duration": "00:32:36",
+                "type": "Swimming"
             },
             {
-                "datetime": "11/27/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "01:26:07",
-                "distance": 1.0334,
-                "points": 47.01970000000001
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "00:08:17",
-                "distance": 0.0994,
-                "points": 4.5227
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:58:10",
-                "distance": 6.98,
-                "points": 87.25
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Emma Castro",
-            "email": "Emma.Castro@email.com",
-            "group": "Accounting"
-        },
-        "activities": [
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:53:36",
-                "distance": 6.432,
-                "points": 80.4
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:15:22",
-                "distance": 4.61,
-                "points": 25.355
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:50:52",
-                "distance": 33.26,
-                "points": 182.92999999999998
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "01:24:27",
-                "distance": 25.335,
-                "points": 139.3425
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:08:42",
-                "distance": 2.61,
-                "points": 14.354999999999999
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:47:59",
-                "distance": 12.958,
-                "points": 161.975
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:08:52",
-                "distance": 0.10640000000000001,
-                "points": 4.841200000000001
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:42:49",
-                "distance": 5.138,
-                "points": 64.225
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:34:46",
-                "distance": 10.43,
-                "points": 57.364999999999995
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Samantha Ramirez",
-            "email": "Samantha.Ramirez@email.com",
-            "group": "Accounting"
-        },
-        "activities": [
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "01:31:47",
-                "distance": 27.535,
-                "points": 151.4425
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:32:41",
-                "distance": 9.805,
-                "points": 53.927499999999995
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:01:43",
-                "distance": 18.515,
-                "points": 101.83250000000001
-            },
-            {
-                "datetime": "11/29/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:38:11",
-                "distance": 4.582,
-                "points": 57.275
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:19:28",
-                "distance": 5.84,
-                "points": 32.12
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:31:29",
-                "distance": 3.778,
-                "points": 47.225
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:26:39",
-                "distance": 10.398,
-                "points": 129.975
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:30:50",
-                "distance": 10.9,
-                "points": 136.25
-            },
-            {
-                "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:13:35",
-                "distance": 1.6300000000000001,
-                "points": 20.375
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "00:45:38",
-                "distance": 0.5476,
-                "points": 24.915799999999997
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:40:31",
-                "distance": 12.155000000000001,
-                "points": 66.8525
-            },
-            {
+                "distance": 0.72499999999999998,
                 "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:55:50",
-                "distance": 6.7,
-                "points": 83.75
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:11:41",
-                "distance": 1.4020000000000001,
-                "points": 17.525000000000002
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
                 "source": "strava",
-                "duration": "00:16:41",
-                "distance": 5.005,
-                "points": 27.5275
+                "points": 3.9874999999999998,
+                "duration": "00:02:25",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/16/2014",
-                "type": "Running",
+                "distance": 13.885,
+                "datetime": "11/27/2014",
+                "source": "DailyMile",
+                "points": 76.367499999999993,
+                "duration": "00:46:17",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.992,
+                "datetime": "11/03/2014",
+                "source": "BodyMedia",
+                "points": 49.899999999999999,
+                "duration": "00:33:16",
+                "type": "Running"
+            },
+            {
+                "distance": 0.29199999999999998,
+                "datetime": "11/03/2014",
+                "source": "DailyMile",
+                "points": 3.6499999999999999,
+                "duration": "00:02:26",
+                "type": "Running"
+            },
+            {
+                "distance": 1.55,
+                "datetime": "11/01/2014",
+                "source": "Fitbug",
+                "points": 8.5250000000000004,
+                "duration": "00:05:10",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 16.375,
+                "datetime": "11/27/2014",
                 "source": "Nike+",
-                "duration": "00:04:16",
-                "distance": 0.512,
-                "points": 6.4
+                "points": 90.0625,
+                "duration": "00:54:35",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.50519999999999998,
+                "datetime": "11/01/2014",
+                "source": "Nike+",
+                "points": 22.986599999999999,
+                "duration": "00:42:06",
+                "type": "Swimming"
+            },
+            {
+                "distance": 3.6200000000000001,
+                "datetime": "11/13/2014",
+                "source": "DailyMile",
+                "points": 19.91,
+                "duration": "00:12:04",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 22.84,
+                "datetime": "11/17/2014",
+                "source": "runtastic",
+                "points": 125.62,
+                "duration": "01:16:08",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.9500000000000002,
+                "datetime": "11/20/2014",
+                "source": "runtastic",
+                "points": 74.375,
+                "duration": "00:49:35",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "runtastic"
             }
         ]
     },
     {
         "employee": {
-            "name": "Douglas Russell",
-            "email": "Douglas.Russell@email.com",
-            "group": "Accounting"
+            "group": "Development",
+            "name": "Jeffrey Grant",
+            "email": "Jeffrey.Grant@email.com"
         },
         "activities": [
             {
+                "distance": 3.198,
+                "datetime": "11/07/2014",
+                "source": "Nike+",
+                "points": 39.975000000000001,
+                "duration": "00:26:39",
+                "type": "Running"
+            },
+            {
+                "distance": 25.435000000000002,
+                "datetime": "11/07/2014",
+                "source": "Jawbone UP",
+                "points": 139.89250000000001,
+                "duration": "01:24:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 14.002000000000001,
+                "datetime": "11/20/2014",
+                "source": "strava",
+                "points": 175.02500000000001,
+                "duration": "01:56:41",
+                "type": "Running"
+            },
+            {
+                "distance": 12.025,
+                "datetime": "11/09/2014",
+                "source": "strava",
+                "points": 66.137500000000003,
+                "duration": "00:40:05",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "strava"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Wayne Gilbert",
+            "email": "Wayne.Gilbert@email.com"
+        },
+        "activities": [
+            {
+                "distance": 16.545000000000002,
+                "datetime": "11/29/2014",
+                "source": "FatSecret",
+                "points": 90.997500000000002,
+                "duration": "00:55:09",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 10.435,
+                "datetime": "11/25/2014",
+                "source": "Nike+",
+                "points": 57.392500000000005,
+                "duration": "00:34:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.6740000000000004,
+                "datetime": "11/27/2014",
+                "source": "strava",
+                "points": 70.925000000000011,
+                "duration": "00:47:17",
+                "type": "Running"
+            },
+            {
+                "distance": 3.5780000000000003,
+                "datetime": "11/19/2014",
+                "source": "strava",
+                "points": 44.725000000000001,
+                "duration": "00:29:49",
+                "type": "Running"
+            },
+            {
+                "distance": 4.0760000000000005,
+                "datetime": "11/30/2014",
+                "source": "Jawbone UP",
+                "points": 50.950000000000003,
+                "duration": "00:33:58",
+                "type": "Running"
+            },
+            {
+                "distance": 7.2759999999999998,
                 "datetime": "11/12/2014",
-                "type": "Swimming",
+                "source": "strava",
+                "points": 90.950000000000003,
+                "duration": "01:00:38",
+                "type": "Running"
+            },
+            {
+                "distance": 11.25,
+                "datetime": "11/22/2014",
+                "source": "Fitbug",
+                "points": 140.625,
+                "duration": "01:33:45",
+                "type": "Running"
+            },
+            {
+                "distance": 21.664999999999999,
+                "datetime": "11/13/2014",
                 "source": "BodyMedia",
-                "duration": "00:52:06",
-                "distance": 0.6252,
-                "points": 28.4466
+                "points": 119.1575,
+                "duration": "01:12:13",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "FatSecret"
             },
             {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:02:55",
-                "distance": 0.35000000000000003,
-                "points": 4.375
+                "name": "Nike+"
             },
             {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "01:44:19",
-                "distance": 12.518,
-                "points": 156.47500000000002
+                "name": "strava"
             },
             {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:55:39",
-                "distance": 16.695,
-                "points": 91.8225
+                "name": "Jawbone UP"
             },
             {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "01:15:01",
-                "distance": 22.505,
-                "points": 123.77749999999999
+                "name": "Fitbug"
             },
             {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:00:03",
-                "distance": 0.015,
-                "points": 0.08249999999999999
-            },
+                "name": "BodyMedia"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Eugene Brown",
+            "email": "Eugene.Brown@email.com"
+        },
+        "activities": [
             {
-                "datetime": "11/17/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:49:17",
-                "distance": 5.914,
-                "points": 73.925
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:28:20",
-                "distance": 3.4,
-                "points": 42.5
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:52:35",
-                "distance": 6.3100000000000005,
-                "points": 78.875
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:30:50",
-                "distance": 3.7,
-                "points": 46.25
-            },
-            {
+                "distance": 6.2050000000000001,
                 "datetime": "11/11/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:27:58",
-                "distance": 3.356,
-                "points": 41.949999999999996
+                "source": "Jawbone UP",
+                "points": 34.127499999999998,
+                "duration": "00:20:41",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "01:59:37",
-                "distance": 35.885,
-                "points": 197.36749999999998
+                "distance": 1.9199999999999999,
+                "datetime": "11/07/2014",
+                "source": "runtastic",
+                "points": 24,
+                "duration": "00:16:00",
+                "type": "Running"
             },
             {
+                "distance": 16.73,
                 "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:07:19",
-                "distance": 0.878,
-                "points": 10.975
+                "source": "strava",
+                "points": 92.015000000000001,
+                "duration": "00:55:46",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/18/2014",
-                "type": "Swimming",
+                "distance": 0.39600000000000002,
+                "datetime": "11/13/2014",
+                "source": "strava",
+                "points": 4.9500000000000002,
+                "duration": "00:03:18",
+                "type": "Running"
+            },
+            {
+                "distance": 17.425000000000001,
+                "datetime": "11/24/2014",
+                "source": "Nike+",
+                "points": 95.837500000000006,
+                "duration": "00:58:05",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.8100000000000005,
+                "datetime": "11/12/2014",
+                "source": "FatSecret",
+                "points": 60.125000000000007,
+                "duration": "00:40:05",
+                "type": "Running"
+            },
+            {
+                "distance": 2.8239999999999998,
+                "datetime": "11/26/2014",
+                "source": "FatSecret",
+                "points": 35.299999999999997,
+                "duration": "00:23:32",
+                "type": "Running"
+            },
+            {
+                "distance": 4.2949999999999999,
+                "datetime": "11/01/2014",
                 "source": "Fitbug",
-                "duration": "00:15:00",
-                "distance": 0.18000000000000002,
-                "points": 8.190000000000001
+                "points": 23.622499999999999,
+                "duration": "00:14:19",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Jawbone UP"
             },
             {
+                "name": "runtastic"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Fitbug"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Angela Cook",
+            "email": "Angela.Cook@email.com"
+        },
+        "activities": [
+            {
+                "distance": 8.9849999999999994,
+                "datetime": "11/27/2014",
+                "source": "BodyMedia",
+                "points": 49.417499999999997,
+                "duration": "00:29:57",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.9950000000000001,
+                "datetime": "11/04/2014",
+                "source": "Nike+",
+                "points": 32.972500000000004,
+                "duration": "00:19:59",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 7.0780000000000003,
+                "datetime": "11/19/2014",
+                "source": "BodyMedia",
+                "points": 88.475000000000009,
+                "duration": "00:58:59",
+                "type": "Running"
+            },
+            {
+                "distance": 0.55359999999999998,
                 "datetime": "11/30/2014",
-                "type": "Bicycling",
                 "source": "BodyMedia",
-                "duration": "00:34:30",
-                "distance": 10.35,
-                "points": 56.925
+                "points": 25.188800000000001,
+                "duration": "00:46:08",
+                "type": "Swimming"
             },
             {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:07:57",
-                "distance": 2.3850000000000002,
-                "points": 13.117500000000001
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:09:53",
-                "distance": 2.965,
-                "points": 16.307499999999997
-            },
-            {
+                "distance": 9.8350000000000009,
                 "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:02:58",
-                "distance": 0.356,
-                "points": 4.45
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:35:20",
-                "distance": 10.6,
-                "points": 58.3
-            },
-            {
-                "datetime": "11/18/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "01:47:58",
-                "distance": 32.39,
-                "points": 178.145
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
                 "source": "Nike+",
-                "duration": "00:36:11",
-                "distance": 10.855,
-                "points": 59.7025
+                "points": 54.092500000000001,
+                "duration": "00:32:47",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "BodyMedia"
             },
             {
-                "datetime": "11/01/2014",
-                "type": "Swimming",
-                "source": "DailyMile",
-                "duration": "00:12:26",
-                "distance": 0.1492,
-                "points": 6.7886
+                "name": "Nike+"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Linda Herrera",
+            "email": "Linda.Herrera@email.com"
+        },
+        "activities": [
+            {
+                "distance": 8.418000000000001,
+                "datetime": "11/23/2014",
+                "source": "runtastic",
+                "points": 105.22500000000001,
+                "duration": "01:10:09",
+                "type": "Running"
             },
             {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:38:04",
-                "distance": 4.5680000000000005,
-                "points": 57.10000000000001
-            },
-            {
+                "distance": 15.435,
                 "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "01:51:53",
-                "distance": 13.426,
-                "points": 167.825
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Hannah James",
-            "email": "Hannah.James@email.com",
-            "group": "Accounting"
-        },
-        "activities": [
-            {
-                "datetime": "11/20/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:54:32",
-                "distance": 6.5440000000000005,
-                "points": 81.80000000000001
+                "source": "Fitbug",
+                "points": 84.892499999999998,
+                "duration": "00:51:27",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "01:07:49",
-                "distance": 20.345,
-                "points": 111.8975
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
+                "distance": 2.6800000000000002,
+                "datetime": "11/12/2014",
                 "source": "BodyMedia",
-                "duration": "00:28:59",
-                "distance": 3.478,
-                "points": 43.475
+                "points": 33.5,
+                "duration": "00:22:20",
+                "type": "Running"
             },
             {
-                "datetime": "11/14/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:45:04",
-                "distance": 0.5408000000000001,
-                "points": 24.606400000000004
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Swimming",
-                "source": "Fitbug",
-                "duration": "00:59:58",
-                "distance": 0.7196,
-                "points": 32.7418
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:29:23",
-                "distance": 8.815,
-                "points": 48.482499999999995
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:14:00",
-                "distance": 1.68,
-                "points": 21
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:17:27",
-                "distance": 5.235,
-                "points": 28.7925
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:42:25",
-                "distance": 5.09,
-                "points": 63.625
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:04:21",
-                "distance": 1.305,
-                "points": 7.177499999999999
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:05:26",
-                "distance": 1.6300000000000001,
-                "points": 8.965
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "01:32:04",
-                "distance": 11.048,
-                "points": 138.1
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:12:01",
-                "distance": 3.605,
-                "points": 19.8275
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:07:37",
-                "distance": 2.285,
-                "points": 12.5675
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:44:47",
-                "distance": 13.435,
-                "points": 73.8925
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:02:52",
-                "distance": 0.34400000000000003,
-                "points": 4.300000000000001
-            },
-            {
-                "datetime": "11/16/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:25:15",
-                "distance": 7.575,
-                "points": 41.6625
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:27:13",
-                "distance": 3.266,
-                "points": 40.825
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:45:57",
-                "distance": 5.514,
-                "points": 68.925
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Craig Gilbert",
-            "email": "Craig.Gilbert@email.com",
-            "group": "Accounting"
-        },
-        "activities": [
-            {
-                "datetime": "11/05/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:04:29",
-                "distance": 1.345,
-                "points": 7.3975
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:19:21",
-                "distance": 5.805,
-                "points": 31.9275
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "00:33:01",
-                "distance": 3.962,
-                "points": 49.525000000000006
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:56:32",
-                "distance": 6.784,
-                "points": 84.8
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "01:24:09",
-                "distance": 25.245,
-                "points": 138.8475
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:14:26",
-                "distance": 4.33,
-                "points": 23.815
-            },
-            {
+                "distance": 8.9900000000000002,
                 "datetime": "11/22/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:56:19",
-                "distance": 6.758,
-                "points": 84.475
+                "source": "Garmin",
+                "points": 49.445,
+                "duration": "00:29:58",
+                "type": "Bicycling"
             },
             {
+                "distance": 3.4620000000000002,
+                "datetime": "11/05/2014",
+                "source": "BodyMedia",
+                "points": 43.275000000000006,
+                "duration": "00:28:51",
+                "type": "Running"
+            },
+            {
+                "distance": 8.5899999999999999,
+                "datetime": "11/11/2014",
+                "source": "Nike+",
+                "points": 47.244999999999997,
+                "duration": "00:28:38",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 8.1150000000000002,
                 "datetime": "11/20/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:24:59",
-                "distance": 0.2998,
-                "points": 13.6409
-            },
-            {
-                "datetime": "11/22/2014",
-                "type": "Swimming",
-                "source": "runtastic",
-                "duration": "00:09:49",
-                "distance": 0.1178,
-                "points": 5.3599
-            },
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "01:03:18",
-                "distance": 7.596,
-                "points": 94.95
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:50:20",
-                "distance": 15.1,
-                "points": 83.05
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:49:25",
-                "distance": 5.93,
-                "points": 74.125
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:27:46",
-                "distance": 3.332,
-                "points": 41.65
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:13:19",
-                "distance": 1.598,
-                "points": 19.975
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "01:16:04",
-                "distance": 22.82,
-                "points": 125.51
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:23:17",
-                "distance": 2.794,
-                "points": 34.925
-            },
-            {
-                "datetime": "11/03/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "01:05:02",
-                "distance": 19.51,
-                "points": 107.305
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:27:00",
-                "distance": 3.24,
-                "points": 40.5
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "DailyMile",
-                "duration": "00:07:16",
-                "distance": 0.872,
-                "points": 10.9
-            },
-            {
-                "datetime": "11/02/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:00:08",
-                "distance": 0.04,
-                "points": 0.22
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Kathy Lynch",
-            "email": "Kathy.Lynch@email.com",
-            "group": "Human Resources"
-        },
-        "activities": [
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
                 "source": "Fitbug",
-                "duration": "00:11:29",
-                "distance": 3.4450000000000003,
-                "points": 18.9475
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Anthony Willis",
-            "email": "Anthony.Willis@email.com",
-            "group": "Human Resources"
-        },
-        "activities": [
-            {
-                "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:43:25",
-                "distance": 5.21,
-                "points": 65.125
+                "points": 44.6325,
+                "duration": "00:27:03",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/02/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:37:41",
-                "distance": 11.305,
-                "points": 62.177499999999995
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:17:21",
-                "distance": 5.205,
-                "points": 28.6275
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Swimming",
-                "source": "FatSecret",
-                "duration": "00:06:08",
-                "distance": 0.0736,
-                "points": 3.3487999999999998
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:36:52",
-                "distance": 4.424,
-                "points": 55.300000000000004
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:22:04",
-                "distance": 6.62,
-                "points": 36.410000000000004
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:59:07",
-                "distance": 17.735,
-                "points": 97.54249999999999
-            },
-            {
-                "datetime": "11/01/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:43:02",
-                "distance": 12.91,
-                "points": 71.005
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Running",
+                "distance": 15.06,
+                "datetime": "11/22/2014",
                 "source": "Jawbone UP",
+                "points": 82.829999999999998,
                 "duration": "00:50:12",
-                "distance": 6.024,
-                "points": 75.3
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:22:17",
-                "distance": 2.674,
-                "points": 33.425
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "01:59:08",
-                "distance": 14.296000000000001,
-                "points": 178.70000000000002
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:39:55",
-                "distance": 4.79,
-                "points": 59.875
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Swimming",
-                "source": "Garmin",
-                "duration": "00:49:51",
-                "distance": 0.5982000000000001,
-                "points": 27.218100000000003
-            },
-            {
-                "datetime": "11/07/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "01:56:23",
-                "distance": 13.966000000000001,
-                "points": 174.57500000000002
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:49:50",
-                "distance": 14.950000000000001,
-                "points": 82.22500000000001
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:25:01",
-                "distance": 7.505,
-                "points": 41.277499999999996
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:33:06",
-                "distance": 9.93,
-                "points": 54.614999999999995
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:11:09",
-                "distance": 1.338,
-                "points": 16.725
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:43:50",
-                "distance": 13.15,
-                "points": 72.325
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:51:50",
-                "distance": 15.55,
-                "points": 85.525
-            },
-            {
-                "datetime": "11/14/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:35:07",
-                "distance": 4.214,
-                "points": 52.675000000000004
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:33:03",
-                "distance": 11.166,
-                "points": 139.57500000000002
-            },
-            {
-                "datetime": "11/26/2014",
-                "type": "Swimming",
-                "source": "strava",
-                "duration": "01:15:42",
-                "distance": 0.9084000000000001,
-                "points": 41.33220000000001
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:36:39",
-                "distance": 10.995000000000001,
-                "points": 60.472500000000004
-            },
-            {
-                "datetime": "11/17/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:50:03",
-                "distance": 33.015,
-                "points": 181.5825
-            },
-            {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:55:22",
-                "distance": 6.644,
-                "points": 83.05
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Christian Gardner",
-            "email": "Christian.Gardner@email.com",
-            "group": "Human Resources"
-        },
-        "activities": []
-    },
-    {
-        "employee": {
-            "name": "Raymond Wheeler",
-            "email": "Raymond.Wheeler@email.com",
-            "group": "Human Resources"
-        },
-        "activities": [
-            {
-                "datetime": "11/01/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:34:07",
-                "distance": 4.094,
-                "points": 51.175000000000004
-            },
-            {
-                "datetime": "11/27/2014",
-                "type": "Running",
-                "source": "strava",
-                "duration": "01:42:29",
-                "distance": 12.298,
-                "points": 153.725
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:12:25",
-                "distance": 3.725,
-                "points": 20.4875
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:13:20",
-                "distance": 1.6,
-                "points": 20
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:40:59",
-                "distance": 12.295,
-                "points": 67.6225
-            },
-            {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:53:30",
-                "distance": 16.05,
-                "points": 88.275
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:26:22",
-                "distance": 3.164,
-                "points": 39.550000000000004
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:15:37",
-                "distance": 1.874,
-                "points": 23.425
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "FatSecret",
-                "duration": "00:09:01",
-                "distance": 1.082,
-                "points": 13.525
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:01:28",
-                "distance": 0.176,
-                "points": 2.1999999999999997
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:03:02",
-                "distance": 0.364,
-                "points": 4.55
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "Jawbone UP",
-                "duration": "00:47:59",
-                "distance": 5.758,
-                "points": 71.975
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "DailyMile",
-                "duration": "00:42:00",
-                "distance": 12.6,
-                "points": 69.3
-            },
-            {
-                "datetime": "11/23/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:01:46",
-                "distance": 0.53,
-                "points": 2.915
-            },
-            {
-                "datetime": "11/24/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "01:40:22",
-                "distance": 12.044,
-                "points": 150.55
-            },
-            {
-                "datetime": "11/09/2014",
-                "type": "Bicycling",
-                "source": "BodyMedia",
-                "duration": "00:37:12",
-                "distance": 11.16,
-                "points": 61.38
-            },
-            {
-                "datetime": "11/08/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "00:24:41",
-                "distance": 2.962,
-                "points": 37.025000000000006
-            },
-            {
-                "datetime": "11/19/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "00:39:47",
-                "distance": 11.935,
-                "points": 65.6425
-            },
-            {
-                "datetime": "11/06/2014",
-                "type": "Bicycling",
-                "source": "strava",
-                "duration": "01:29:53",
-                "distance": 26.965,
-                "points": 148.3075
-            },
-            {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "BodyMedia",
-                "duration": "00:54:11",
-                "distance": 6.502,
-                "points": 81.27499999999999
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "Sara Smith",
-            "email": "Sara.Smith@email.com",
-            "group": "Human Resources"
-        },
-        "activities": []
-    },
-    {
-        "employee": {
-            "name": "Jennifer Butler",
-            "email": "Jennifer.Butler@email.com",
-            "group": "Executives"
-        },
-        "activities": [
-            {
+                "distance": 9.0549999999999997,
                 "datetime": "11/16/2014",
-                "type": "Bicycling",
+                "source": "strava",
+                "points": 49.802499999999995,
+                "duration": "00:30:11",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 8.088000000000001,
+                "datetime": "11/29/2014",
+                "source": "strava",
+                "points": 101.10000000000001,
+                "duration": "01:07:24",
+                "type": "Running"
+            },
+            {
+                "distance": 4.5499999999999998,
+                "datetime": "11/16/2014",
                 "source": "DailyMile",
-                "duration": "00:23:59",
-                "distance": 7.195,
-                "points": 39.572500000000005
+                "points": 25.024999999999999,
+                "duration": "00:15:10",
+                "type": "Bicycling"
             },
             {
+                "distance": 29.855,
                 "datetime": "11/13/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:19:02",
-                "distance": 2.2840000000000003,
-                "points": 28.550000000000004
-            }
-        ]
-    },
-    {
-        "employee": {
-            "name": "John Rice",
-            "email": "John.Rice@email.com",
-            "group": "Executives"
-        },
-        "activities": [
-            {
-                "datetime": "11/08/2014",
-                "type": "Bicycling",
-                "source": "Fitbug",
-                "duration": "00:57:18",
-                "distance": 17.19,
-                "points": 94.545
+                "source": "Nike+",
+                "points": 164.20250000000001,
+                "duration": "01:39:31",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/25/2014",
-                "type": "Running",
-                "source": "Fitbug",
-                "duration": "00:51:28",
-                "distance": 6.176,
-                "points": 77.2
-            },
-            {
+                "distance": 30.175000000000001,
                 "datetime": "11/27/2014",
-                "type": "Bicycling",
-                "source": "Garmin",
-                "duration": "00:50:30",
-                "distance": 15.15,
-                "points": 83.325
+                "source": "DailyMile",
+                "points": 165.96250000000001,
+                "duration": "01:40:35",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/07/2014",
-                "type": "Running",
+                "distance": 2.706,
+                "datetime": "11/18/2014",
+                "source": "Nike+",
+                "points": 33.825000000000003,
+                "duration": "00:22:33",
+                "type": "Running"
+            },
+            {
+                "distance": 2.9060000000000001,
+                "datetime": "11/18/2014",
+                "source": "strava",
+                "points": 36.325000000000003,
+                "duration": "00:24:13",
+                "type": "Running"
+            },
+            {
+                "distance": 0.48999999999999999,
+                "datetime": "11/30/2014",
                 "source": "Fitbug",
-                "duration": "01:43:20",
-                "distance": 12.4,
-                "points": 155
+                "points": 6.125,
+                "duration": "00:04:05",
+                "type": "Running"
             },
             {
-                "datetime": "11/04/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:38:49",
-                "distance": 4.658,
-                "points": 58.225
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:56:40",
-                "distance": 6.8,
-                "points": 85
-            },
-            {
-                "datetime": "11/28/2014",
-                "type": "Swimming",
-                "source": "BodyMedia",
-                "duration": "00:25:16",
-                "distance": 0.3032,
-                "points": 13.7956
-            },
-            {
+                "distance": 12.322000000000001,
                 "datetime": "11/13/2014",
-                "type": "Bicycling",
                 "source": "Nike+",
-                "duration": "00:57:58",
-                "distance": 17.39,
-                "points": 95.64500000000001
+                "points": 154.02500000000001,
+                "duration": "01:42:41",
+                "type": "Running"
             },
             {
-                "datetime": "11/06/2014",
-                "type": "Running",
+                "distance": 0.67200000000000004,
+                "datetime": "11/12/2014",
                 "source": "Jawbone UP",
-                "duration": "01:33:06",
-                "distance": 11.172,
-                "points": 139.65
+                "points": 8.4000000000000004,
+                "duration": "00:05:36",
+                "type": "Running"
             },
             {
-                "datetime": "11/03/2014",
-                "type": "Running",
-                "source": "Nike+",
-                "duration": "00:29:16",
-                "distance": 3.512,
-                "points": 43.9
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "Jawbone UP",
-                "duration": "00:34:35",
-                "distance": 10.375,
-                "points": 57.0625
-            },
-            {
-                "datetime": "11/15/2014",
-                "type": "Bicycling",
-                "source": "FatSecret",
-                "duration": "00:54:27",
-                "distance": 16.335,
-                "points": 89.8425
-            },
-            {
-                "datetime": "11/05/2014",
-                "type": "Swimming",
+                "distance": 8.2349999999999994,
+                "datetime": "11/26/2014",
                 "source": "Garmin",
-                "duration": "00:13:09",
-                "distance": 0.1578,
-                "points": 7.1799
+                "points": 45.292499999999997,
+                "duration": "00:27:27",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/22/2014",
-                "type": "Bicycling",
-                "source": "Nike+",
-                "duration": "00:37:48",
-                "distance": 11.34,
-                "points": 62.37
+                "distance": 4.0499999999999998,
+                "datetime": "11/03/2014",
+                "source": "strava",
+                "points": 50.625,
+                "duration": "00:33:45",
+                "type": "Running"
             },
             {
-                "datetime": "11/10/2014",
-                "type": "Bicycling",
+                "distance": 0.46540000000000004,
+                "datetime": "11/07/2014",
                 "source": "BodyMedia",
-                "duration": "00:11:51",
-                "distance": 3.555,
-                "points": 19.552500000000002
+                "points": 21.175700000000003,
+                "duration": "00:38:47",
+                "type": "Swimming"
             },
             {
-                "datetime": "11/02/2014",
-                "type": "Running",
-                "source": "runtastic",
-                "duration": "00:08:07",
-                "distance": 0.974,
-                "points": 12.174999999999999
-            },
-            {
-                "datetime": "11/21/2014",
-                "type": "Bicycling",
-                "source": "runtastic",
-                "duration": "00:06:30",
-                "distance": 1.95,
-                "points": 10.725
-            },
-            {
+                "distance": 31.710000000000001,
                 "datetime": "11/01/2014",
-                "type": "Bicycling",
                 "source": "Fitbug",
-                "duration": "00:55:17",
-                "distance": 16.585,
-                "points": 91.2175
+                "points": 174.405,
+                "duration": "01:45:42",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.9600000000000009,
+                "datetime": "11/02/2014",
+                "source": "Fitbug",
+                "points": 54.780000000000001,
+                "duration": "00:33:12",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "DailyMile"
             }
         ]
     },
     {
         "employee": {
-            "name": "Kelly Aguilar",
-            "email": "Kelly.Aguilar@email.com",
-            "group": "Executives"
+            "group": "Development",
+            "name": "Ashley Hill",
+            "email": "Ashley.Hill@email.com"
         },
         "activities": [
             {
-                "datetime": "11/19/2014",
-                "type": "Running",
-                "source": "Garmin",
-                "duration": "01:48:37",
-                "distance": 13.034,
-                "points": 162.925
+                "distance": 17.780000000000001,
+                "datetime": "11/13/2014",
+                "source": "runtastic",
+                "points": 97.790000000000006,
+                "duration": "00:59:16",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/26/2014",
-                "type": "Running",
+                "distance": 17.039999999999999,
+                "datetime": "11/30/2014",
                 "source": "Nike+",
-                "duration": "00:40:08",
-                "distance": 4.816,
-                "points": 60.199999999999996
+                "points": 93.719999999999999,
+                "duration": "00:56:48",
+                "type": "Bicycling"
             },
             {
-                "datetime": "11/06/2014",
-                "type": "Running",
+                "distance": 6.8920000000000003,
+                "datetime": "11/08/2014",
                 "source": "FatSecret",
-                "duration": "00:39:39",
-                "distance": 4.758,
-                "points": 59.475
+                "points": 86.150000000000006,
+                "duration": "00:57:26",
+                "type": "Running"
+            },
+            {
+                "distance": 8.1799999999999997,
+                "datetime": "11/06/2014",
+                "source": "Fitbug",
+                "points": 44.989999999999995,
+                "duration": "00:27:16",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.059000000000000004,
+                "datetime": "11/01/2014",
+                "source": "Fitbug",
+                "points": 2.6845000000000003,
+                "duration": "00:04:55",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.96320000000000006,
+                "datetime": "11/09/2014",
+                "source": "DailyMile",
+                "points": 43.825600000000001,
+                "duration": "01:20:16",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.10000000000000001,
+                "datetime": "11/22/2014",
+                "source": "FatSecret",
+                "points": 1.25,
+                "duration": "00:00:50",
+                "type": "Running"
+            },
+            {
+                "distance": 15.140000000000001,
+                "datetime": "11/01/2014",
+                "source": "DailyMile",
+                "points": 83.27000000000001,
+                "duration": "00:50:28",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.15,
+                "datetime": "11/02/2014",
+                "source": "BodyMedia",
+                "points": 72.325000000000003,
+                "duration": "00:43:50",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "BodyMedia"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Emma Allen",
+            "email": "Emma.Allen@email.com"
+        },
+        "activities": [
+            {
+                "distance": 4.8280000000000003,
+                "datetime": "11/02/2014",
+                "source": "Jawbone UP",
+                "points": 60.350000000000001,
+                "duration": "00:40:14",
+                "type": "Running"
+            },
+            {
+                "distance": 2.4980000000000002,
+                "datetime": "11/27/2014",
+                "source": "strava",
+                "points": 31.225000000000001,
+                "duration": "00:20:49",
+                "type": "Running"
+            },
+            {
+                "distance": 1.0880000000000001,
+                "datetime": "11/11/2014",
+                "source": "Nike+",
+                "points": 13.600000000000001,
+                "duration": "00:09:04",
+                "type": "Running"
+            },
+            {
+                "distance": 13.825000000000001,
+                "datetime": "11/06/2014",
+                "source": "FatSecret",
+                "points": 76.037500000000009,
+                "duration": "00:46:05",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.6600000000000001,
+                "datetime": "11/08/2014",
+                "source": "Garmin",
+                "points": 45.75,
+                "duration": "00:30:30",
+                "type": "Running"
+            },
+            {
+                "distance": 3.206,
+                "datetime": "11/19/2014",
+                "source": "strava",
+                "points": 40.075000000000003,
+                "duration": "00:26:43",
+                "type": "Running"
+            },
+            {
+                "distance": 3.456,
+                "datetime": "11/01/2014",
+                "source": "Jawbone UP",
+                "points": 43.200000000000003,
+                "duration": "00:28:48",
+                "type": "Running"
+            },
+            {
+                "distance": 6.202,
+                "datetime": "11/27/2014",
+                "source": "strava",
+                "points": 77.525000000000006,
+                "duration": "00:51:41",
+                "type": "Running"
+            },
+            {
+                "distance": 0.78400000000000003,
+                "datetime": "11/08/2014",
+                "source": "FatSecret",
+                "points": 9.8000000000000007,
+                "duration": "00:06:32",
+                "type": "Running"
+            },
+            {
+                "distance": 12.050000000000001,
+                "datetime": "11/05/2014",
+                "source": "FatSecret",
+                "points": 66.275000000000006,
+                "duration": "00:40:10",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.4980000000000002,
+                "datetime": "11/07/2014",
+                "source": "Jawbone UP",
+                "points": 68.725000000000009,
+                "duration": "00:45:49",
+                "type": "Running"
+            },
+            {
+                "distance": 22.375,
+                "datetime": "11/10/2014",
+                "source": "DailyMile",
+                "points": 123.0625,
+                "duration": "01:14:35",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.3959999999999999,
+                "datetime": "11/19/2014",
+                "source": "Nike+",
+                "points": 54.949999999999996,
+                "duration": "00:36:38",
+                "type": "Running"
+            },
+            {
+                "distance": 6.2860000000000005,
+                "datetime": "11/23/2014",
+                "source": "runtastic",
+                "points": 78.575000000000003,
+                "duration": "00:52:23",
+                "type": "Running"
+            },
+            {
+                "distance": 13.478,
+                "datetime": "11/01/2014",
+                "source": "strava",
+                "points": 168.47499999999999,
+                "duration": "01:52:19",
+                "type": "Running"
+            },
+            {
+                "distance": 4.0700000000000003,
+                "datetime": "11/09/2014",
+                "source": "FatSecret",
+                "points": 50.875,
+                "duration": "00:33:55",
+                "type": "Running"
+            },
+            {
+                "distance": 0.33600000000000002,
+                "datetime": "11/23/2014",
+                "source": "Garmin",
+                "points": 4.2000000000000002,
+                "duration": "00:02:48",
+                "type": "Running"
+            },
+            {
+                "distance": 7.04,
+                "datetime": "11/19/2014",
+                "source": "runtastic",
+                "points": 38.719999999999999,
+                "duration": "00:23:28",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.6680000000000001,
+                "datetime": "11/19/2014",
+                "source": "Fitbug",
+                "points": 33.350000000000001,
+                "duration": "00:22:14",
+                "type": "Running"
+            },
+            {
+                "distance": 3.294,
+                "datetime": "11/18/2014",
+                "source": "Fitbug",
+                "points": 41.174999999999997,
+                "duration": "00:27:27",
+                "type": "Running"
+            },
+            {
+                "distance": 0.86599999999999999,
+                "datetime": "11/30/2014",
+                "source": "BodyMedia",
+                "points": 10.824999999999999,
+                "duration": "00:07:13",
+                "type": "Running"
+            },
+            {
+                "distance": 1.806,
+                "datetime": "11/06/2014",
+                "source": "BodyMedia",
+                "points": 22.574999999999999,
+                "duration": "00:15:03",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "BodyMedia"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Kathleen Sanders",
+            "email": "Kathleen.Sanders@email.com"
+        },
+        "activities": [
+            {
+                "distance": 2.3250000000000002,
+                "datetime": "11/01/2014",
+                "source": "FatSecret",
+                "points": 12.787500000000001,
+                "duration": "00:07:45",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.1918,
+                "datetime": "11/04/2014",
+                "source": "runtastic",
+                "points": 8.7269000000000005,
+                "duration": "00:15:59",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.7792,
+                "datetime": "11/05/2014",
+                "source": "strava",
+                "points": 35.453600000000002,
+                "duration": "01:04:56",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.85499999999999998,
+                "datetime": "11/04/2014",
+                "source": "Garmin",
+                "points": 4.7024999999999997,
+                "duration": "00:02:51",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 12.206,
+                "datetime": "11/21/2014",
+                "source": "FatSecret",
+                "points": 152.57499999999999,
+                "duration": "01:41:43",
+                "type": "Running"
+            },
+            {
+                "distance": 3.968,
+                "datetime": "11/23/2014",
+                "source": "Jawbone UP",
+                "points": 49.600000000000001,
+                "duration": "00:33:04",
+                "type": "Running"
+            },
+            {
+                "distance": 12.68,
+                "datetime": "11/06/2014",
+                "source": "BodyMedia",
+                "points": 69.739999999999995,
+                "duration": "00:42:16",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 16.710000000000001,
+                "datetime": "11/15/2014",
+                "source": "strava",
+                "points": 91.905000000000001,
+                "duration": "00:55:42",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.6050000000000004,
+                "datetime": "11/06/2014",
+                "source": "Fitbug",
+                "points": 36.327500000000001,
+                "duration": "00:22:01",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.9359999999999999,
+                "datetime": "11/19/2014",
+                "source": "runtastic",
+                "points": 124.2,
+                "duration": "01:22:48",
+                "type": "Running"
+            },
+            {
+                "distance": 2.8980000000000001,
+                "datetime": "11/23/2014",
+                "source": "Fitbug",
+                "points": 36.225000000000001,
+                "duration": "00:24:09",
+                "type": "Running"
+            },
+            {
+                "distance": 0.42420000000000002,
+                "datetime": "11/03/2014",
+                "source": "FatSecret",
+                "points": 19.301100000000002,
+                "duration": "00:35:21",
+                "type": "Swimming"
+            },
+            {
+                "distance": 4.0750000000000002,
+                "datetime": "11/16/2014",
+                "source": "Fitbug",
+                "points": 22.412500000000001,
+                "duration": "00:13:35",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.73,
+                "datetime": "11/22/2014",
+                "source": "Fitbug",
+                "points": 46.625,
+                "duration": "00:31:05",
+                "type": "Running"
+            },
+            {
+                "distance": 15.210000000000001,
+                "datetime": "11/10/2014",
+                "source": "runtastic",
+                "points": 83.655000000000001,
+                "duration": "00:50:42",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.4450000000000003,
+                "datetime": "11/09/2014",
+                "source": "strava",
+                "points": 24.447500000000002,
+                "duration": "00:14:49",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 8.3300000000000001,
+                "datetime": "11/13/2014",
+                "source": "runtastic",
+                "points": 45.814999999999998,
+                "duration": "00:27:46",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.865,
+                "datetime": "11/14/2014",
+                "source": "BodyMedia",
+                "points": 10.2575,
+                "duration": "00:06:13",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 7.4039999999999999,
+                "datetime": "11/30/2014",
+                "source": "Garmin",
+                "points": 92.549999999999997,
+                "duration": "01:01:42",
+                "type": "Running"
+            },
+            {
+                "distance": 3.6200000000000001,
+                "datetime": "11/19/2014",
+                "source": "BodyMedia",
+                "points": 19.91,
+                "duration": "00:12:04",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 27.385000000000002,
+                "datetime": "11/02/2014",
+                "source": "Garmin",
+                "points": 150.61750000000001,
+                "duration": "01:31:17",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.46,
+                "datetime": "11/26/2014",
+                "source": "Nike+",
+                "points": 35.530000000000001,
+                "duration": "00:21:32",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Nike+"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Joshua Palmer",
+            "email": "Joshua.Palmer@email.com"
+        },
+        "activities": [
+            {
+                "distance": 10.25,
+                "datetime": "11/22/2014",
+                "source": "runtastic",
+                "points": 56.375,
+                "duration": "00:34:10",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.266,
+                "datetime": "11/07/2014",
+                "source": "BodyMedia",
+                "points": 53.325000000000003,
+                "duration": "00:35:33",
+                "type": "Running"
+            },
+            {
+                "distance": 13.505000000000001,
+                "datetime": "11/10/2014",
+                "source": "Jawbone UP",
+                "points": 74.277500000000003,
+                "duration": "00:45:01",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.9139999999999997,
+                "datetime": "11/02/2014",
+                "source": "Garmin",
+                "points": 73.924999999999997,
+                "duration": "00:49:17",
+                "type": "Running"
+            },
+            {
+                "distance": 0.106,
+                "datetime": "11/25/2014",
+                "source": "Jawbone UP",
+                "points": 1.325,
+                "duration": "00:00:53",
+                "type": "Running"
+            },
+            {
+                "distance": 4.774,
+                "datetime": "11/30/2014",
+                "source": "BodyMedia",
+                "points": 59.674999999999997,
+                "duration": "00:39:47",
+                "type": "Running"
+            },
+            {
+                "distance": 0.42460000000000003,
+                "datetime": "11/15/2014",
+                "source": "BodyMedia",
+                "points": 19.319300000000002,
+                "duration": "00:35:23",
+                "type": "Swimming"
+            },
+            {
+                "distance": 4.306,
+                "datetime": "11/25/2014",
+                "source": "Nike+",
+                "points": 53.825000000000003,
+                "duration": "00:35:53",
+                "type": "Running"
+            },
+            {
+                "distance": 2.036,
+                "datetime": "11/29/2014",
+                "source": "Garmin",
+                "points": 25.449999999999999,
+                "duration": "00:16:58",
+                "type": "Running"
+            },
+            {
+                "distance": 3.9279999999999999,
+                "datetime": "11/04/2014",
+                "source": "strava",
+                "points": 49.100000000000001,
+                "duration": "00:32:44",
+                "type": "Running"
+            },
+            {
+                "distance": 5.9450000000000003,
+                "datetime": "11/01/2014",
+                "source": "Jawbone UP",
+                "points": 32.697500000000005,
+                "duration": "00:19:49",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.4900000000000002,
+                "datetime": "11/07/2014",
+                "source": "strava",
+                "points": 30.195,
+                "duration": "00:18:18",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.4950000000000001,
+                "datetime": "11/12/2014",
+                "source": "Fitbug",
+                "points": 8.2225000000000001,
+                "duration": "00:04:59",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.31720000000000004,
+                "datetime": "11/25/2014",
+                "source": "Nike+",
+                "points": 14.432600000000003,
+                "duration": "00:26:26",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.9598000000000001,
+                "datetime": "11/28/2014",
+                "source": "FatSecret",
+                "points": 43.670900000000003,
+                "duration": "01:19:59",
+                "type": "Swimming"
+            },
+            {
+                "distance": 11.445,
+                "datetime": "11/21/2014",
+                "source": "Fitbug",
+                "points": 62.947500000000005,
+                "duration": "00:38:09",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 12.875999999999999,
+                "datetime": "11/05/2014",
+                "source": "FatSecret",
+                "points": 160.94999999999999,
+                "duration": "01:47:18",
+                "type": "Running"
+            },
+            {
+                "distance": 9.5139999999999993,
+                "datetime": "11/16/2014",
+                "source": "Fitbug",
+                "points": 118.925,
+                "duration": "01:19:17",
+                "type": "Running"
+            },
+            {
+                "distance": 4.6280000000000001,
+                "datetime": "11/06/2014",
+                "source": "Jawbone UP",
+                "points": 57.850000000000001,
+                "duration": "00:38:34",
+                "type": "Running"
+            },
+            {
+                "distance": 17.210000000000001,
+                "datetime": "11/18/2014",
+                "source": "BodyMedia",
+                "points": 94.655000000000001,
+                "duration": "00:57:22",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.1160000000000001,
+                "datetime": "11/01/2014",
+                "source": "Fitbug",
+                "points": 13.950000000000001,
+                "duration": "00:09:18",
+                "type": "Running"
+            },
+            {
+                "distance": 12.015000000000001,
+                "datetime": "11/20/2014",
+                "source": "Nike+",
+                "points": 66.08250000000001,
+                "duration": "00:40:03",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.5280000000000005,
+                "datetime": "11/11/2014",
+                "source": "Garmin",
+                "points": 69.100000000000009,
+                "duration": "00:46:04",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "FatSecret"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Zachary Crawford",
+            "email": "Zachary.Crawford@email.com"
+        },
+        "activities": [
+            {
+                "distance": 1.236,
+                "datetime": "11/12/2014",
+                "source": "DailyMile",
+                "points": 15.449999999999999,
+                "duration": "00:10:18",
+                "type": "Running"
+            },
+            {
+                "distance": 11.25,
+                "datetime": "11/14/2014",
+                "source": "DailyMile",
+                "points": 61.875,
+                "duration": "00:37:30",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.2850000000000001,
+                "datetime": "11/24/2014",
+                "source": "FatSecret",
+                "points": 51.067500000000003,
+                "duration": "00:30:57",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.4880000000000004,
+                "datetime": "11/19/2014",
+                "source": "DailyMile",
+                "points": 81.100000000000009,
+                "duration": "00:54:04",
+                "type": "Running"
+            },
+            {
+                "distance": 33.520000000000003,
+                "datetime": "11/09/2014",
+                "source": "Garmin",
+                "points": 184.36000000000001,
+                "duration": "01:51:44",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 8.2149999999999999,
+                "datetime": "11/22/2014",
+                "source": "Fitbug",
+                "points": 45.182499999999997,
+                "duration": "00:27:23",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.0449999999999999,
+                "datetime": "11/12/2014",
+                "source": "BodyMedia",
+                "points": 5.7474999999999996,
+                "duration": "00:03:29",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.6600000000000001,
+                "datetime": "11/16/2014",
+                "source": "Fitbug",
+                "points": 53.130000000000003,
+                "duration": "00:32:12",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.8399999999999999,
+                "datetime": "11/20/2014",
+                "source": "runtastic",
+                "points": 26.619999999999997,
+                "duration": "00:16:08",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.69900000000000007,
+                "datetime": "11/21/2014",
+                "source": "DailyMile",
+                "points": 31.804500000000004,
+                "duration": "00:58:15",
+                "type": "Swimming"
+            },
+            {
+                "distance": 1.1698,
+                "datetime": "11/17/2014",
+                "source": "DailyMile",
+                "points": 53.225899999999996,
+                "duration": "01:37:29",
+                "type": "Swimming"
+            },
+            {
+                "distance": 3.008,
+                "datetime": "11/15/2014",
+                "source": "Garmin",
+                "points": 37.600000000000001,
+                "duration": "00:25:04",
+                "type": "Running"
+            },
+            {
+                "distance": 0.52080000000000004,
+                "datetime": "11/29/2014",
+                "source": "Garmin",
+                "points": 23.696400000000001,
+                "duration": "00:43:24",
+                "type": "Swimming"
+            },
+            {
+                "distance": 1.8,
+                "datetime": "11/21/2014",
+                "source": "Nike+",
+                "points": 22.5,
+                "duration": "00:15:00",
+                "type": "Running"
+            },
+            {
+                "distance": 3.4620000000000002,
+                "datetime": "11/03/2014",
+                "source": "Fitbug",
+                "points": 43.275000000000006,
+                "duration": "00:28:51",
+                "type": "Running"
+            },
+            {
+                "distance": 26.940000000000001,
+                "datetime": "11/28/2014",
+                "source": "strava",
+                "points": 148.17000000000002,
+                "duration": "01:29:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.5760000000000001,
+                "datetime": "11/04/2014",
+                "source": "Garmin",
+                "points": 19.699999999999999,
+                "duration": "00:13:08",
+                "type": "Running"
+            },
+            {
+                "distance": 0.082000000000000003,
+                "datetime": "11/13/2014",
+                "source": "DailyMile",
+                "points": 3.7310000000000003,
+                "duration": "00:06:50",
+                "type": "Swimming"
+            },
+            {
+                "distance": 20.469999999999999,
+                "datetime": "11/11/2014",
+                "source": "strava",
+                "points": 112.58499999999999,
+                "duration": "01:08:14",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 19.91,
+                "datetime": "11/25/2014",
+                "source": "runtastic",
+                "points": 109.505,
+                "duration": "01:06:22",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "strava"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Lawrence Payne",
+            "email": "Lawrence.Payne@email.com"
+        },
+        "activities": [
+            {
+                "distance": 0.93000000000000005,
+                "datetime": "11/17/2014",
+                "source": "Garmin",
+                "points": 5.1150000000000002,
+                "duration": "00:03:06",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.4950000000000001,
+                "datetime": "11/07/2014",
+                "source": "Fitbug",
+                "points": 30.2225,
+                "duration": "00:18:19",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.0979999999999999,
+                "datetime": "11/25/2014",
+                "source": "Garmin",
+                "points": 26.224999999999998,
+                "duration": "00:17:29",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Fitbug"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Teresa Holland",
+            "email": "Teresa.Holland@email.com"
+        },
+        "activities": [
+            {
+                "distance": 35.789999999999999,
+                "datetime": "11/11/2014",
+                "source": "Nike+",
+                "points": 196.845,
+                "duration": "01:59:18",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 10.885,
+                "datetime": "11/15/2014",
+                "source": "runtastic",
+                "points": 59.8675,
+                "duration": "00:36:17",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.8380000000000001,
+                "datetime": "11/03/2014",
+                "source": "DailyMile",
+                "points": 47.975000000000001,
+                "duration": "00:31:59",
+                "type": "Running"
+            },
+            {
+                "distance": 13.950000000000001,
+                "datetime": "11/26/2014",
+                "source": "FatSecret",
+                "points": 76.725000000000009,
+                "duration": "00:46:30",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.48,
+                "datetime": "11/07/2014",
+                "source": "runtastic",
+                "points": 18.5,
+                "duration": "00:12:20",
+                "type": "Running"
+            },
+            {
+                "distance": 1.0458000000000001,
+                "datetime": "11/27/2014",
+                "source": "FatSecret",
+                "points": 47.5839,
+                "duration": "01:27:09",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.016,
+                "datetime": "11/22/2014",
+                "source": "Jawbone UP",
+                "points": 0.20000000000000001,
+                "duration": "00:00:08",
+                "type": "Running"
+            },
+            {
+                "distance": 8.4199999999999999,
+                "datetime": "11/13/2014",
+                "source": "Fitbug",
+                "points": 46.310000000000002,
+                "duration": "00:28:04",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.3680000000000001,
+                "datetime": "11/08/2014",
+                "source": "Fitbug",
+                "points": 17.100000000000001,
+                "duration": "00:11:24",
+                "type": "Running"
+            },
+            {
+                "distance": 1.095,
+                "datetime": "11/05/2014",
+                "source": "Jawbone UP",
+                "points": 6.0225,
+                "duration": "00:03:39",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.9600000000000009,
+                "datetime": "11/02/2014",
+                "source": "DailyMile",
+                "points": 54.780000000000001,
+                "duration": "00:33:12",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 14.33,
+                "datetime": "11/12/2014",
+                "source": "Garmin",
+                "points": 78.814999999999998,
+                "duration": "00:47:46",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.0760000000000005,
+                "datetime": "11/19/2014",
+                "source": "Fitbug",
+                "points": 50.950000000000003,
+                "duration": "00:33:58",
+                "type": "Running"
+            },
+            {
+                "distance": 5.4279999999999999,
+                "datetime": "11/22/2014",
+                "source": "Nike+",
+                "points": 67.849999999999994,
+                "duration": "00:45:14",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Garmin"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Brittany Baker",
+            "email": "Brittany.Baker@email.com"
+        },
+        "activities": [
+            {
+                "distance": 28.210000000000001,
+                "datetime": "11/24/2014",
+                "source": "DailyMile",
+                "points": 155.155,
+                "duration": "01:34:02",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.0679999999999996,
+                "datetime": "11/05/2014",
+                "source": "strava",
+                "points": 113.34999999999999,
+                "duration": "01:15:34",
+                "type": "Running"
+            },
+            {
+                "distance": 0.062,
+                "datetime": "11/06/2014",
+                "source": "FatSecret",
+                "points": 0.77500000000000002,
+                "duration": "00:00:31",
+                "type": "Running"
+            },
+            {
+                "distance": 0.3478,
+                "datetime": "11/11/2014",
+                "source": "FatSecret",
+                "points": 15.8249,
+                "duration": "00:28:59",
+                "type": "Swimming"
+            },
+            {
+                "distance": 2.3000000000000003,
+                "datetime": "11/04/2014",
+                "source": "Nike+",
+                "points": 12.650000000000002,
+                "duration": "00:07:40",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Nike+"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Development",
+            "name": "Samantha Gardner",
+            "email": "Samantha.Gardner@email.com"
+        },
+        "activities": [
+            {
+                "distance": 5.6040000000000001,
+                "datetime": "11/19/2014",
+                "source": "BodyMedia",
+                "points": 70.049999999999997,
+                "duration": "00:46:42",
+                "type": "Running"
+            },
+            {
+                "distance": 4.96,
+                "datetime": "11/10/2014",
+                "source": "Nike+",
+                "points": 62,
+                "duration": "00:41:20",
+                "type": "Running"
+            },
+            {
+                "distance": 12.215,
+                "datetime": "11/25/2014",
+                "source": "FatSecret",
+                "points": 67.182500000000005,
+                "duration": "00:40:43",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.8280000000000003,
+                "datetime": "11/14/2014",
+                "source": "Fitbug",
+                "points": 72.850000000000009,
+                "duration": "00:48:34",
+                "type": "Running"
+            },
+            {
+                "distance": 25.844999999999999,
+                "datetime": "11/12/2014",
+                "source": "Jawbone UP",
+                "points": 142.14749999999998,
+                "duration": "01:26:09",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.04,
+                "datetime": "11/09/2014",
+                "source": "Jawbone UP",
+                "points": 11.220000000000001,
+                "duration": "00:06:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.7650000000000001,
+                "datetime": "11/30/2014",
+                "source": "Garmin",
+                "points": 20.7075,
+                "duration": "00:12:33",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.276,
+                "datetime": "11/09/2014",
+                "source": "Jawbone UP",
+                "points": 15.950000000000001,
+                "duration": "00:10:38",
+                "type": "Running"
+            },
+            {
+                "distance": 0.014,
+                "datetime": "11/25/2014",
+                "source": "Jawbone UP",
+                "points": 0.17500000000000002,
+                "duration": "00:00:07",
+                "type": "Running"
+            },
+            {
+                "distance": 4.0720000000000001,
+                "datetime": "11/28/2014",
+                "source": "DailyMile",
+                "points": 50.899999999999999,
+                "duration": "00:33:56",
+                "type": "Running"
+            },
+            {
+                "distance": 8.9049999999999994,
+                "datetime": "11/22/2014",
+                "source": "Nike+",
+                "points": 48.977499999999999,
+                "duration": "00:29:41",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.654,
+                "datetime": "11/27/2014",
+                "source": "FatSecret",
+                "points": 170.67500000000001,
+                "duration": "01:53:47",
+                "type": "Running"
+            },
+            {
+                "distance": 3.8250000000000002,
+                "datetime": "11/24/2014",
+                "source": "Jawbone UP",
+                "points": 21.037500000000001,
+                "duration": "00:12:45",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 8.2550000000000008,
+                "datetime": "11/06/2014",
+                "source": "DailyMile",
+                "points": 45.402500000000003,
+                "duration": "00:27:31",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.6799999999999997,
+                "datetime": "11/09/2014",
+                "source": "BodyMedia",
+                "points": 25.739999999999998,
+                "duration": "00:15:36",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 8.25,
+                "datetime": "11/13/2014",
+                "source": "strava",
+                "points": 45.375,
+                "duration": "00:27:30",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.9279999999999999,
+                "datetime": "11/30/2014",
+                "source": "BodyMedia",
+                "points": 24.099999999999998,
+                "duration": "00:16:04",
+                "type": "Running"
+            },
+            {
+                "distance": 0.19980000000000001,
+                "datetime": "11/28/2014",
+                "source": "DailyMile",
+                "points": 9.0908999999999995,
+                "duration": "00:16:39",
+                "type": "Swimming"
+            },
+            {
+                "distance": 13.602,
+                "datetime": "11/27/2014",
+                "source": "DailyMile",
+                "points": 170.02500000000001,
+                "duration": "01:53:21",
+                "type": "Running"
+            },
+            {
+                "distance": 11.51,
+                "datetime": "11/11/2014",
+                "source": "Garmin",
+                "points": 63.305,
+                "duration": "00:38:22",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "strava"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Jesse Chen",
+            "email": "Jesse.Chen@email.com"
+        },
+        "activities": [
+            {
+                "distance": 1.996,
+                "datetime": "11/09/2014",
+                "source": "Fitbug",
+                "points": 24.949999999999999,
+                "duration": "00:16:38",
+                "type": "Running"
+            },
+            {
+                "distance": 2.7000000000000002,
+                "datetime": "11/28/2014",
+                "source": "Nike+",
+                "points": 14.850000000000001,
+                "duration": "00:09:00",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.98,
+                "datetime": "11/07/2014",
+                "source": "Jawbone UP",
+                "points": 76.890000000000001,
+                "duration": "00:46:36",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.5948,
+                "datetime": "11/15/2014",
+                "source": "runtastic",
+                "points": 27.063400000000001,
+                "duration": "00:49:34",
+                "type": "Swimming"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "runtastic"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Nicholas Lynch",
+            "email": "Nicholas.Lynch@email.com"
+        },
+        "activities": [
+            {
+                "distance": 1.3700000000000001,
+                "datetime": "11/22/2014",
+                "source": "strava",
+                "points": 17.125,
+                "duration": "00:11:25",
+                "type": "Running"
+            },
+            {
+                "distance": 17.59,
+                "datetime": "11/30/2014",
+                "source": "Nike+",
+                "points": 96.745000000000005,
+                "duration": "00:58:38",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.7000000000000002,
+                "datetime": "11/02/2014",
+                "source": "BodyMedia",
+                "points": 25.850000000000001,
+                "duration": "00:15:40",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 19.440000000000001,
+                "datetime": "11/11/2014",
+                "source": "DailyMile",
+                "points": 106.92,
+                "duration": "01:04:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 7.9350000000000005,
+                "datetime": "11/27/2014",
+                "source": "Fitbug",
+                "points": 43.642500000000005,
+                "duration": "00:26:27",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.94800000000000006,
+                "datetime": "11/28/2014",
+                "source": "Nike+",
+                "points": 43.134,
+                "duration": "01:19:00",
+                "type": "Swimming"
+            },
+            {
+                "distance": 30.879999999999999,
+                "datetime": "11/28/2014",
+                "source": "Nike+",
+                "points": 169.84,
+                "duration": "01:42:56",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.1280000000000001,
+                "datetime": "11/11/2014",
+                "source": "strava",
+                "points": 76.599999999999994,
+                "duration": "00:51:04",
+                "type": "Running"
+            },
+            {
+                "distance": 7.0120000000000005,
+                "datetime": "11/03/2014",
+                "source": "BodyMedia",
+                "points": 87.650000000000006,
+                "duration": "00:58:26",
+                "type": "Running"
+            },
+            {
+                "distance": 5.5640000000000001,
+                "datetime": "11/04/2014",
+                "source": "FatSecret",
+                "points": 69.549999999999997,
+                "duration": "00:46:22",
+                "type": "Running"
+            },
+            {
+                "distance": 11.675000000000001,
+                "datetime": "11/26/2014",
+                "source": "runtastic",
+                "points": 64.212500000000006,
+                "duration": "00:38:55",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 8.1600000000000001,
+                "datetime": "11/14/2014",
+                "source": "runtastic",
+                "points": 44.880000000000003,
+                "duration": "00:27:12",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.0460000000000003,
+                "datetime": "11/15/2014",
+                "source": "Jawbone UP",
+                "points": 38.075000000000003,
+                "duration": "00:25:23",
+                "type": "Running"
+            },
+            {
+                "distance": 0.53400000000000003,
+                "datetime": "11/24/2014",
+                "source": "BodyMedia",
+                "points": 6.6750000000000007,
+                "duration": "00:04:27",
+                "type": "Running"
+            },
+            {
+                "distance": 2.464,
+                "datetime": "11/20/2014",
+                "source": "FatSecret",
+                "points": 30.800000000000001,
+                "duration": "00:20:32",
+                "type": "Running"
+            },
+            {
+                "distance": 0.8992,
+                "datetime": "11/19/2014",
+                "source": "DailyMile",
+                "points": 40.913600000000002,
+                "duration": "01:14:56",
+                "type": "Swimming"
+            },
+            {
+                "distance": 16.57,
+                "datetime": "11/18/2014",
+                "source": "Jawbone UP",
+                "points": 91.135000000000005,
+                "duration": "00:55:14",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.4539999999999997,
+                "datetime": "11/28/2014",
+                "source": "BodyMedia",
+                "points": 80.674999999999997,
+                "duration": "00:53:47",
+                "type": "Running"
+            },
+            {
+                "distance": 0.14940000000000001,
+                "datetime": "11/29/2014",
+                "source": "Nike+",
+                "points": 6.7976999999999999,
+                "duration": "00:12:27",
+                "type": "Swimming"
+            },
+            {
+                "distance": 2.0380000000000003,
+                "datetime": "11/06/2014",
+                "source": "Garmin",
+                "points": 25.475000000000001,
+                "duration": "00:16:59",
+                "type": "Running"
+            },
+            {
+                "distance": 0.30380000000000001,
+                "datetime": "11/12/2014",
+                "source": "Garmin",
+                "points": 13.822900000000001,
+                "duration": "00:25:19",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.96599999999999997,
+                "datetime": "11/13/2014",
+                "source": "FatSecret",
+                "points": 12.074999999999999,
+                "duration": "00:08:03",
+                "type": "Running"
+            },
+            {
+                "distance": 5.25,
+                "datetime": "11/18/2014",
+                "source": "Jawbone UP",
+                "points": 65.625,
+                "duration": "00:43:45",
+                "type": "Running"
+            },
+            {
+                "distance": 7.1500000000000004,
+                "datetime": "11/17/2014",
+                "source": "FatSecret",
+                "points": 89.375,
+                "duration": "00:59:35",
+                "type": "Running"
+            },
+            {
+                "distance": 6.0440000000000005,
+                "datetime": "11/02/2014",
+                "source": "BodyMedia",
+                "points": 75.550000000000011,
+                "duration": "00:50:22",
+                "type": "Running"
+            },
+            {
+                "distance": 0.47200000000000003,
+                "datetime": "11/10/2014",
+                "source": "runtastic",
+                "points": 5.9000000000000004,
+                "duration": "00:03:56",
+                "type": "Running"
+            },
+            {
+                "distance": 4.0019999999999998,
+                "datetime": "11/05/2014",
+                "source": "strava",
+                "points": 50.024999999999999,
+                "duration": "00:33:21",
+                "type": "Running"
+            },
+            {
+                "distance": 16.490000000000002,
+                "datetime": "11/24/2014",
+                "source": "FatSecret",
+                "points": 90.695000000000007,
+                "duration": "00:54:58",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.11,
+                "datetime": "11/01/2014",
+                "source": "Fitbug",
+                "points": 1.375,
+                "duration": "00:00:55",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "Garmin"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Tyler Cole",
+            "email": "Tyler.Cole@email.com"
+        },
+        "activities": [],
+        "trackers": []
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Anna Jones",
+            "email": "Anna.Jones@email.com"
+        },
+        "activities": [
+            {
+                "distance": 4.6050000000000004,
+                "datetime": "11/06/2014",
+                "source": "BodyMedia",
+                "points": 25.327500000000001,
+                "duration": "00:15:21",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.1160000000000001,
+                "datetime": "11/09/2014",
+                "source": "Nike+",
+                "points": 13.950000000000001,
+                "duration": "00:09:18",
+                "type": "Running"
+            },
+            {
+                "distance": 0.28500000000000003,
+                "datetime": "11/19/2014",
+                "source": "DailyMile",
+                "points": 1.5675000000000001,
+                "duration": "00:00:57",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.6499999999999999,
+                "datetime": "11/14/2014",
+                "source": "BodyMedia",
+                "points": 20.074999999999999,
+                "duration": "00:12:10",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.0880000000000001,
+                "datetime": "11/14/2014",
+                "source": "BodyMedia",
+                "points": 76.099999999999994,
+                "duration": "00:50:44",
+                "type": "Running"
+            },
+            {
+                "distance": 5.3020000000000005,
+                "datetime": "11/03/2014",
+                "source": "Nike+",
+                "points": 66.275000000000006,
+                "duration": "00:44:11",
+                "type": "Running"
+            },
+            {
+                "distance": 35.164999999999999,
+                "datetime": "11/03/2014",
+                "source": "runtastic",
+                "points": 193.4075,
+                "duration": "01:57:13",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.84,
+                "datetime": "11/26/2014",
+                "source": "Jawbone UP",
+                "points": 173,
+                "duration": "01:55:20",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Jawbone UP"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Megan Thompson",
+            "email": "Megan.Thompson@email.com"
+        },
+        "activities": [
+            {
+                "distance": 1.298,
+                "datetime": "11/11/2014",
+                "source": "runtastic",
+                "points": 59.059000000000005,
+                "duration": "01:48:10",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.080399999999999999,
+                "datetime": "11/04/2014",
+                "source": "Garmin",
+                "points": 3.6581999999999999,
+                "duration": "00:06:42",
+                "type": "Swimming"
+            },
+            {
+                "distance": 10.904999999999999,
+                "datetime": "11/07/2014",
+                "source": "strava",
+                "points": 59.977499999999999,
+                "duration": "00:36:21",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.492,
+                "datetime": "11/02/2014",
+                "source": "BodyMedia",
+                "points": 56.149999999999999,
+                "duration": "00:37:26",
+                "type": "Running"
+            },
+            {
+                "distance": 8.1950000000000003,
+                "datetime": "11/24/2014",
+                "source": "runtastic",
+                "points": 45.072500000000005,
+                "duration": "00:27:19",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.5680000000000001,
+                "datetime": "11/30/2014",
+                "source": "Garmin",
+                "points": 19.600000000000001,
+                "duration": "00:13:04",
+                "type": "Running"
+            },
+            {
+                "distance": 5.2199999999999998,
+                "datetime": "11/08/2014",
+                "source": "Garmin",
+                "points": 65.25,
+                "duration": "00:43:30",
+                "type": "Running"
+            },
+            {
+                "distance": 0.35539999999999999,
+                "datetime": "11/21/2014",
+                "source": "Nike+",
+                "points": 16.1707,
+                "duration": "00:29:37",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.29920000000000002,
+                "datetime": "11/27/2014",
+                "source": "DailyMile",
+                "points": 13.613600000000002,
+                "duration": "00:24:56",
+                "type": "Swimming"
+            },
+            {
+                "distance": 15.08,
+                "datetime": "11/03/2014",
+                "source": "DailyMile",
+                "points": 82.939999999999998,
+                "duration": "00:50:16",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "DailyMile"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Karen Cox",
+            "email": "Karen.Cox@email.com"
+        },
+        "activities": [
+            {
+                "distance": 9.7650000000000006,
+                "datetime": "11/21/2014",
+                "source": "Fitbug",
+                "points": 53.707500000000003,
+                "duration": "00:32:33",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.5140000000000002,
+                "datetime": "11/16/2014",
+                "source": "Fitbug",
+                "points": 31.425000000000004,
+                "duration": "00:20:57",
+                "type": "Running"
+            },
+            {
+                "distance": 0.35799999999999998,
+                "datetime": "11/08/2014",
+                "source": "Jawbone UP",
+                "points": 4.4749999999999996,
+                "duration": "00:02:59",
+                "type": "Running"
+            },
+            {
+                "distance": 33.369999999999997,
+                "datetime": "11/12/2014",
+                "source": "Nike+",
+                "points": 183.535,
+                "duration": "01:51:14",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.950000000000001,
+                "datetime": "11/24/2014",
+                "source": "BodyMedia",
+                "points": 76.725000000000009,
+                "duration": "00:46:30",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.59400000000000008,
+                "datetime": "11/28/2014",
+                "source": "runtastic",
+                "points": 27.027000000000005,
+                "duration": "00:49:30",
+                "type": "Swimming"
+            },
+            {
+                "distance": 10.960000000000001,
+                "datetime": "11/02/2014",
+                "source": "Jawbone UP",
+                "points": 137,
+                "duration": "01:31:20",
+                "type": "Running"
+            },
+            {
+                "distance": 7.532,
+                "datetime": "11/14/2014",
+                "source": "BodyMedia",
+                "points": 94.150000000000006,
+                "duration": "01:02:46",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "runtastic"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Diane Burton",
+            "email": "Diane.Burton@email.com"
+        },
+        "activities": [
+            {
+                "distance": 13.816000000000001,
+                "datetime": "11/29/2014",
+                "source": "Garmin",
+                "points": 172.70000000000002,
+                "duration": "01:55:08",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Garmin"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Kathy Watkins",
+            "email": "Kathy.Watkins@email.com"
+        },
+        "activities": [
+            {
+                "distance": 0.052000000000000005,
+                "datetime": "11/14/2014",
+                "source": "strava",
+                "points": 0.65000000000000002,
+                "duration": "00:00:26",
+                "type": "Running"
+            },
+            {
+                "distance": 3.3500000000000001,
+                "datetime": "11/12/2014",
+                "source": "DailyMile",
+                "points": 41.875,
+                "duration": "00:27:55",
+                "type": "Running"
+            },
+            {
+                "distance": 0.98280000000000001,
+                "datetime": "11/01/2014",
+                "source": "FatSecret",
+                "points": 44.717399999999998,
+                "duration": "01:21:54",
+                "type": "Swimming"
+            },
+            {
+                "distance": 33.405000000000001,
+                "datetime": "11/13/2014",
+                "source": "Fitbug",
+                "points": 183.72750000000002,
+                "duration": "01:51:21",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.4700000000000006,
+                "datetime": "11/20/2014",
+                "source": "runtastic",
+                "points": 52.085000000000001,
+                "duration": "00:31:34",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.61740000000000006,
+                "datetime": "11/24/2014",
+                "source": "Fitbug",
+                "points": 28.091700000000003,
+                "duration": "00:51:27",
+                "type": "Swimming"
+            },
+            {
+                "distance": 1.3958000000000002,
+                "datetime": "11/03/2014",
+                "source": "Nike+",
+                "points": 63.508900000000004,
+                "duration": "01:56:19",
+                "type": "Swimming"
+            },
+            {
+                "distance": 16.449999999999999,
+                "datetime": "11/12/2014",
+                "source": "Garmin",
+                "points": 90.474999999999994,
+                "duration": "00:54:50",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.70079999999999998,
+                "datetime": "11/22/2014",
+                "source": "Garmin",
+                "points": 31.886399999999998,
+                "duration": "00:58:24",
+                "type": "Swimming"
+            },
+            {
+                "distance": 14.205,
+                "datetime": "11/25/2014",
+                "source": "Jawbone UP",
+                "points": 78.127499999999998,
+                "duration": "00:47:21",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.22600000000000001,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 2.8250000000000002,
+                "duration": "00:01:53",
+                "type": "Running"
+            },
+            {
+                "distance": 14.359999999999999,
+                "datetime": "11/08/2014",
+                "source": "strava",
+                "points": 78.97999999999999,
+                "duration": "00:47:52",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "strava"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "BodyMedia"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Linda Schmidt",
+            "email": "Linda.Schmidt@email.com"
+        },
+        "activities": [
+            {
+                "distance": 0.7046,
+                "datetime": "11/15/2014",
+                "source": "Garmin",
+                "points": 32.0593,
+                "duration": "00:58:43",
+                "type": "Swimming"
+            },
+            {
+                "distance": 13.105,
+                "datetime": "11/26/2014",
+                "source": "Garmin",
+                "points": 72.077500000000001,
+                "duration": "00:43:41",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.8840000000000003,
+                "datetime": "11/21/2014",
+                "source": "Garmin",
+                "points": 61.050000000000004,
+                "duration": "00:40:42",
+                "type": "Running"
+            },
+            {
+                "distance": 6.3650000000000002,
+                "datetime": "11/26/2014",
+                "source": "Garmin",
+                "points": 35.0075,
+                "duration": "00:21:13",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.6340000000000003,
+                "datetime": "11/09/2014",
+                "source": "DailyMile",
+                "points": 82.925000000000011,
+                "duration": "00:55:17",
+                "type": "Running"
+            },
+            {
+                "distance": 4.6619999999999999,
+                "datetime": "11/04/2014",
+                "source": "Fitbug",
+                "points": 58.274999999999999,
+                "duration": "00:38:51",
+                "type": "Running"
+            },
+            {
+                "distance": 0.039400000000000004,
+                "datetime": "11/19/2014",
+                "source": "runtastic",
+                "points": 1.7927000000000002,
+                "duration": "00:03:17",
+                "type": "Swimming"
+            },
+            {
+                "distance": 10.102,
+                "datetime": "11/16/2014",
+                "source": "Nike+",
+                "points": 126.27500000000001,
+                "duration": "01:24:11",
+                "type": "Running"
+            },
+            {
+                "distance": 3.298,
+                "datetime": "11/02/2014",
+                "source": "Jawbone UP",
+                "points": 41.225000000000001,
+                "duration": "00:27:29",
+                "type": "Running"
+            },
+            {
+                "distance": 6.8460000000000001,
+                "datetime": "11/08/2014",
+                "source": "runtastic",
+                "points": 85.575000000000003,
+                "duration": "00:57:03",
+                "type": "Running"
+            },
+            {
+                "distance": 3.0540000000000003,
+                "datetime": "11/13/2014",
+                "source": "FatSecret",
+                "points": 38.175000000000004,
+                "duration": "00:25:27",
+                "type": "Running"
+            },
+            {
+                "distance": 28.125,
+                "datetime": "11/30/2014",
+                "source": "runtastic",
+                "points": 154.6875,
+                "duration": "01:33:45",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 14.755000000000001,
+                "datetime": "11/30/2014",
+                "source": "Jawbone UP",
+                "points": 81.152500000000003,
+                "duration": "00:49:11",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 14.955,
+                "datetime": "11/05/2014",
+                "source": "runtastic",
+                "points": 82.252499999999998,
+                "duration": "00:49:51",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 19.574999999999999,
+                "datetime": "11/10/2014",
+                "source": "Fitbug",
+                "points": 107.66249999999999,
+                "duration": "01:05:15",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.67600000000000005,
+                "datetime": "11/15/2014",
+                "source": "DailyMile",
+                "points": 8.4500000000000011,
+                "duration": "00:05:38",
+                "type": "Running"
+            },
+            {
+                "distance": 12.455,
+                "datetime": "11/22/2014",
+                "source": "runtastic",
+                "points": 68.502499999999998,
+                "duration": "00:41:31",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.0519999999999996,
+                "datetime": "11/14/2014",
+                "source": "Fitbug",
+                "points": 113.14999999999999,
+                "duration": "01:15:26",
+                "type": "Running"
+            },
+            {
+                "distance": 0.97399999999999998,
+                "datetime": "11/28/2014",
+                "source": "strava",
+                "points": 12.174999999999999,
+                "duration": "00:08:07",
+                "type": "Running"
+            },
+            {
+                "distance": 6.9649999999999999,
+                "datetime": "11/04/2014",
+                "source": "FatSecret",
+                "points": 38.307499999999997,
+                "duration": "00:23:13",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "strava"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Edward Kennedy",
+            "email": "Edward.Kennedy@email.com"
+        },
+        "activities": [
+            {
+                "distance": 16.260000000000002,
+                "datetime": "11/18/2014",
+                "source": "Jawbone UP",
+                "points": 89.430000000000007,
+                "duration": "00:54:12",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 34.840000000000003,
+                "datetime": "11/22/2014",
+                "source": "strava",
+                "points": 191.62,
+                "duration": "01:56:08",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.3800000000000001,
+                "datetime": "11/13/2014",
+                "source": "Fitbug",
+                "points": 17.25,
+                "duration": "00:11:30",
+                "type": "Running"
+            },
+            {
+                "distance": 0.50240000000000007,
+                "datetime": "11/26/2014",
+                "source": "runtastic",
+                "points": 22.859200000000005,
+                "duration": "00:41:52",
+                "type": "Swimming"
+            },
+            {
+                "distance": 1.206,
+                "datetime": "11/22/2014",
+                "source": "Jawbone UP",
+                "points": 15.074999999999999,
+                "duration": "00:10:03",
+                "type": "Running"
+            },
+            {
+                "distance": 0.56680000000000008,
+                "datetime": "11/26/2014",
+                "source": "runtastic",
+                "points": 25.789400000000004,
+                "duration": "00:47:14",
+                "type": "Swimming"
+            },
+            {
+                "distance": 5.4039999999999999,
+                "datetime": "11/12/2014",
+                "source": "Garmin",
+                "points": 67.549999999999997,
+                "duration": "00:45:02",
+                "type": "Running"
+            },
+            {
+                "distance": 2.5950000000000002,
+                "datetime": "11/29/2014",
+                "source": "DailyMile",
+                "points": 14.272500000000001,
+                "duration": "00:08:39",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.4000000000000004,
+                "datetime": "11/24/2014",
+                "source": "Jawbone UP",
+                "points": 80,
+                "duration": "00:53:20",
+                "type": "Running"
+            },
+            {
+                "distance": 1.6950000000000001,
+                "datetime": "11/21/2014",
+                "source": "DailyMile",
+                "points": 9.3224999999999998,
+                "duration": "00:05:39",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 16.920000000000002,
+                "datetime": "11/28/2014",
+                "source": "Garmin",
+                "points": 93.060000000000002,
+                "duration": "00:56:24",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.26000000000000001,
+                "datetime": "11/05/2014",
+                "source": "Garmin",
+                "points": 1.4300000000000002,
+                "duration": "00:00:52",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.33119999999999999,
+                "datetime": "11/13/2014",
+                "source": "BodyMedia",
+                "points": 15.069599999999999,
+                "duration": "00:27:36",
+                "type": "Swimming"
+            },
+            {
+                "distance": 12.528,
+                "datetime": "11/15/2014",
+                "source": "strava",
+                "points": 156.59999999999999,
+                "duration": "01:44:24",
+                "type": "Running"
+            },
+            {
+                "distance": 1.2650000000000001,
+                "datetime": "11/08/2014",
+                "source": "runtastic",
+                "points": 6.9575000000000005,
+                "duration": "00:04:13",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.4259999999999999,
+                "datetime": "11/04/2014",
+                "source": "DailyMile",
+                "points": 17.824999999999999,
+                "duration": "00:11:53",
+                "type": "Running"
+            },
+            {
+                "distance": 6.04,
+                "datetime": "11/11/2014",
+                "source": "Nike+",
+                "points": 75.5,
+                "duration": "00:50:20",
+                "type": "Running"
+            },
+            {
+                "distance": 5.8520000000000003,
+                "datetime": "11/29/2014",
+                "source": "Nike+",
+                "points": 73.150000000000006,
+                "duration": "00:48:46",
+                "type": "Running"
+            },
+            {
+                "distance": 4.415,
+                "datetime": "11/09/2014",
+                "source": "strava",
+                "points": 24.282499999999999,
+                "duration": "00:14:43",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 15.950000000000001,
+                "datetime": "11/23/2014",
+                "source": "Garmin",
+                "points": 87.725000000000009,
+                "duration": "00:53:10",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Nike+"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Laura Barrett",
+            "email": "Laura.Barrett@email.com"
+        },
+        "activities": [
+            {
+                "distance": 5.5250000000000004,
+                "datetime": "11/22/2014",
+                "source": "Garmin",
+                "points": 30.387500000000003,
+                "duration": "00:18:25",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.59020000000000006,
+                "datetime": "11/10/2014",
+                "source": "Garmin",
+                "points": 26.854100000000003,
+                "duration": "00:49:11",
+                "type": "Swimming"
+            },
+            {
+                "distance": 12.5,
+                "datetime": "11/12/2014",
+                "source": "Jawbone UP",
+                "points": 68.75,
+                "duration": "00:41:40",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.9649999999999999,
+                "datetime": "11/15/2014",
+                "source": "FatSecret",
+                "points": 38.307499999999997,
+                "duration": "00:23:13",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.27200000000000002,
+                "datetime": "11/08/2014",
+                "source": "Nike+",
+                "points": 3.4000000000000004,
+                "duration": "00:02:16",
+                "type": "Running"
+            },
+            {
+                "distance": 8.120000000000001,
+                "datetime": "11/28/2014",
+                "source": "Jawbone UP",
+                "points": 101.50000000000001,
+                "duration": "01:07:40",
+                "type": "Running"
+            },
+            {
+                "distance": 30.75,
+                "datetime": "11/25/2014",
+                "source": "strava",
+                "points": 169.125,
+                "duration": "01:42:30",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.812000000000001,
+                "datetime": "11/24/2014",
+                "source": "DailyMile",
+                "points": 172.65000000000001,
+                "duration": "01:55:06",
+                "type": "Running"
+            },
+            {
+                "distance": 7.6400000000000006,
+                "datetime": "11/15/2014",
+                "source": "strava",
+                "points": 42.020000000000003,
+                "duration": "00:25:28",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.48700000000000004,
+                "datetime": "11/27/2014",
+                "source": "Fitbug",
+                "points": 22.158500000000004,
+                "duration": "00:40:35",
+                "type": "Swimming"
+            },
+            {
+                "distance": 3.3420000000000001,
+                "datetime": "11/20/2014",
+                "source": "BodyMedia",
+                "points": 41.774999999999999,
+                "duration": "00:27:51",
+                "type": "Running"
+            },
+            {
+                "distance": 1.3160000000000001,
+                "datetime": "11/11/2014",
+                "source": "Garmin",
+                "points": 16.449999999999999,
+                "duration": "00:10:58",
+                "type": "Running"
+            },
+            {
+                "distance": 14.32,
+                "datetime": "11/02/2014",
+                "source": "Fitbug",
+                "points": 78.760000000000005,
+                "duration": "00:47:44",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 32.634999999999998,
+                "datetime": "11/04/2014",
+                "source": "runtastic",
+                "points": 179.49249999999998,
+                "duration": "01:48:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.72340000000000004,
+                "datetime": "11/11/2014",
+                "source": "Jawbone UP",
+                "points": 32.914700000000003,
+                "duration": "01:00:17",
+                "type": "Swimming"
+            },
+            {
+                "distance": 2.1379999999999999,
+                "datetime": "11/06/2014",
+                "source": "BodyMedia",
+                "points": 26.724999999999998,
+                "duration": "00:17:49",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "runtastic"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Jesse Holmes",
+            "email": "Jesse.Holmes@email.com"
+        },
+        "activities": [
+            {
+                "distance": 11.960000000000001,
+                "datetime": "11/23/2014",
+                "source": "Fitbug",
+                "points": 65.780000000000001,
+                "duration": "00:39:52",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 12.465,
+                "datetime": "11/06/2014",
+                "source": "Jawbone UP",
+                "points": 68.557500000000005,
+                "duration": "00:41:33",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 14.358000000000001,
+                "datetime": "11/21/2014",
+                "source": "strava",
+                "points": 179.47499999999999,
+                "duration": "01:59:39",
+                "type": "Running"
+            },
+            {
+                "distance": 8.8460000000000001,
+                "datetime": "11/30/2014",
+                "source": "Nike+",
+                "points": 110.575,
+                "duration": "01:13:43",
+                "type": "Running"
+            },
+            {
+                "distance": 7.4279999999999999,
+                "datetime": "11/25/2014",
+                "source": "FatSecret",
+                "points": 92.849999999999994,
+                "duration": "01:01:54",
+                "type": "Running"
+            },
+            {
+                "distance": 0.20300000000000001,
+                "datetime": "11/27/2014",
+                "source": "runtastic",
+                "points": 9.2365000000000013,
+                "duration": "00:16:55",
+                "type": "Swimming"
+            },
+            {
+                "distance": 16.065000000000001,
+                "datetime": "11/16/2014",
+                "source": "Fitbug",
+                "points": 88.357500000000002,
+                "duration": "00:53:33",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 10.24,
+                "datetime": "11/23/2014",
+                "source": "strava",
+                "points": 128,
+                "duration": "01:25:20",
+                "type": "Running"
+            },
+            {
+                "distance": 1.034,
+                "datetime": "11/14/2014",
+                "source": "DailyMile",
+                "points": 12.925000000000001,
+                "duration": "00:08:37",
+                "type": "Running"
+            },
+            {
+                "distance": 13.140000000000001,
+                "datetime": "11/08/2014",
+                "source": "runtastic",
+                "points": 72.27000000000001,
+                "duration": "00:43:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 11.109999999999999,
+                "datetime": "11/30/2014",
+                "source": "Nike+",
+                "points": 61.104999999999997,
+                "duration": "00:37:02",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.5300000000000002,
+                "datetime": "11/28/2014",
+                "source": "Garmin",
+                "points": 35.914999999999999,
+                "duration": "00:21:46",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.29,
+                "datetime": "11/05/2014",
+                "source": "strava",
+                "points": 78.625,
+                "duration": "00:52:25",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Garmin"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Denise Ramirez",
+            "email": "Denise.Ramirez@email.com"
+        },
+        "activities": [
+            {
+                "distance": 13.734999999999999,
+                "datetime": "11/26/2014",
+                "source": "Nike+",
+                "points": 75.54249999999999,
+                "duration": "00:45:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.1500000000000004,
+                "datetime": "11/14/2014",
+                "source": "BodyMedia",
+                "points": 28.325000000000003,
+                "duration": "00:17:10",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 16.324999999999999,
+                "datetime": "11/17/2014",
+                "source": "DailyMile",
+                "points": 89.787499999999994,
+                "duration": "00:54:25",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.3840000000000003,
+                "datetime": "11/02/2014",
+                "source": "Jawbone UP",
+                "points": 54.800000000000004,
+                "duration": "00:36:32",
+                "type": "Running"
+            },
+            {
+                "distance": 10.826000000000001,
+                "datetime": "11/06/2014",
+                "source": "Nike+",
+                "points": 135.32500000000002,
+                "duration": "01:30:13",
+                "type": "Running"
+            },
+            {
+                "distance": 0.20400000000000001,
+                "datetime": "11/10/2014",
+                "source": "runtastic",
+                "points": 2.5500000000000003,
+                "duration": "00:01:42",
+                "type": "Running"
+            },
+            {
+                "distance": 16.695,
+                "datetime": "11/22/2014",
+                "source": "Garmin",
+                "points": 91.822500000000005,
+                "duration": "00:55:39",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.798,
+                "datetime": "11/28/2014",
+                "source": "Nike+",
+                "points": 59.975000000000001,
+                "duration": "00:39:59",
+                "type": "Running"
+            },
+            {
+                "distance": 3.714,
+                "datetime": "11/10/2014",
+                "source": "runtastic",
+                "points": 46.424999999999997,
+                "duration": "00:30:57",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Garmin"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Sharon Franklin",
+            "email": "Sharon.Franklin@email.com"
+        },
+        "activities": [],
+        "trackers": []
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Bruce Gilbert",
+            "email": "Bruce.Gilbert@email.com"
+        },
+        "activities": [
+            {
+                "distance": 3.3200000000000003,
+                "datetime": "11/16/2014",
+                "source": "strava",
+                "points": 18.260000000000002,
+                "duration": "00:11:04",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.5819999999999999,
+                "datetime": "11/16/2014",
+                "source": "FatSecret",
+                "points": 82.274999999999991,
+                "duration": "00:54:51",
+                "type": "Running"
+            },
+            {
+                "distance": 2.5619999999999998,
+                "datetime": "11/10/2014",
+                "source": "Garmin",
+                "points": 32.024999999999999,
+                "duration": "00:21:21",
+                "type": "Running"
+            },
+            {
+                "distance": 3.395,
+                "datetime": "11/01/2014",
+                "source": "FatSecret",
+                "points": 18.672499999999999,
+                "duration": "00:11:19",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.9100000000000001,
+                "datetime": "11/29/2014",
+                "source": "strava",
+                "points": 10.505000000000001,
+                "duration": "00:06:22",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 14.435,
+                "datetime": "11/26/2014",
+                "source": "BodyMedia",
+                "points": 79.392499999999998,
+                "duration": "00:48:07",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.7919999999999998,
+                "datetime": "11/29/2014",
+                "source": "FatSecret",
+                "points": 59.899999999999999,
+                "duration": "00:39:56",
+                "type": "Running"
+            },
+            {
+                "distance": 4.4720000000000004,
+                "datetime": "11/12/2014",
+                "source": "DailyMile",
+                "points": 55.900000000000006,
+                "duration": "00:37:16",
+                "type": "Running"
+            },
+            {
+                "distance": 4,
+                "datetime": "11/15/2014",
+                "source": "BodyMedia",
+                "points": 50,
+                "duration": "00:33:20",
+                "type": "Running"
+            },
+            {
+                "distance": 6.2860000000000005,
+                "datetime": "11/18/2014",
+                "source": "runtastic",
+                "points": 78.575000000000003,
+                "duration": "00:52:23",
+                "type": "Running"
+            },
+            {
+                "distance": 0.97399999999999998,
+                "datetime": "11/29/2014",
+                "source": "Garmin",
+                "points": 12.174999999999999,
+                "duration": "00:08:07",
+                "type": "Running"
+            },
+            {
+                "distance": 6.7460000000000004,
+                "datetime": "11/28/2014",
+                "source": "Fitbug",
+                "points": 84.325000000000003,
+                "duration": "00:56:13",
+                "type": "Running"
+            },
+            {
+                "distance": 12.745000000000001,
+                "datetime": "11/30/2014",
+                "source": "Garmin",
+                "points": 70.097500000000011,
+                "duration": "00:42:29",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.3399999999999999,
+                "datetime": "11/18/2014",
+                "source": "runtastic",
+                "points": 34.869999999999997,
+                "duration": "00:21:08",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.774,
+                "datetime": "11/02/2014",
+                "source": "FatSecret",
+                "points": 59.674999999999997,
+                "duration": "00:39:47",
+                "type": "Running"
+            },
+            {
+                "distance": 1.3049999999999999,
+                "datetime": "11/21/2014",
+                "source": "runtastic",
+                "points": 7.1774999999999993,
+                "duration": "00:04:21",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 11.19,
+                "datetime": "11/17/2014",
+                "source": "strava",
+                "points": 61.544999999999995,
+                "duration": "00:37:18",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 11.85,
+                "datetime": "11/06/2014",
+                "source": "Garmin",
+                "points": 65.174999999999997,
+                "duration": "00:39:30",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 12.630000000000001,
+                "datetime": "11/17/2014",
+                "source": "BodyMedia",
+                "points": 69.465000000000003,
+                "duration": "00:42:06",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 7.1600000000000001,
+                "datetime": "11/14/2014",
+                "source": "FatSecret",
+                "points": 39.380000000000003,
+                "duration": "00:23:52",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.7050000000000001,
+                "datetime": "11/11/2014",
+                "source": "runtastic",
+                "points": 9.3775000000000013,
+                "duration": "00:05:41",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 33.064999999999998,
+                "datetime": "11/26/2014",
+                "source": "strava",
+                "points": 181.85749999999999,
+                "duration": "01:50:13",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.07,
+                "datetime": "11/18/2014",
+                "source": "FatSecret",
+                "points": 163.375,
+                "duration": "01:48:55",
+                "type": "Running"
+            },
+            {
+                "distance": 21.955000000000002,
+                "datetime": "11/08/2014",
+                "source": "Nike+",
+                "points": 120.75250000000001,
+                "duration": "01:13:11",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.6100000000000003,
+                "datetime": "11/22/2014",
+                "source": "Jawbone UP",
+                "points": 82.625,
+                "duration": "00:55:05",
+                "type": "Running"
+            },
+            {
+                "distance": 15.715,
+                "datetime": "11/06/2014",
+                "source": "DailyMile",
+                "points": 86.432500000000005,
+                "duration": "00:52:23",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.6200000000000001,
+                "datetime": "11/05/2014",
+                "source": "DailyMile",
+                "points": 25.41,
+                "duration": "00:15:24",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.4738,
+                "datetime": "11/17/2014",
+                "source": "DailyMile",
+                "points": 21.5579,
+                "duration": "00:39:29",
+                "type": "Swimming"
+            },
+            {
+                "distance": 4.4800000000000004,
+                "datetime": "11/07/2014",
+                "source": "Jawbone UP",
+                "points": 56.000000000000007,
+                "duration": "00:37:20",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "strava"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Jawbone UP"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Maria Ruiz",
+            "email": "Maria.Ruiz@email.com"
+        },
+        "activities": [
+            {
+                "distance": 0.76019999999999999,
+                "datetime": "11/12/2014",
+                "source": "DailyMile",
+                "points": 34.589100000000002,
+                "duration": "01:03:21",
+                "type": "Swimming"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "DailyMile"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Frances Kennedy",
+            "email": "Frances.Kennedy@email.com"
+        },
+        "activities": [
+            {
+                "distance": 10.279999999999999,
+                "datetime": "11/09/2014",
+                "source": "Garmin",
+                "points": 56.539999999999999,
+                "duration": "00:34:16",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.31059999999999999,
+                "datetime": "11/25/2014",
+                "source": "Nike+",
+                "points": 14.132299999999999,
+                "duration": "00:25:53",
+                "type": "Swimming"
+            },
+            {
+                "distance": 4.1539999999999999,
+                "datetime": "11/19/2014",
+                "source": "Garmin",
+                "points": 51.924999999999997,
+                "duration": "00:34:37",
+                "type": "Running"
+            },
+            {
+                "distance": 16.440000000000001,
+                "datetime": "11/05/2014",
+                "source": "FatSecret",
+                "points": 90.420000000000002,
+                "duration": "00:54:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.3500000000000005,
+                "datetime": "11/19/2014",
+                "source": "Garmin",
+                "points": 79.375,
+                "duration": "00:52:55",
+                "type": "Running"
+            },
+            {
+                "distance": 13.790000000000001,
+                "datetime": "11/01/2014",
+                "source": "FatSecret",
+                "points": 172.375,
+                "duration": "01:54:55",
+                "type": "Running"
+            },
+            {
+                "distance": 13.33,
+                "datetime": "11/25/2014",
+                "source": "FatSecret",
+                "points": 73.314999999999998,
+                "duration": "00:44:26",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 10.938000000000001,
+                "datetime": "11/19/2014",
+                "source": "Nike+",
+                "points": 136.72499999999999,
+                "duration": "01:31:09",
+                "type": "Running"
+            },
+            {
+                "distance": 5.5940000000000003,
+                "datetime": "11/26/2014",
+                "source": "strava",
+                "points": 69.924999999999997,
+                "duration": "00:46:37",
+                "type": "Running"
+            },
+            {
+                "distance": 4.3700000000000001,
+                "datetime": "11/30/2014",
+                "source": "Fitbug",
+                "points": 24.035,
+                "duration": "00:14:34",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.8280000000000003,
+                "datetime": "11/06/2014",
+                "source": "BodyMedia",
+                "points": 72.850000000000009,
+                "duration": "00:48:34",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "BodyMedia"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Henry Bradley",
+            "email": "Henry.Bradley@email.com"
+        },
+        "activities": [
+            {
+                "distance": 0.23340000000000002,
+                "datetime": "11/16/2014",
+                "source": "FatSecret",
+                "points": 10.619700000000002,
+                "duration": "00:19:27",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.1326,
+                "datetime": "11/22/2014",
+                "source": "Garmin",
+                "points": 6.0332999999999997,
+                "duration": "00:11:03",
+                "type": "Swimming"
+            },
+            {
+                "distance": 2.238,
+                "datetime": "11/03/2014",
+                "source": "runtastic",
+                "points": 27.975000000000001,
+                "duration": "00:18:39",
+                "type": "Running"
+            },
+            {
+                "distance": 13.685,
+                "datetime": "11/09/2014",
+                "source": "BodyMedia",
+                "points": 75.267499999999998,
+                "duration": "00:45:37",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 16.199999999999999,
+                "datetime": "11/15/2014",
+                "source": "strava",
+                "points": 89.099999999999994,
+                "duration": "00:54:00",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.1459999999999999,
+                "datetime": "11/06/2014",
+                "source": "runtastic",
+                "points": 64.325000000000003,
+                "duration": "00:42:53",
+                "type": "Running"
+            },
+            {
+                "distance": 3.5420000000000003,
+                "datetime": "11/21/2014",
+                "source": "DailyMile",
+                "points": 44.275000000000006,
+                "duration": "00:29:31",
+                "type": "Running"
+            },
+            {
+                "distance": 13.460000000000001,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 74.030000000000001,
+                "duration": "00:44:52",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.3180000000000001,
+                "datetime": "11/27/2014",
+                "source": "Nike+",
+                "points": 41.475000000000001,
+                "duration": "00:27:39",
+                "type": "Running"
+            },
+            {
+                "distance": 5.8500000000000005,
+                "datetime": "11/19/2014",
+                "source": "DailyMile",
+                "points": 32.175000000000004,
+                "duration": "00:19:30",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.778,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 34.725000000000001,
+                "duration": "00:23:09",
+                "type": "Running"
+            },
+            {
+                "distance": 5.798,
+                "datetime": "11/27/2014",
+                "source": "Fitbug",
+                "points": 72.474999999999994,
+                "duration": "00:48:19",
+                "type": "Running"
+            },
+            {
+                "distance": 9.718,
+                "datetime": "11/23/2014",
+                "source": "DailyMile",
+                "points": 121.47499999999999,
+                "duration": "01:20:59",
+                "type": "Running"
+            },
+            {
+                "distance": 5.4199999999999999,
+                "datetime": "11/19/2014",
+                "source": "FatSecret",
+                "points": 29.809999999999999,
+                "duration": "00:18:04",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.41999999999999998,
+                "datetime": "11/16/2014",
+                "source": "strava",
+                "points": 2.3100000000000001,
+                "duration": "00:01:24",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.23000000000000001,
+                "datetime": "11/17/2014",
+                "source": "DailyMile",
+                "points": 1.2650000000000001,
+                "duration": "00:00:46",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.9140000000000001,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 48.925000000000004,
+                "duration": "00:32:37",
+                "type": "Running"
+            },
+            {
+                "distance": 3.6840000000000002,
+                "datetime": "11/14/2014",
+                "source": "Nike+",
+                "points": 46.050000000000004,
+                "duration": "00:30:42",
+                "type": "Running"
+            },
+            {
+                "distance": 0.63560000000000005,
+                "datetime": "11/12/2014",
+                "source": "DailyMile",
+                "points": 28.919800000000002,
+                "duration": "00:52:58",
+                "type": "Swimming"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Fitbug"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Judith Barnett",
+            "email": "Judith.Barnett@email.com"
+        },
+        "activities": [
+            {
+                "distance": 10.734999999999999,
+                "datetime": "11/13/2014",
+                "source": "strava",
+                "points": 59.042499999999997,
+                "duration": "00:35:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.96,
+                "datetime": "11/15/2014",
+                "source": "FatSecret",
+                "points": 27.280000000000001,
+                "duration": "00:16:32",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.0800000000000001,
+                "datetime": "11/22/2014",
+                "source": "runtastic",
+                "points": 63.5,
+                "duration": "00:42:20",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "strava"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "runtastic"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Sales",
+            "name": "Melissa Reid",
+            "email": "Melissa.Reid@email.com"
+        },
+        "activities": [
+            {
+                "distance": 14.258000000000001,
+                "datetime": "11/05/2014",
+                "source": "Garmin",
+                "points": 178.22500000000002,
+                "duration": "01:58:49",
+                "type": "Running"
+            },
+            {
+                "distance": 27.525000000000002,
+                "datetime": "11/25/2014",
+                "source": "FatSecret",
+                "points": 151.38750000000002,
+                "duration": "01:31:45",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.59660000000000002,
+                "datetime": "11/16/2014",
+                "source": "Jawbone UP",
+                "points": 27.145300000000002,
+                "duration": "00:49:43",
+                "type": "Swimming"
+            },
+            {
+                "distance": 7.1360000000000001,
+                "datetime": "11/17/2014",
+                "source": "runtastic",
+                "points": 89.200000000000003,
+                "duration": "00:59:28",
+                "type": "Running"
+            },
+            {
+                "distance": 11.815,
+                "datetime": "11/25/2014",
+                "source": "Garmin",
+                "points": 64.982500000000002,
+                "duration": "00:39:23",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.6099999999999999,
+                "datetime": "11/20/2014",
+                "source": "Jawbone UP",
+                "points": 32.625,
+                "duration": "00:21:45",
+                "type": "Running"
+            },
+            {
+                "distance": 6.7919999999999998,
+                "datetime": "11/25/2014",
+                "source": "Fitbug",
+                "points": 84.899999999999991,
+                "duration": "00:56:36",
+                "type": "Running"
+            },
+            {
+                "distance": 1.026,
+                "datetime": "11/09/2014",
+                "source": "Garmin",
+                "points": 12.825000000000001,
+                "duration": "00:08:33",
+                "type": "Running"
+            },
+            {
+                "distance": 0.28079999999999999,
+                "datetime": "11/06/2014",
+                "source": "Jawbone UP",
+                "points": 12.776399999999999,
+                "duration": "00:23:24",
+                "type": "Swimming"
+            },
+            {
+                "distance": 9.4260000000000002,
+                "datetime": "11/08/2014",
+                "source": "runtastic",
+                "points": 117.825,
+                "duration": "01:18:33",
+                "type": "Running"
+            },
+            {
+                "distance": 32.200000000000003,
+                "datetime": "11/26/2014",
+                "source": "DailyMile",
+                "points": 177.10000000000002,
+                "duration": "01:47:20",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.3180000000000001,
+                "datetime": "11/07/2014",
+                "source": "Garmin",
+                "points": 16.475000000000001,
+                "duration": "00:10:59",
+                "type": "Running"
+            },
+            {
+                "distance": 12.845000000000001,
+                "datetime": "11/14/2014",
+                "source": "Garmin",
+                "points": 70.647500000000008,
+                "duration": "00:42:49",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.098799999999999999,
+                "datetime": "11/25/2014",
+                "source": "strava",
+                "points": 4.4954000000000001,
+                "duration": "00:08:14",
+                "type": "Swimming"
+            },
+            {
+                "distance": 0.36499999999999999,
+                "datetime": "11/03/2014",
+                "source": "BodyMedia",
+                "points": 16.607499999999998,
+                "duration": "00:30:25",
+                "type": "Swimming"
+            },
+            {
+                "distance": 16.990000000000002,
+                "datetime": "11/10/2014",
+                "source": "BodyMedia",
+                "points": 93.445000000000007,
+                "duration": "00:56:38",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.7000000000000002,
+                "datetime": "11/02/2014",
+                "source": "Jawbone UP",
+                "points": 36.850000000000001,
+                "duration": "00:22:20",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.425000000000001,
+                "datetime": "11/23/2014",
+                "source": "Garmin",
+                "points": 73.837500000000006,
+                "duration": "00:44:45",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.6020000000000001,
+                "datetime": "11/26/2014",
+                "source": "Jawbone UP",
+                "points": 20.025000000000002,
+                "duration": "00:13:21",
+                "type": "Running"
+            },
+            {
+                "distance": 6.5350000000000001,
+                "datetime": "11/30/2014",
+                "source": "Nike+",
+                "points": 35.942500000000003,
+                "duration": "00:21:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.694,
+                "datetime": "11/02/2014",
+                "source": "BodyMedia",
+                "points": 83.674999999999997,
+                "duration": "00:55:47",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Nike+"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Accounting",
+            "name": "Emma Castro",
+            "email": "Emma.Castro@email.com"
+        },
+        "activities": [
+            {
+                "distance": 12.57,
+                "datetime": "11/24/2014",
+                "source": "FatSecret",
+                "points": 69.135000000000005,
+                "duration": "00:41:54",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 10.960000000000001,
+                "datetime": "11/08/2014",
+                "source": "FatSecret",
+                "points": 60.280000000000001,
+                "duration": "00:36:32",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.19940000000000002,
+                "datetime": "11/12/2014",
+                "source": "Garmin",
+                "points": 9.0727000000000011,
+                "duration": "00:16:37",
+                "type": "Swimming"
+            },
+            {
+                "distance": 11.657999999999999,
+                "datetime": "11/17/2014",
+                "source": "runtastic",
+                "points": 145.72499999999999,
+                "duration": "01:37:09",
+                "type": "Running"
+            },
+            {
+                "distance": 17.574999999999999,
+                "datetime": "11/15/2014",
+                "source": "BodyMedia",
+                "points": 96.662499999999994,
+                "duration": "00:58:35",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.1100000000000003,
+                "datetime": "11/16/2014",
+                "source": "DailyMile",
+                "points": 51.375000000000007,
+                "duration": "00:34:15",
+                "type": "Running"
+            },
+            {
+                "distance": 4.4050000000000002,
+                "datetime": "11/09/2014",
+                "source": "runtastic",
+                "points": 24.227500000000003,
+                "duration": "00:14:41",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.436,
+                "datetime": "11/29/2014",
+                "source": "runtastic",
+                "points": 5.4500000000000002,
+                "duration": "00:03:38",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "DailyMile"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Accounting",
+            "name": "Samantha Ramirez",
+            "email": "Samantha.Ramirez@email.com"
+        },
+        "activities": [
+            {
+                "distance": 3.992,
+                "datetime": "11/12/2014",
+                "source": "Nike+",
+                "points": 49.899999999999999,
+                "duration": "00:33:16",
+                "type": "Running"
+            },
+            {
+                "distance": 8.120000000000001,
+                "datetime": "11/13/2014",
+                "source": "strava",
+                "points": 44.660000000000004,
+                "duration": "00:27:04",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.4820000000000002,
+                "datetime": "11/05/2014",
+                "source": "Fitbug",
+                "points": 68.525000000000006,
+                "duration": "00:45:41",
+                "type": "Running"
+            },
+            {
+                "distance": 6.6699999999999999,
+                "datetime": "11/30/2014",
+                "source": "Nike+",
+                "points": 36.685000000000002,
+                "duration": "00:22:14",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 23.475000000000001,
+                "datetime": "11/15/2014",
+                "source": "DailyMile",
+                "points": 129.11250000000001,
+                "duration": "01:18:15",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 13.515000000000001,
+                "datetime": "11/16/2014",
+                "source": "Fitbug",
+                "points": 74.33250000000001,
+                "duration": "00:45:03",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 12.83,
+                "datetime": "11/29/2014",
+                "source": "Fitbug",
+                "points": 70.564999999999998,
+                "duration": "00:42:46",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.059800000000000006,
+                "datetime": "11/07/2014",
+                "source": "strava",
+                "points": 2.7209000000000003,
+                "duration": "00:04:59",
+                "type": "Swimming"
+            },
+            {
+                "distance": 6.6500000000000004,
+                "datetime": "11/12/2014",
+                "source": "Garmin",
+                "points": 36.575000000000003,
+                "duration": "00:22:10",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.0999999999999996,
+                "datetime": "11/11/2014",
+                "source": "Jawbone UP",
+                "points": 51.249999999999993,
+                "duration": "00:34:10",
+                "type": "Running"
+            },
+            {
+                "distance": 0.30120000000000002,
+                "datetime": "11/03/2014",
+                "source": "Jawbone UP",
+                "points": 13.704600000000001,
+                "duration": "00:25:06",
+                "type": "Swimming"
+            },
+            {
+                "distance": 6.202,
+                "datetime": "11/21/2014",
+                "source": "Garmin",
+                "points": 77.525000000000006,
+                "duration": "00:51:41",
+                "type": "Running"
+            },
+            {
+                "distance": 4.8680000000000003,
+                "datetime": "11/23/2014",
+                "source": "Nike+",
+                "points": 60.850000000000001,
+                "duration": "00:40:34",
+                "type": "Running"
+            },
+            {
+                "distance": 16.830000000000002,
+                "datetime": "11/09/2014",
+                "source": "Jawbone UP",
+                "points": 92.565000000000012,
+                "duration": "00:56:06",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 12.641999999999999,
+                "datetime": "11/13/2014",
+                "source": "strava",
+                "points": 158.02500000000001,
+                "duration": "01:45:21",
+                "type": "Running"
+            },
+            {
+                "distance": 1.028,
+                "datetime": "11/24/2014",
+                "source": "Garmin",
+                "points": 12.85,
+                "duration": "00:08:34",
+                "type": "Running"
+            },
+            {
+                "distance": 6.5899999999999999,
+                "datetime": "11/06/2014",
+                "source": "Garmin",
+                "points": 82.375,
+                "duration": "00:54:55",
+                "type": "Running"
+            },
+            {
+                "distance": 2.6560000000000001,
+                "datetime": "11/03/2014",
+                "source": "Nike+",
+                "points": 33.200000000000003,
+                "duration": "00:22:08",
+                "type": "Running"
+            },
+            {
+                "distance": 8.9960000000000004,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 112.45,
+                "duration": "01:14:58",
+                "type": "Running"
+            },
+            {
+                "distance": 1.115,
+                "datetime": "11/02/2014",
+                "source": "FatSecret",
+                "points": 6.1325000000000003,
+                "duration": "00:03:43",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 9.7550000000000008,
+                "datetime": "11/26/2014",
+                "source": "runtastic",
+                "points": 53.652500000000003,
+                "duration": "00:32:31",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.3140000000000001,
+                "datetime": "11/07/2014",
+                "source": "FatSecret",
+                "points": 66.424999999999997,
+                "duration": "00:44:17",
+                "type": "Running"
+            },
+            {
+                "distance": 31.740000000000002,
+                "datetime": "11/20/2014",
+                "source": "BodyMedia",
+                "points": 174.57000000000002,
+                "duration": "01:45:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 15.905000000000001,
+                "datetime": "11/05/2014",
+                "source": "runtastic",
+                "points": 87.477500000000006,
+                "duration": "00:53:01",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.8840000000000003,
+                "datetime": "11/11/2014",
+                "source": "FatSecret",
+                "points": 86.050000000000011,
+                "duration": "00:57:22",
+                "type": "Running"
+            },
+            {
+                "distance": 8.3399999999999999,
+                "datetime": "11/19/2014",
+                "source": "runtastic",
+                "points": 45.869999999999997,
+                "duration": "00:27:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.5600000000000001,
+                "datetime": "11/24/2014",
+                "source": "strava",
+                "points": 32,
+                "duration": "00:21:20",
+                "type": "Running"
+            },
+            {
+                "distance": 2.5380000000000003,
+                "datetime": "11/26/2014",
+                "source": "BodyMedia",
+                "points": 31.725000000000001,
+                "duration": "00:21:09",
+                "type": "Running"
+            },
+            {
+                "distance": 6.6260000000000003,
+                "datetime": "11/27/2014",
+                "source": "Garmin",
+                "points": 82.825000000000003,
+                "duration": "00:55:13",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "runtastic"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Accounting",
+            "name": "Douglas Russell",
+            "email": "Douglas.Russell@email.com"
+        },
+        "activities": [
+            {
+                "distance": 2.0680000000000001,
+                "datetime": "11/21/2014",
+                "source": "strava",
+                "points": 25.850000000000001,
+                "duration": "00:17:14",
+                "type": "Running"
+            },
+            {
+                "distance": 28.765000000000001,
+                "datetime": "11/30/2014",
+                "source": "Jawbone UP",
+                "points": 158.20750000000001,
+                "duration": "01:35:53",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Jawbone UP"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Accounting",
+            "name": "Hannah James",
+            "email": "Hannah.James@email.com"
+        },
+        "activities": [],
+        "trackers": []
+    },
+    {
+        "employee": {
+            "group": "Accounting",
+            "name": "Craig Gilbert",
+            "email": "Craig.Gilbert@email.com"
+        },
+        "activities": [
+            {
+                "distance": 1.8700000000000001,
+                "datetime": "11/30/2014",
+                "source": "DailyMile",
+                "points": 23.375,
+                "duration": "00:15:35",
+                "type": "Running"
+            },
+            {
+                "distance": 9.7550000000000008,
+                "datetime": "11/10/2014",
+                "source": "Garmin",
+                "points": 53.652500000000003,
+                "duration": "00:32:31",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 17.335000000000001,
+                "datetime": "11/08/2014",
+                "source": "runtastic",
+                "points": 95.342500000000001,
+                "duration": "00:57:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.0722,
+                "datetime": "11/19/2014",
+                "source": "Fitbug",
+                "points": 3.2850999999999999,
+                "duration": "00:06:01",
+                "type": "Swimming"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Fitbug"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Human Resources",
+            "name": "Kathy Lynch",
+            "email": "Kathy.Lynch@email.com"
+        },
+        "activities": [],
+        "trackers": []
+    },
+    {
+        "employee": {
+            "group": "Human Resources",
+            "name": "Anthony Willis",
+            "email": "Anthony.Willis@email.com"
+        },
+        "activities": [
+            {
+                "distance": 16.25,
+                "datetime": "11/12/2014",
+                "source": "DailyMile",
+                "points": 89.375,
+                "duration": "00:54:10",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.244,
+                "datetime": "11/15/2014",
+                "source": "strava",
+                "points": 15.550000000000001,
+                "duration": "00:10:22",
+                "type": "Running"
+            },
+            {
+                "distance": 16.559999999999999,
+                "datetime": "11/28/2014",
+                "source": "BodyMedia",
+                "points": 91.079999999999998,
+                "duration": "00:55:12",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 3.9399999999999999,
+                "datetime": "11/22/2014",
+                "source": "runtastic",
+                "points": 49.25,
+                "duration": "00:32:50",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "runtastic"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Human Resources",
+            "name": "Christian Gardner",
+            "email": "Christian.Gardner@email.com"
+        },
+        "activities": [
+            {
+                "distance": 2.9199999999999999,
+                "datetime": "11/20/2014",
+                "source": "DailyMile",
+                "points": 16.059999999999999,
+                "duration": "00:09:44",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.0600000000000001,
+                "datetime": "11/02/2014",
+                "source": "Jawbone UP",
+                "points": 11.33,
+                "duration": "00:06:52",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.46880000000000005,
+                "datetime": "11/30/2014",
+                "source": "BodyMedia",
+                "points": 21.330400000000001,
+                "duration": "00:39:04",
+                "type": "Swimming"
+            },
+            {
+                "distance": 6.1379999999999999,
+                "datetime": "11/11/2014",
+                "source": "Fitbug",
+                "points": 76.724999999999994,
+                "duration": "00:51:09",
+                "type": "Running"
+            },
+            {
+                "distance": 0.32500000000000001,
+                "datetime": "11/14/2014",
+                "source": "Fitbug",
+                "points": 1.7875000000000001,
+                "duration": "00:01:05",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.0250000000000004,
+                "datetime": "11/23/2014",
+                "source": "strava",
+                "points": 22.137500000000003,
+                "duration": "00:13:25",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 33.755000000000003,
+                "datetime": "11/29/2014",
+                "source": "BodyMedia",
+                "points": 185.6525,
+                "duration": "01:52:31",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 16.655000000000001,
+                "datetime": "11/18/2014",
+                "source": "BodyMedia",
+                "points": 91.602500000000006,
+                "duration": "00:55:31",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.2000000000000002,
+                "datetime": "11/22/2014",
+                "source": "BodyMedia",
+                "points": 27.500000000000004,
+                "duration": "00:18:20",
+                "type": "Running"
+            },
+            {
+                "distance": 23.164999999999999,
+                "datetime": "11/16/2014",
+                "source": "Jawbone UP",
+                "points": 127.4075,
+                "duration": "01:17:13",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.1320000000000006,
+                "datetime": "11/19/2014",
+                "source": "runtastic",
+                "points": 76.650000000000006,
+                "duration": "00:51:06",
+                "type": "Running"
+            },
+            {
+                "distance": 8.0800000000000001,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 44.439999999999998,
+                "duration": "00:26:56",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 7.8879999999999999,
+                "datetime": "11/09/2014",
+                "source": "DailyMile",
+                "points": 98.599999999999994,
+                "duration": "01:05:44",
+                "type": "Running"
+            },
+            {
+                "distance": 7.1539999999999999,
+                "datetime": "11/12/2014",
+                "source": "Fitbug",
+                "points": 89.424999999999997,
+                "duration": "00:59:37",
+                "type": "Running"
+            },
+            {
+                "distance": 0.93200000000000005,
+                "datetime": "11/30/2014",
+                "source": "Nike+",
+                "points": 11.65,
+                "duration": "00:07:46",
+                "type": "Running"
+            },
+            {
+                "distance": 3.5300000000000002,
+                "datetime": "11/28/2014",
+                "source": "BodyMedia",
+                "points": 44.125,
+                "duration": "00:29:25",
+                "type": "Running"
+            },
+            {
+                "distance": 14.136000000000001,
+                "datetime": "11/11/2014",
+                "source": "Garmin",
+                "points": 176.70000000000002,
+                "duration": "01:57:48",
+                "type": "Running"
+            },
+            {
+                "distance": 0.70000000000000007,
+                "datetime": "11/05/2014",
+                "source": "runtastic",
+                "points": 8.75,
+                "duration": "00:05:50",
+                "type": "Running"
+            },
+            {
+                "distance": 10.955,
+                "datetime": "11/08/2014",
+                "source": "strava",
+                "points": 60.252499999999998,
+                "duration": "00:36:31",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.3500000000000001,
+                "datetime": "11/29/2014",
+                "source": "Nike+",
+                "points": 29.375,
+                "duration": "00:19:35",
+                "type": "Running"
+            },
+            {
+                "distance": 3.5500000000000003,
+                "datetime": "11/09/2014",
+                "source": "Nike+",
+                "points": 44.375,
+                "duration": "00:29:35",
+                "type": "Running"
+            },
+            {
+                "distance": 3.6819999999999999,
+                "datetime": "11/26/2014",
+                "source": "BodyMedia",
+                "points": 46.024999999999999,
+                "duration": "00:30:41",
+                "type": "Running"
+            },
+            {
+                "distance": 1.175,
+                "datetime": "11/09/2014",
+                "source": "Jawbone UP",
+                "points": 6.4625000000000004,
+                "duration": "00:03:55",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "strava"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Garmin"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Human Resources",
+            "name": "Raymond Wheeler",
+            "email": "Raymond.Wheeler@email.com"
+        },
+        "activities": [
+            {
+                "distance": 0.41960000000000003,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 19.091800000000003,
+                "duration": "00:34:58",
+                "type": "Swimming"
+            },
+            {
+                "distance": 4.9480000000000004,
+                "datetime": "11/02/2014",
+                "source": "runtastic",
+                "points": 61.850000000000009,
+                "duration": "00:41:14",
+                "type": "Running"
+            },
+            {
+                "distance": 0.28040000000000004,
+                "datetime": "11/21/2014",
+                "source": "runtastic",
+                "points": 12.758200000000002,
+                "duration": "00:23:22",
+                "type": "Swimming"
+            },
+            {
+                "distance": 2.1800000000000002,
+                "datetime": "11/05/2014",
+                "source": "Fitbug",
+                "points": 27.250000000000004,
+                "duration": "00:18:10",
+                "type": "Running"
+            },
+            {
+                "distance": 16.925000000000001,
+                "datetime": "11/19/2014",
+                "source": "Nike+",
+                "points": 93.087500000000006,
+                "duration": "00:56:25",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 24.705000000000002,
+                "datetime": "11/02/2014",
+                "source": "Fitbug",
+                "points": 135.8775,
+                "duration": "01:22:21",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 6.8799999999999999,
+                "datetime": "11/13/2014",
+                "source": "Fitbug",
+                "points": 37.839999999999996,
+                "duration": "00:22:56",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 28.195,
+                "datetime": "11/14/2014",
+                "source": "DailyMile",
+                "points": 155.07249999999999,
+                "duration": "01:33:59",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 20.52,
+                "datetime": "11/15/2014",
+                "source": "Jawbone UP",
+                "points": 112.86,
+                "duration": "01:08:24",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.4379999999999999,
+                "datetime": "11/11/2014",
+                "source": "Garmin",
+                "points": 17.974999999999998,
+                "duration": "00:11:59",
+                "type": "Running"
+            },
+            {
+                "distance": 7.1139999999999999,
+                "datetime": "11/23/2014",
+                "source": "Jawbone UP",
+                "points": 88.924999999999997,
+                "duration": "00:59:17",
+                "type": "Running"
+            },
+            {
+                "distance": 2.9250000000000003,
+                "datetime": "11/23/2014",
+                "source": "FatSecret",
+                "points": 16.087500000000002,
+                "duration": "00:09:45",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.976,
+                "datetime": "11/12/2014",
+                "source": "runtastic",
+                "points": 62.200000000000003,
+                "duration": "00:41:28",
+                "type": "Running"
+            },
+            {
+                "distance": 8.3599999999999994,
+                "datetime": "11/29/2014",
+                "source": "runtastic",
+                "points": 45.979999999999997,
+                "duration": "00:27:52",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 1.548,
+                "datetime": "11/08/2014",
+                "source": "BodyMedia",
+                "points": 19.350000000000001,
+                "duration": "00:12:54",
+                "type": "Running"
+            },
+            {
+                "distance": 3.5920000000000001,
+                "datetime": "11/30/2014",
+                "source": "Nike+",
+                "points": 44.899999999999999,
+                "duration": "00:29:56",
+                "type": "Running"
+            },
+            {
+                "distance": 3.3980000000000001,
+                "datetime": "11/28/2014",
+                "source": "Nike+",
+                "points": 42.475000000000001,
+                "duration": "00:28:19",
+                "type": "Running"
+            },
+            {
+                "distance": 9,
+                "datetime": "11/18/2014",
+                "source": "Garmin",
+                "points": 49.5,
+                "duration": "00:30:00",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 10.200000000000001,
+                "datetime": "11/28/2014",
+                "source": "BodyMedia",
+                "points": 56.100000000000009,
+                "duration": "00:34:00",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 26.335000000000001,
+                "datetime": "11/16/2014",
+                "source": "FatSecret",
+                "points": 144.8425,
+                "duration": "01:27:47",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 2.048,
+                "datetime": "11/20/2014",
+                "source": "FatSecret",
+                "points": 25.600000000000001,
+                "duration": "00:17:04",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "DailyMile"
+            },
+            {
+                "name": "Jawbone UP"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "FatSecret"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Human Resources",
+            "name": "Sara Smith",
+            "email": "Sara.Smith@email.com"
+        },
+        "activities": [
+            {
+                "distance": 6.6920000000000002,
+                "datetime": "11/06/2014",
+                "source": "BodyMedia",
+                "points": 83.650000000000006,
+                "duration": "00:55:46",
+                "type": "Running"
+            },
+            {
+                "distance": 10.715,
+                "datetime": "11/03/2014",
+                "source": "FatSecret",
+                "points": 58.932499999999997,
+                "duration": "00:35:43",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.98160000000000003,
+                "datetime": "11/06/2014",
+                "source": "Fitbug",
+                "points": 44.662800000000004,
+                "duration": "01:21:48",
+                "type": "Swimming"
+            },
+            {
+                "distance": 2.7160000000000002,
+                "datetime": "11/07/2014",
+                "source": "Nike+",
+                "points": 33.950000000000003,
+                "duration": "00:22:38",
+                "type": "Running"
+            },
+            {
+                "distance": 11.038,
+                "datetime": "11/06/2014",
+                "source": "Nike+",
+                "points": 137.97499999999999,
+                "duration": "01:31:59",
+                "type": "Running"
+            },
+            {
+                "distance": 31.115000000000002,
+                "datetime": "11/10/2014",
+                "source": "FatSecret",
+                "points": 171.13250000000002,
+                "duration": "01:43:43",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 4.1450000000000005,
+                "datetime": "11/30/2014",
+                "source": "Fitbug",
+                "points": 22.797500000000003,
+                "duration": "00:13:49",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 30.594999999999999,
+                "datetime": "11/21/2014",
+                "source": "Fitbug",
+                "points": 168.27249999999998,
+                "duration": "01:41:59",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.7300000000000004,
+                "datetime": "11/10/2014",
+                "source": "Jawbone UP",
+                "points": 71.625,
+                "duration": "00:47:45",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "Jawbone UP"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Executives",
+            "name": "Jennifer Butler",
+            "email": "Jennifer.Butler@email.com"
+        },
+        "activities": [
+            {
+                "distance": 0.32300000000000001,
+                "datetime": "11/24/2014",
+                "source": "runtastic",
+                "points": 14.6965,
+                "duration": "00:26:55",
+                "type": "Swimming"
+            },
+            {
+                "distance": 14.31,
+                "datetime": "11/12/2014",
+                "source": "FatSecret",
+                "points": 78.704999999999998,
+                "duration": "00:47:42",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.5250000000000004,
+                "datetime": "11/29/2014",
+                "source": "DailyMile",
+                "points": 30.387500000000003,
+                "duration": "00:18:25",
+                "type": "Bicycling"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "DailyMile"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Executives",
+            "name": "John Rice",
+            "email": "John.Rice@email.com"
+        },
+        "activities": [
+            {
+                "distance": 19.420000000000002,
+                "datetime": "11/16/2014",
+                "source": "runtastic",
+                "points": 106.81,
+                "duration": "01:04:44",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.35599999999999998,
+                "datetime": "11/20/2014",
+                "source": "BodyMedia",
+                "points": 4.4500000000000002,
+                "duration": "00:02:58",
+                "type": "Running"
+            },
+            {
+                "distance": 3.1619999999999999,
+                "datetime": "11/10/2014",
+                "source": "Jawbone UP",
+                "points": 39.524999999999999,
+                "duration": "00:26:21",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Jawbone UP"
+            }
+        ]
+    },
+    {
+        "employee": {
+            "group": "Executives",
+            "name": "Kelly Aguilar",
+            "email": "Kelly.Aguilar@email.com"
+        },
+        "activities": [
+            {
+                "distance": 5.29,
+                "datetime": "11/06/2014",
+                "source": "strava",
+                "points": 29.094999999999999,
+                "duration": "00:17:38",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.53800000000000003,
+                "datetime": "11/21/2014",
+                "source": "Garmin",
+                "points": 6.7250000000000005,
+                "duration": "00:04:29",
+                "type": "Running"
+            },
+            {
+                "distance": 4.3579999999999997,
+                "datetime": "11/25/2014",
+                "source": "Fitbug",
+                "points": 54.474999999999994,
+                "duration": "00:36:19",
+                "type": "Running"
+            },
+            {
+                "distance": 0.55400000000000005,
+                "datetime": "11/10/2014",
+                "source": "strava",
+                "points": 25.207000000000001,
+                "duration": "00:46:10",
+                "type": "Swimming"
+            },
+            {
+                "distance": 5.4059999999999997,
+                "datetime": "11/14/2014",
+                "source": "runtastic",
+                "points": 67.575000000000003,
+                "duration": "00:45:03",
+                "type": "Running"
+            },
+            {
+                "distance": 2.0859999999999999,
+                "datetime": "11/16/2014",
+                "source": "FatSecret",
+                "points": 26.074999999999999,
+                "duration": "00:17:23",
+                "type": "Running"
+            },
+            {
+                "distance": 13.74,
+                "datetime": "11/30/2014",
+                "source": "Fitbug",
+                "points": 75.570000000000007,
+                "duration": "00:45:48",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.17300000000000001,
+                "datetime": "11/21/2014",
+                "source": "BodyMedia",
+                "points": 7.8715000000000011,
+                "duration": "00:14:25",
+                "type": "Swimming"
+            },
+            {
+                "distance": 12.325000000000001,
+                "datetime": "11/29/2014",
+                "source": "strava",
+                "points": 67.787500000000009,
+                "duration": "00:41:05",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 5.1479999999999997,
+                "datetime": "11/11/2014",
+                "source": "Nike+",
+                "points": 64.349999999999994,
+                "duration": "00:42:54",
+                "type": "Running"
+            },
+            {
+                "distance": 10.02,
+                "datetime": "11/09/2014",
+                "source": "DailyMile",
+                "points": 55.109999999999999,
+                "duration": "00:33:24",
+                "type": "Bicycling"
+            },
+            {
+                "distance": 0.90800000000000003,
+                "datetime": "11/12/2014",
+                "source": "BodyMedia",
+                "points": 11.35,
+                "duration": "00:07:34",
+                "type": "Running"
+            }
+        ],
+        "trackers": [
+            {
+                "name": "strava"
+            },
+            {
+                "name": "Garmin"
+            },
+            {
+                "name": "Fitbug"
+            },
+            {
+                "name": "runtastic"
+            },
+            {
+                "name": "FatSecret"
+            },
+            {
+                "name": "BodyMedia"
+            },
+            {
+                "name": "Nike+"
+            },
+            {
+                "name": "DailyMile"
             }
         ]
     }

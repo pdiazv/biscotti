@@ -9,14 +9,17 @@ class DemoContext(object):
 
         NimbbleUser.delete_all()
         NimbbleActivity.delete_all()
+        NimbbleTracker.delete_all()
 
         for record in data:
             user_key = self.add_employee(record['employee'])
             self.add_activities(user_key, record['activities'])
+            self.add_trackers(user_key, record['trackers'])
 
         return {
             'user_count': NimbbleUser.query().count(limit=200),
-            'activity_count': NimbbleActivity.query().count(limit=500)
+            'activity_count': NimbbleActivity.query().count(limit=5000),
+            'tracker_count': NimbbleTracker.query().count(limit=5000)
         }
 
 
@@ -26,8 +29,12 @@ class DemoContext(object):
 
     def add_activities(self, user_key, data):
         acts = [self.get_activity(user_key, activity) for activity in data]
-
         NimbbleActivity.add_all(acts)
+
+
+    def add_trackers(self, user_key, data):
+        trackers = [self.get_tracker(user_key, tracker) for tracker in data]
+        NimbbleTracker.add_all(trackers)
 
 
     def get_activity(self, user_key, data):
@@ -38,6 +45,13 @@ class DemoContext(object):
         nimbble_activity.populate(**data)
 
         return nimbble_activity
+
+
+    def get_tracker(self, user_key, data):
+        nimbble_tracker = NimbbleTracker(parent=user_key)
+        nimbble_tracker.populate(**data)
+
+        return nimbble_tracker
 
 
 class UserContext(object):

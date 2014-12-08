@@ -336,15 +336,28 @@ for(var d in departments) {
                 'email': uiName['name'] + '.' + uiName['surname'] + '@email.com',
                 'group': departments[d]['group']
             },
-			'activities': []
+			'activities': [],
+            'trackers': []
 		};
 		var activities = Math.floor(Math.random() * 30);
 		for(var a = 0; a < activities; a++)
 		{
-			newUser['activities'].push(MakeNewUserActivity());
+            var activity = MakeNewUserActivity()
+			newUser['activities'].push(activity);
+            var tracker = { 
+                'name' : activity['source']
+            };
+            var hasTracker = false;
+            for(var t in newUser['trackers']) {
+                if(newUser['trackers'][t]['name'] === activity['source']){
+                    hasTracker = true;
+                    break;
+                }
+            }
+            if(!hasTracker) { newUser['trackers'].push(tracker); }
 		}
 		userModels.push(newUser);
-	}
+    }
 }
 
 console.log(JSON.stringify(userModels));
