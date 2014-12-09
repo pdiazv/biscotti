@@ -16,6 +16,7 @@ urlpatterns = patterns('webui.views',
     url(r'^user/$', views.user_view, name='user_view'),
 
     url(r'^loaddata/$', views.load_data, name='load_data'),
+    url(r'^stats/$', views.stats, name='stats')
 )
 
 if settings.DEBUG:

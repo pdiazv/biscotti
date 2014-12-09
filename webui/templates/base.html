@@ -23,7 +23,9 @@
           <li class="feed {% firstof control.home %}">
             <a href="{% url webui:home %}">Feed</a>
           </li>
-          <li Class="stats"><a href="#">Stats</a></li>
+          <li Class="stats {% firstof control.stats %}">
+              <a href="{% url webui:stats %}">Stats</a>
+          </li>
           {% block header-links %} {% endblock %}
         </ul>
       </aside>

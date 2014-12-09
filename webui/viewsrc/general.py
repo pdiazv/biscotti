@@ -52,6 +52,7 @@ class MainEmployeeView(TemplateView):
     template_name = 'main.html'
 
     def get_context_data(self, **kwargs):
+
         recent = feed.ActivityFeed().recent()
 
         return {
