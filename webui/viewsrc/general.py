@@ -6,6 +6,11 @@ class DefaultView(TemplateView):
     template_name = 'cover.html'
 
     def get_context_data(self, **kwargs):
+
+        if self.request.session['user_id'] is None:
+            user = context.UserContext().get_random_user()
+            self.request.session['user_id'] = user.key.id()
+        
         return {'control': { 'home': 'active' } }
 
 from business import manager
@@ -59,8 +64,9 @@ class MainUserView(TemplateView):
     template_name = 'user.html'
 
     def get_context_data(self, **kwargs):
-        user_id = kwargs['user_id']
-
+        user_id = self.request.session['user_id']
+        if 'user_id' in kwargs:
+            user_id = kwargs['user_id']
         user = context.UserContext().get_user(long(user_id))
         activities = feed.ActivityFeed().activities_by_user(user.key)
 

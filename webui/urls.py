@@ -13,7 +13,7 @@ urlpatterns = patterns('webui.views',
     url(r'^sv_auth$', views.strava_auth, name='strava_auth'),
     url(r'^tracker/(?P<tracker_name>\w+)/$', views.tracker_view, name='tracker_view'),
     url(r'^user/(?P<user_id>\w+)/$', views.user_view, name='user_view'),
-
+    url(r'^user/$', views.user_view, name='user_view'),
 
     url(r'^loaddata/$', views.load_data, name='load_data'),
 )

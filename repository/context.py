@@ -59,21 +59,20 @@ class UserContext(object):
     def get_user(self, user_id):
         return UserCtxManager().get(user_id)
 
-
+    def get_random_user(self):
+        return UserCtxManager().get_random_user()
+        
     def add_user(self, user):
         key = UserCtxManager().add(**user)
         return key.id()
-
 
     def get_tracker(self, name, user_id):
         user = self.get_user(user_id)
         return TrackerCtxManager().get(user.key, name)
 
-
     def get_user_trackers(self, user_id, limit=50):
         user = self.get_user(user_id)
         return TrackerCtxManager().list_by_user(user.key, limit)
-
 
     def add_tracker(self, user_id, tracker):
         user = self.get_user(user_id)
@@ -103,10 +102,20 @@ class ActivityContext(object):
         return query.order(-NimbbleActivity.datetime).fetch(limit=15)
 
 
+import random
 class UserCtxManager(object):
+
     def get(self, user_id):
         return NimbbleUser.get_by_id(id=user_id)
 
+    def get_random_user(self):
+        rnum = random.randrange(0,50)
+        nnum = 0
+
+        for u in NimbbleUser.query().iter():
+            if nnum == rnum:
+                return u
+            nnum += 1
 
     def add(self, *args, **kwargs):
         existing = NimbbleUser.query().filter(NimbbleUser.name == kwargs['name']).get()
@@ -119,7 +128,6 @@ class UserCtxManager(object):
 
         key = user.put()
         return key
-
 
 
 class TrackerCtxManager(object):
