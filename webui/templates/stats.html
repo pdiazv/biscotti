@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block scripts %}
+    {% load compressed %}
+    {% compressed_js 'stats' %}
+{% endblock %}
+
 {% block content %}
 
 <div class="container-fluid">
@@ -7,7 +12,9 @@
         <h1>Stats View</h1>
     </div>
     <!-- Main component for a primary marketing message or call to action -->
+    <div class="js-chart-container">
 
+    </div>
 
 </div>
 

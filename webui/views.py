@@ -15,4 +15,5 @@ add_activity = simple.SimpleAddActivityView.as_view()
 
 
 load_data = demo_view.LoadDataView.as_view()
-stats = demo_view.StatsDataView.as_view()
+stats = demo_view.StatsTemplateView.as_view()
+stats_data = demo_view.StatsDataView.as_view()

@@ -48,6 +48,7 @@ class SimpleTrackerView(TemplateView):
         }
 
 from business import feed
+import json
 class MainEmployeeView(TemplateView):
     template_name = 'main.html'
 
@@ -59,6 +60,7 @@ class MainEmployeeView(TemplateView):
             'control': { 'home': 'active' },
             'recent': recent
         }
+
 
 from repository import context
 class MainUserView(TemplateView):
