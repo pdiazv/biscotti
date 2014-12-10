@@ -6,37 +6,57 @@
 
 {% block content %}
 
-
+<header class="header">
+  <h1>
+    Daily feed <em>for</em> <strong>Infinite Energy</strong>
+    <small>Showing activity for <a href="#">Development Department</a></small>
+  </h1>
+</header>
 <div class="container-fluid">
-    <div class="row ui-header"></div>
-    <!-- Main component for a primary marketing message or call to action -->
     <div class="row">
-        <div class="row col-md-6 ui-feed">
-            <div class="col-md-12">
+        <div class="col-md-6 margin-top">
+          <div class="card">
+            <ul class="feed">
+              {% if not recent %}
+                <li class="empty-set">
+                  <img class="profile small" src="../static/images/snail.png"></img>
+                  <p><strong>Oops!</strong> No activity found.</p>
+                </li>
+              {% else %}
                 {% for activity in recent %}
-                    <div class="row ui-activity js-activity" data-user-id="{{ activity.user.id }}">
-                        <div class="ui-info"><a href="{% url webui:user_view activity.user.id %}">{{ activity.user.name }}</a> - {{ activity.datetime }}</div>
-                        <div class="col-md-4">
-                            <div>{{ activity.type }}</div>
-                            <div><a href="#">{{ activity.source }}</a></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div>{{ activity.distance }}</div>
-                            <div>Distance</div>
-                        </div>
-                        <div class="col-md-4">
-                            <div>{{ activity.duration }}</div>
-                            <div>Duration</div>
-                        </div>
-                    </div>
+                  <li class="profile">
+                    <img class="profile small" src="../static/images/128.png"></img>
+                    <h4 class="user">Kyle Redon</h4>
+                    <span class="date">- {{ activity.datetime }}</span>
+                    <ul class="stats">
+                      <li>
+                        <div class="value">{{ activity.type }}</div>
+                        <div class="name"><a href="#">{{ activity.source }}</a></div>
+                      </li>
+                      <li>
+                        <div class="value">{{ activity.distance }}</div>
+                        <div class="name">Distance</div>
+                      </li>
+                      <li>
+                        <div class="value">{{ activity.duration }}</div>
+                        <div class="name">Duration</div>
+                      </li>
+                    </ul>
+                  </li>
                 {% endfor %}
-            </div>
-            <div class="col-md-6">
-
-            </div>
+              {% endif %}
+            </ul>
+          </div>
         </div>
-    </div>
+        <div class="col-md-6 margin-top">
+          <div class="card padding">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac ornare enim. Donec condimentum tellus in nisi maximus aliquet. Suspendisse auctor ultricies arcu commodo viverra. Quisque lacinia feugiat felis, et tincidunt nunc vehicula a. Praesent dictum lacus vel molestie mollis. Vestibulum elementum eleifend ante, vel iaculis ligula volutpat et. Etiam imperdiet dui lectus, at dictum est imperdiet vitae. Suspendisse egestas purus a massa iaculis, sit amet volutpat nisl laoreet. Proin vel vulputate erat. Donec et urna felis. Pellentesque vitae ligula et quam euismod rutrum.</p> 
+          </div> 
+        </div>
+      </div>
+  </div>
 
-</div>
+
+
 
 {% endblock %}
