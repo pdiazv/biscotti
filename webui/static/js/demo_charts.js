@@ -27,8 +27,9 @@ function DemoChart(){
     var self = this;
 
     this.Init = function(){
+        var $cont = $('.js-chart-container');
         var margin = {top: 20, right: 20, bottom: 30, left: 40},
-            width = 1700 - margin.left - margin.right,
+            width = $cont.width() - margin.left - margin.right,
             height = 500 - margin.top - margin.bottom;
 
         self.height = height;
