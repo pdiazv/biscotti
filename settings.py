@@ -222,10 +222,20 @@ PIPELINE_CSS = {
 }
 
 PIPELINE_JS = {
-    'stats': {
+    'general': {
         'source_filenames': (
+          'js/jquery.min.js',
           'bstrap/js/bootstrap.min.js',
           'bstrap/js/docs.min.js',
+        ),
+        'output_filename': 'js/general.js',
+    },
+    'stats': {
+        'source_filenames': (
+            'js/crossfilter.v1.min.js',
+            'js/jquery.min.js',
+            'js/d3.v3.min.js',
+            'js/demo_charts.js',
         ),
         'output_filename': 'js/stats.js',
     }

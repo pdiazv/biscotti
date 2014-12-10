@@ -18,19 +18,25 @@ class LoadDataView(TemplateView):
 
 
 import random
-class StatsDataView(TemplateView):
+class StatsTemplateView(TemplateView):
     template_name = 'stats.html'
 
     def get_context_data(self, **kwargs):
 
-        return {
-            'control': { 'stats': 'active' },
+        return {'control': {'stats': 'active'}}
+
+from django.http import HttpResponse
+class StatsDataView(View):
+    http_method_names = ['get']
+
+    def get(self, request, *args, **kwargs):
+        return HttpResponse(json.dumps({
             'info': self.get_info(),
             'data': self.get_data()
-        }
+        }), content_type="application/json")
 
 
-    def get_sample_stats(self):
+    def get_info(self):
         return {
             'points':{
                 'label': 'Points',
@@ -48,18 +54,23 @@ class StatsDataView(TemplateView):
 
     def get_data(self):
         return [
-            { 'day_label': 's', 'date': '04/01/2014', 'value': random.randint(400, 1500) },
-            { 'day_label': 'm', 'date': '04/02/2014', 'value': random.randint(450, 1400) },
-            { 'day_label': 't', 'date': '04/03/2014', 'value': random.randint(420, 1600) },
-            { 'day_label': 'w', 'date': '04/04/2014', 'value': random.randint(430, 1200) },
-            { 'day_label': 't', 'date': '04/05/2014', 'value': random.randint(440, 1400) },
-            { 'day_label': 'f', 'date': '04/06/2014', 'value': random.randint(400, 1530) },
-            { 'day_label': 's', 'date': '04/07/2014', 'value': random.randint(400, 1000) },
-            { 'day_label': 's', 'date': '04/08/2014', 'value': random.randint(400, 1500) },
-            { 'day_label': 'm', 'date': '04/09/2014', 'value': random.randint(450, 1400) },
-            { 'day_label': 't', 'date': '04/10/2014', 'value': random.randint(420, 1600) },
-            { 'day_label': 'w', 'date': '04/11/2014', 'value': random.randint(430, 1200) },
-            { 'day_label': 't', 'date': '04/12/2014', 'value': random.randint(440, 1400) },
-            { 'day_label': 'f', 'date': '04/13/2014', 'value': random.randint(400, 1530) },
-            { 'day_label': 's', 'date': '04/14/2014', 'value': random.randint(400, 1000) },
+            { 'datetime': '2014-04-01T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-02T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-03T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-04T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-05T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-06T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-07T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
         ]
+
+import json
+import decimal
+
+class DateTimeEncoder(json.JSONEncoder):
+    def default(self, obj):
+       if hasattr(obj, 'isoformat'):
+           return obj.isoformat()
+       elif isinstance(obj, decimal.Decimal):
+           return float(obj)
+       else:
+           return json.JSONEncoder.default(self, obj)
