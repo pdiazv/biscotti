@@ -54,13 +54,13 @@ class StatsDataView(View):
 
     def get_data(self):
         return [
-            { 'datetime': '2011-04-1T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2011-04-2T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2011-04-3T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2011-04-4T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2011-04-5T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2011-04-6T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2011-04-7T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-01T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-02T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-03T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-04T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-05T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-06T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-04-07T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
         ]
 
 import json
