@@ -22,15 +22,18 @@ aside.sidebar {
 }
 
 aside.sidebar ul {
+  position: relative;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 aside.sidebar ul li { 
   display: block; 
-  border-top: 1px solid #2e3748;
-  border-bottom: 1px solid #3c475c;
+  border-top: 1px solid #3c475c;
+  border-bottom: 1px solid #2e3748;
 }
 
 aside.sidebar ul li:last-child { border-bottom: 0; } 
@@ -86,6 +89,53 @@ aside.sidebar ul li.logo a:hover  {
   background: transparent url('../images/logo-white.png') no-repeat center center;
 }
 
+aside.sidebar ul li.user { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+aside.sidebar ul li.user:before {
+  content:'';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #2e3748;
+} 
+
+aside.sidebar ul li.user .img-wrapper {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+aside.sidebar ul li.user .img-wrapper .hex-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+aside.sidebar ul li.user a {
+  line-height: 1;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  text-transform: none;
+} 
+
+aside.sidebar ul li.user a.employee { color: #4495d1; }
+
 /* Header */
 
 header.header {
@@ -110,7 +160,7 @@ header.header h1 small {
 }
 
 #content {
-  padding: 0;
+  padding: 0 0 20px 0;
   margin-left: 200px;
   transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -144,6 +194,26 @@ header.header h1 small {
     height: 50px;
     width: 50px;
     background: transparent url('../images/logo-small.png') no-repeat center center; 
+  }
+
+  aside.sidebar ul li.user { padding: 10px 0 10px 0; }
+
+  aside.sidebar ul li.user .img-wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  aside.sidebar ul li.user .img-wrapper img { 
+    width: 35px;
+    height: 35px;
+  }
+
+  aside.sidebar ul li.user .img-wrapper a.employee,
+  aside.sidebar ul li.user .img-wrapper a.dept,
+  aside.sidebar ul li.user .img-wrapper .hex-badge { 
+    display: none; 
   }
 
 }

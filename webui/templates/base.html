@@ -24,9 +24,17 @@
             <a href="{% url webui:home %}">Feed</a>
           </li>
           <li Class="stats {% firstof control.stats %}">
-              <a href="{% url webui:stats %}">Stats</a>
+            <a href="{% url webui:stats %}">Stats</a>
           </li>
           {% block header-links %} {% endblock %}
+          <li class="user">
+            <div class="img-wrapper">
+              <div class="hex-badge small">50</div>
+              <img class="profile medium" src="../static/images/128.png"></img>
+            </div>
+            <a href="#" class="employee">Kyle Redon</a>
+            <a href="#" class="dept">Development</a>
+          </li>
         </ul>
       </aside>
       <div id="content">
