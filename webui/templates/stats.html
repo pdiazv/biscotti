@@ -1,76 +1,12 @@
 {% extends "base.html" %}
 
 {% block scripts %}
-    {% load compressed %}
-    {% compressed_js 'stats' %}
+    <script data-main="/static/js/stats" src="/static/js/lib/require.js"></script>
 {% endblock %}
 
 {% block css %}
-<style>
-
-
-.bar {
-  fill: #d6d6d6;
-}
-
-.bar:hover {
-  fill: brown;
-}
-
-.axis {
-  font: 16px sans-serif;
-  font-weight: bold;
-  fill: #818181;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.tick.minor line{
-    stroke: #ccc;
-    stroke-width: 2;
-    stroke-dasharray: 5,5;
-}
-
-.ui-over-goal{
-    fill: #98cc2d;
-}
-
-
-.ui-stat{
-    padding: 20px;
-    margin: 5px;
-    border: 2px solid #ccc;
-    background: #FFF;
-}
-
-.ui-stat-value{
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.ui-stat-change{
-    font-size: 20px;
-    padding-left: 15px;
-}
-
-.ui-stat-change.positive{
-    color: #46B466;
-}
-
-.ui-stat-change.negative{
-    color: #c93744;
-}
-
-</style>
-
+    {% load compressed %}
+    {% compressed_css 'stats' %}
 {% endblock %}
 
 {% block content %}
@@ -79,18 +15,18 @@
     <div class="row ui-header">
         <h1>Stats View</h1>
     </div>
-    <div class="row">
+    <div class="row js-stats">
         <div class="col-md-3 ui-stat">
             <div class="ui-stat-value">9,375<span class="ui-stat-change positive">5.8%</span></div>
-            <div class="ui-stat-unit">STEPS</div>
+            <div class="ui-stat-unit">POINTS</div>
         </div>
         <div class="col-md-3 ui-stat">
             <div class="ui-stat-value">20<span class="ui-stat-change positive">5.8%</span></div>
-            <div class="ui-stat-unit">FLOORS</div>
+            <div class="ui-stat-unit">DISTANCE</div>
         </div>
         <div class="col-md-3 ui-stat">
             <div class="ui-stat-value">450<span class="ui-stat-change negative">5.8%</span></div>
-            <div class="ui-stat-unit">ACTIVE MINUTES</div>
+            <div class="ui-stat-unit">DURATION</div>
         </div>
     </div>
     <!-- Main component for a primary marketing message or call to action -->
