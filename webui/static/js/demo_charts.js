@@ -5,15 +5,27 @@
 function LoadDemo(){
 
     $.get('/stats_data', function(result){
+
+        result.info.start_date = new Date(result.info.start_date);
+        result.info.end_date = new Date(result.info.end_date);
+
         result.data.forEach(function(d, i){
-            d.index = i;
             d.date = new Date(d.datetime);
         });
 
+        var group = d3.nest()
+            .key(function(d){ return d.datetime; })
+            .rollup(function(d){
+                return d3.sum(d, function(g){ return g.points; });
+            }).entries(result.data);
+
+        var groupData = group.map(function(d, i){
+            return { key: i, date: new Date(d.key), values: d.values  };
+        });
 
         new DemoChart()
-            .Init()
-            .Render(result.data);
+            .Init(result.info)
+            .Render(groupData);
     });
 
 
@@ -26,7 +38,7 @@ function DemoChart(){
 
     var self = this;
 
-    this.Init = function(){
+    this.Init = function(info){
         var $cont = $('.js-chart-container');
         var margin = {top: 20, right: 20, bottom: 30, left: 40},
             width = $cont.width() - margin.left - margin.right,
@@ -34,7 +46,7 @@ function DemoChart(){
 
         self.height = height;
         self.x = d3.time.scale()
-            .domain([new Date(2014, 3, 1), new Date(2014, 3, 30)])
+            .domain([info.start_date, info.end_date])
             .rangeRound([margin.left, width]);
 
         self.y = d3.scale.linear()
@@ -75,7 +87,7 @@ function DemoChart(){
 
     this.Render = function(data){
         //self.x.domain(data.map(function(d) { return d.letter; }));
-        self.y.domain([0, d3.max(data, function(d) { return d.points+100; })]);
+        self.y.domain([0, d3.max(data, function(d) { return d.values+100; })]);
 
         self.svg.append("g")
               .attr("class", "x axis")
@@ -101,11 +113,14 @@ function DemoChart(){
               .data(data)
             .enter().append("rect")
               .attr("class", "bar")
-              .classed('ui-over-goal', function(d){ return d.points >= 1000; })
-              .attr("x", function(d) { return self.x(d.date) - 5; })
+              .classed('ui-over-goal', function(d){ return d.values >= 1000; })
+              .attr("x", function(d) {
+                  return self.x(d.date); })
               .attr("width", 30)
-              .attr("y", function(d) { return self.y(d.points); })
-              .attr("height", function(d) { return self.height - self.y(d.points); });
+              .attr("y", function(d) {
+                  return self.y(d.values); })
+              .attr("height", function(d) {
+                  return self.height - self.y(d.values); });
 
         return self;
     }

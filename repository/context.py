@@ -98,7 +98,10 @@ class ActivityContext(object):
         query = NimbbleActivity.query()
         query.filter(NimbbleActivity.datetime >= starting_date and NimbbleActivity.datetime <= end_date)
 
-        return query.order(-NimbbleActivity.datetime).fetch(limit=15)
+
+        limit = kwargs['limit'] if 'limit' in kwargs else 15
+
+        return query.order(-NimbbleActivity.datetime).fetch(limit=limit)
 
     def by_user(self, user_key):
         query = NimbbleActivity.query(ancestor=user_key)

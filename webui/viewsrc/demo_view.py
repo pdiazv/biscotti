@@ -26,18 +26,28 @@ class StatsTemplateView(TemplateView):
         return {'control': {'stats': 'active'}}
 
 from django.http import HttpResponse
+from business import feed
 class StatsDataView(View):
     http_method_names = ['get']
 
     def get(self, request, *args, **kwargs):
+
+        data = feed.ActivityFeed().recent(
+            starting_date='11/1/2014',
+            end_date='11/30/2014',
+            limit=800)
+
+
         return HttpResponse(json.dumps({
             'info': self.get_info(),
-            'data': self.get_data()
-        }), content_type="application/json")
+            'data': data
+        }, cls=DateTimeEncoder), content_type="application/json")
 
 
     def get_info(self):
         return {
+            'start_date': '2014-11-01T00:00:00',
+            'end_date': '2014-12-01T00:00:00',
             'points':{
                 'label': 'Points',
                 'total': '9,375',
@@ -54,13 +64,13 @@ class StatsDataView(View):
 
     def get_data(self):
         return [
-            { 'datetime': '2014-04-01T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-04-02T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-04-03T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-04-04T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-04-05T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-04-06T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-04-07T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-11-01T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-11-02T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-11-03T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-11-04T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-11-15T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-11-26T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
+            { 'datetime': '2014-11-29T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
         ]
 
 import json
