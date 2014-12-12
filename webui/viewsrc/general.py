@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView, View
+from demo import sample_data
 from django.shortcuts import render_to_response, redirect
 from django.utils import http
 
@@ -9,6 +10,12 @@ class DefaultView(TemplateView):
 
         if 'user_id' not in self.request.session:
             user = context.UserContext().get_random_user()
+
+            if user is None:
+                data = sample_data.source
+                context.DemoContext().parse_sample_data(data)
+                user = context.UserContext().get_random_user()
+
             self.request.session['user_id'] = user.key.id()
         
         return {'control': { 'home': 'active' } }
@@ -48,7 +55,6 @@ class SimpleTrackerView(TemplateView):
         }
 
 from business import feed
-import json
 class MainEmployeeView(TemplateView):
     template_name = 'main.html'
 

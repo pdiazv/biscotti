@@ -40,8 +40,11 @@ class DemoContext(object):
     def get_activity(self, user_key, data):
         nimbble_activity = NimbbleActivity(parent=user_key)
 
-        data['datetime'] = datetime.strptime(data['datetime'], '%m/%d/%Y')
-        data['duration'] = datetime.strptime(data['duration'], '%H:%M:%S').time()
+        data['datetime'] = datetime.strptime(data['dateStr'], '%m/%d/%Y')
+        data['duration'] = datetime.strptime(data['durationStr'], '%H:%M:%S').time()
+        del data['dateStr']
+        del data['durationStr']
+
         nimbble_activity.populate(**data)
 
         return nimbble_activity

@@ -204,7 +204,7 @@ LOGGING = {
     }
 }
 
-
+PIPELINE_ENABLED = False
 
 PIPELINE_CSS = {
     'application': {
@@ -243,7 +243,7 @@ PIPELINE_JS = {
 
 
 ALLOWED_HOSTS = [
-    'localgears.appspot.com',
+    '.nimbble-demo.appspot.com',
 ]
 
 

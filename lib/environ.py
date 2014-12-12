@@ -29,7 +29,7 @@ def setup_environ():
     from dev_appserver import fix_sys_path
     fix_sys_path()
 
-    from google.appengine.tools import dev_appserver as tools_dev_appserver
+    from google.appengine.tools import old_dev_appserver as tools_dev_appserver
     from google.appengine import dist
 
     # Parse `app.yaml`
