@@ -63,7 +63,7 @@ aside.sidebar ul li a:hover {
 
 aside.sidebar ul li.feed a { background: transparent url('../images/feed-inactive.png') no-repeat 20px center; }
 
-aside.sidebar ul li.feed.active a:hover,
+aside.sidebar ul li.feed a:hover,
 aside.sidebar ul li.feed.active a { 
   background: transparent url('../images/feed-active.png') no-repeat 20px center; 
 }
@@ -73,6 +73,20 @@ aside.sidebar ul li.stats a { background: transparent url('../images/stats-inact
 aside.sidebar ul li.stats a:hover, 
 aside.sidebar ul li.stats.active a { 
   background: transparent url('../images/stats-active.png') no-repeat 20px center; 
+}
+
+aside.sidebar ul li.signup a { background: transparent url('../images/check-inactive.png') no-repeat 20px center; }
+
+aside.sidebar ul li.signup a:hover, 
+aside.sidebar ul li.signup.active a { 
+  background: transparent url('../images/check-active.png') no-repeat 20px center; 
+}
+
+aside.sidebar ul li.trackers a { background: transparent url('../images/phone-inactive.png') no-repeat 20px center; }
+
+aside.sidebar ul li.trackers a:hover, 
+aside.sidebar ul li.trackers.active a { 
+  background: transparent url('../images/phone-active.png') no-repeat 20px center; 
 }
 
 aside.sidebar ul li.logo { max-height: 100px; }

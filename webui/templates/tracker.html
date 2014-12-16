@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block header-links %}
-<li class="{% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
+<li class="trackers {% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
 {% endblock %}
 
 {% block css %}

@@ -1,15 +1,23 @@
 {% extends "base.html" %}
 
 {% block header-links %}
-<li class="{% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
+<li class="trackers {% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
 {% endblock %}
 
 {% block content %}
 
-<div class="container">
-    <!-- Main component for a primary marketing message or call to action -->
-    <h2>Available trackers:</h2>
-    <table class="table">
+
+<header class="header">
+  <h1>
+    Available trackers
+    <small>Dont see your favorite fitness tracker? <a href="#">Let us know</a>.</small>
+  </h1>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card margin-top">
+        <table class="table">
           <thead>
             <tr>
               <th>Active</th>
@@ -29,9 +37,11 @@
                   {% endif %}
                 </tr>
             {% endfor %}
-
           </tbody>
-    </table>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

@@ -14,6 +14,16 @@ a,
 a:visited {
   text-decoration: none;
   color: #49b2fb;
+  transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+}
+
+a:hover { 
+  color: #3f8bc3; 
+  text-decoration: none;
 }
 
 h1,
@@ -109,6 +119,17 @@ a.btn,
 .btn-primary.active, 
 .open .dropdown-toggle.btn-primary {
   background-color: #18a689;
+}
+
+/* Tables */
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th,
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+  border-color: #e5ebf0; 
 }
 
 /* Components */
@@ -212,6 +233,12 @@ ul.stats li .value { font-weight: bold; }
   height: 4px;
   display: block;
   background: #e74c3c;
+}
+
+.card.stat { 
+  margin: 0 auto; 
+  padding: 20px;
+  text-align: center;
 }
 
 img.profile {

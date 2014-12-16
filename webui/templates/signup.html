@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block header-links %}
-<li class="{% firstof control.signup %}"><a href="{% url webui:signup %}">Sign Up</a></li>
+<li class="signup {% firstof control.signup %}"><a href="{% url webui:signup %}">Sign Up</a></li>
 {% endblock %}
 
 {% block content %}
