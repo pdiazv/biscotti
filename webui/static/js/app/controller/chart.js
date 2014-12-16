@@ -6,7 +6,7 @@ define(['d3'], function(d3){
     Chart.prototype = {
 
         init: function(info){
-            var margin = {top: 20, right: 20, bottom: 30, left: 40},
+            var margin = {top: 20, right: 50, bottom: 30, left: 40},
                 width = info.width - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
 
@@ -20,8 +20,7 @@ define(['d3'], function(d3){
             this.xAxis = d3.svg.axis()
                 .scale(this.x)
                 .ticks(d3.time.day)
-                .tickFormat(function(d){
-                    return d3.time.format('%a')(d)[0]; })
+                .tickFormat(function(d){ return d3.time.format('%a')(d)[0]; })
                 .orient("bottom");
 
             this.weekAxis = d3.svg.axis()
@@ -41,7 +40,7 @@ define(['d3'], function(d3){
               .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            this.weekSvg = d3.select(info.containerSelector).append("svg")
+            this.weekSvg = d3.select(info.weeklySelector).append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", 100)
               .append("g")
@@ -80,13 +79,10 @@ define(['d3'], function(d3){
                 .enter().append("rect")
                   .attr("class", "bar")
                   .classed('ui-over-goal', function(d){ return d.values >= 1000; })
-                  .attr("x", function(d) {
-                      return self.x(d.date); })
+                  .attr("x", function(d) { return self.x(d.date); })
                   .attr("width", 30)
-                  .attr("y", function(d) {
-                      return self.y(d.values); })
-                  .attr("height", function(d) {
-                      return self.height - self.y(d.values); });
+                  .attr("y", function(d) { return self.y(d.values); })
+                  .attr("height", function(d) { return self.height - self.y(d.values); });
 
             return this;
         }

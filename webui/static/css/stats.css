@@ -58,3 +58,13 @@
 .ui-stat-change.negative{
     color: #c93744;
 }
+
+.brush rect.extent {
+  fill: steelblue;
+  fill-opacity: .125;
+}
+
+.brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}

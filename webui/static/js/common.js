@@ -11,6 +11,7 @@ requirejs.config({
         app: '../app'
     },
     shim:{
-        'd3': { exports: 'd3' }
+        'd3': { exports: 'd3' },
+        'crossfilter': { exports: 'crossfilter' }
     }
 });

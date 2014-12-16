@@ -1,6 +1,5 @@
 define(function (require) {
     var $ = require('jquery'),
-        lib = require('./lib'),
         Chart = require('./controller/chart'),
         DataProvider = require('./providers/activity'),
         PointModifier = require('./modifiers/pointmodifier'),
@@ -12,18 +11,13 @@ define(function (require) {
     };
 
     Demo.prototype = {
-        run: function(){
-            var provider = new DataProvider();
+        init: function(){
             this.chart = new Chart();
             this.chart.init({
                 width: this.$elt.width(),
-                containerSelector: '.js-chart-container'
+                containerSelector: '.js-chart-container',
+                weeklySelector: '.js-weekly-indicator'
             });
-
-            var boundUpdate = this.update.bind(this);
-
-            provider.requestData()
-                .done(boundUpdate);
         },
 
         update: function(data){
