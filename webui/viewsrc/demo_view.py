@@ -40,7 +40,7 @@ class StatsDataView(View):
 
         return HttpResponse(json.dumps({
             'info': self.get_info(),
-            'data': data
+            'values': data
         }, cls=DateTimeEncoder), content_type="application/json")
 
 

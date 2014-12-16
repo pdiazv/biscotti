@@ -219,27 +219,15 @@ PIPELINE_CSS = {
             'media': 'screen,projection',
         },
     },
-}
-
-PIPELINE_JS = {
-    'general': {
-        'source_filenames': (
-          'js/jquery.min.js',
-          'bstrap/js/bootstrap.min.js',
-          'bstrap/js/docs.min.js',
-        ),
-        'output_filename': 'js/general.js',
-    },
     'stats': {
         'source_filenames': (
-            'js/crossfilter.v1.min.js',
-            'js/jquery.min.js',
-            'js/d3.v3.min.js',
-            'js/demo_charts.js',
+          'css/stats.css',
         ),
-        'output_filename': 'js/stats.js',
-    }
+        'output_filename': 'css/stats_final.css',
+    },
 }
+
+PIPELINE_JS = {}
 
 
 ALLOWED_HOSTS = [
