@@ -49,7 +49,7 @@ class NimbbleActivity(ndb.Model):
         user = self.key.parent().get()
 
         act_dic = self.to_dict()
-        act_dic['duration'] = self.duration.timedelta()
+        #act_dic['duration'] = self.duration.timedelta()
         act_dic['user'] = user.to_dict()
         act_dic['user']['id'] = user.key.id()
 
