@@ -1,7 +1,5 @@
-from django.views.generic import TemplateView, View
+from django.views.generic import TemplateView
 from demo import sample_data
-from django.shortcuts import render_to_response, redirect
-from django.utils import http
 
 class DefaultView(TemplateView):
     template_name = 'cover.html'
@@ -18,20 +16,34 @@ class DefaultView(TemplateView):
 
             self.request.session['user_id'] = user.key.id()
         
-        return {'control': { 'home': 'active' } }
+        return {
+            'control': { 
+                'login': 'hidden',
+                'signup': 'hidden',
+                'home': 'active',
+                'user': {'name': user.name, 'group': user.group } 
+            }
+        }
 
 from business import manager
-
 class TrackersView(TemplateView):
     template_name = 'trackers.html'
 
     def get_context_data(self, **kwargs):
         user_id = self.request.session['user_id']
-
+        user = context.UserContext().get_user(user_id)
         trackers = manager.TrackerManager().list(user_id)
 
         return {
-            'control': { 'trackers': 'active' },
+            'control': { 
+                'login': 'hidden',
+                'signup': 'hidden',
+                'trackers': 'active', 
+                'user': {
+                    'name': user.name, 
+                    'group': user.group 
+                }
+            },
             'trackers': trackers,
         }
 
@@ -42,13 +54,21 @@ class SimpleTrackerView(TemplateView):
     def get_context_data(self, **kwargs):
         name = kwargs['tracker_name']
         user_id = self.request.session['user_id']
-
+        user = context.UserContext().get_user(user_id)
         tracker = manager.TrackerManager().sample_data(name, user_id)
 
         return {
+            'control': { 
+                'login': 'hidden',
+                'signup': 'hidden',
+                'tracker': 'active',
+                'user': {
+                    'name': user.name,
+                    'group': user.group
+                }
+            },
             'athlete_template': 'trackers/{0}_athlete.html'.format(name),
             'data_template': 'trackers/{0}_data.html'.format(name),
-            'control': { 'tracker': 'active' },
             'tracker_name': name,
             'athlete': tracker['athlete'],
             'activities': tracker['activities']
@@ -59,11 +79,20 @@ class MainEmployeeView(TemplateView):
     template_name = 'main.html'
 
     def get_context_data(self, **kwargs):
-
         recent = feed.ActivityFeed().recent()
-
+        user_id = self.request.session['user_id']
+        user = context.UserContext().get_user(user_id)
+        
         return {
-            'control': { 'home': 'active' },
+            'control': { 
+                'login': 'hidden',
+                'signup': 'hidden',
+                'home': 'active',
+                'user': {
+                    'name': user.name,
+                    'group': user.group
+                }
+             },
             'recent': recent
         }
 
@@ -74,12 +103,47 @@ class MainUserView(TemplateView):
 
     def get_context_data(self, **kwargs):
         user_id = self.request.session['user_id']
+        session_user = context.UserContext().get_user(long(user_id))
         if 'user_id' in kwargs:
             user_id = kwargs['user_id']
         user = context.UserContext().get_user(long(user_id))
         activities = feed.ActivityFeed().activities_by_user(user.key)
 
-        return {    
+        return {
+            'control': { 
+                'login': 'hidden',
+                'signup': 'hidden',
+                'home': 'active',
+                'user': {
+                    'name': session_user.name,
+                    'group': session_user.group
+                }
+             }, 
+            'nimbbleUser': user,
+            'activities': activities
+        }
+
+class GroupView(TemplateView):
+    template_name = 'group.html'
+
+    def get_context_data(self, **kwargs):
+        user_id = self.request.session['user_id']
+        user = context.UserContext().get_user(long(user_id))
+        group = user.group
+        if 'group' in kwargs:
+            group = kwargs['group']
+        activities = feed.ActivityFeed().activities_by_group(group)
+
+        return {
+            'control': { 
+                'login': 'hidden',
+                'signup': 'hidden',
+                'group': 'active',
+                'user': {
+                    'name': user.name,
+                    'group': user.group
+                }
+             },
             'nimbbleUser': user,
             'activities': activities
         }

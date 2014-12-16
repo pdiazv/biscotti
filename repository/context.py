@@ -107,6 +107,11 @@ class ActivityContext(object):
         query = NimbbleActivity.query(ancestor=user_key)
         return query.order(-NimbbleActivity.datetime).fetch(limit=15)
 
+    def by_group(self, group):
+        user_ids = NimbbleUser.query(NimbbleUser.group == group).fetch(keys_only=True)
+        activities_by_user = [NimbbleActivity.query(ancestor=user_id).fetch() for user_id in user_ids]
+        all_activities = sorted([j for i in activities_by_user for j in i], key=lambda x: x.datetime, reverse=True)
+        return all_activities[:15]
 
 import random
 class UserCtxManager(object):

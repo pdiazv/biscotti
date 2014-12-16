@@ -17,23 +17,31 @@
     <div id="wrap">
       <aside class="sidebar">
         <ul class="navigation">
-          <li class="logo {% firstof control.home %}">
-            <a href="{% url webui:home %}">Home</a>
+          <li class="{% firstof control.login %}">
+            <a href="{% url webui:login %}">Login</a>
           </li>
-          <li class="feed {% firstof control.home %}">
-            <a href="{% url webui:home %}">Feed</a>
+          <li class="{% firstof control.signup %}">
+            <a href="{% url webui:signup %}">Signup</a>
+          </li>
+          <li class="logo {% firstof control.home %}">
+            <a href="{% url webui:main_employee %}">Home</a>
+          </li>
+          <li class="feed {% firstof control.group %}">
+            <a href="{% url webui:group %}">Feeds</a>
           </li>
           <li Class="stats {% firstof control.stats %}">
             <a href="{% url webui:stats %}">Stats</a>
           </li>
-          {% block header-links %} {% endblock %}
+          <li class="{% firstof control.trackers %}">
+            <a href="{% url webui:trackers %}">Trackers</a>
+          </li>
           <li class="user">
             <div class="img-wrapper">
               <div class="hex-badge small">50</div>
-              <img class="profile medium" src="../static/images/128.png"></img>
+              <img class="profile medium" src="/static/images/128.png"></img>
             </div>
-            <a href="#" class="employee">Kyle Redon</a>
-            <a href="#" class="dept">Development</a>
+            <a href="{% url webui:user %}" class="employee">{{ control.user.name }}</a>
+            <a href="{% url webui:group %}" class="dept">{{ control.user.group }}</a>
           </li>
         </ul>
       </aside>

@@ -31,4 +31,19 @@ class ActivityFeed(object):
 
         nimbble_cache.setItem(cache_key, result)
 
-        return result        
+        return result
+
+    def activities_by_group(self, group):
+        cache_key = 'group:' + str(group)
+        nimbble_cache = cache.NimbbleCache()
+        result = nimbble_cache.getItem(cache_key)
+
+        if result:
+            return result
+
+        activities = context.ActivityContext().by_group(group)
+        result = [activity.serialize() for activity in activities]
+
+        nimbble_cache.setItem(cache_key, result)
+
+        return result      

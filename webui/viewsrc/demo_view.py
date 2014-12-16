@@ -10,21 +10,46 @@ class LoadDataView(TemplateView):
     def get_context_data(self, **kwargs):
         source = sample_data.source
         result = context.DemoContext().parse_sample_data(source)
-
+        user_id = self.request.session['user_id']
+        user = context.UserContext().get_user(long(user_id))
+        
         return {
-            'control': { 'signup': 'active' },
+            'control': { 
+                'signup': '', 
+                'login': 'active',
+                'home': 'hidden',
+                'groups': 'hidden',
+                'stats': 'hidden',
+                'trackers': 'hidden',
+                'user': {
+                    'name': user.name,
+                    'group': user.group
+                }
+            },
             'result': result
         }
 
 
-import random
 class StatsTemplateView(TemplateView):
     template_name = 'stats.html'
 
     def get_context_data(self, **kwargs):
+        user_id = self.request.session['user_id']
+        user = context.UserContext().get_user(long(user_id))
+        
+        return {
+            'control': {
+                'stats': 'active',
+                'signup': 'hidden', 
+                'login': 'hidden',
+                'user': {
+                    'name': user.name,
+                    'group': user.group
+                }
+            }
+        }
 
-        return {'control': {'stats': 'active'}}
-
+import random
 from django.http import HttpResponse
 from business import feed
 class StatsDataView(View):

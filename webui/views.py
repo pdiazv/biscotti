@@ -8,6 +8,7 @@ trackers = general.TrackersView.as_view()
 strava_auth = auth.StravaTokenExchangeView.as_view()
 tracker_view = general.SimpleTrackerView.as_view()
 user_view = general.MainUserView.as_view()
+group_view = general.GroupView.as_view()
 
 simple_signup = simple.SimpleSignupView.as_view()
 add_user = simple.SimpleAddUserView.as_view()
