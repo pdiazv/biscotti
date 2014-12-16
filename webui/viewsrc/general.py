@@ -93,6 +93,7 @@ class MainEmployeeView(TemplateView):
                     'group': user.group
                 }
              },
+            'group_name': 'All Departments',
             'recent': recent
         }
 
@@ -143,7 +144,7 @@ class GroupView(TemplateView):
                     'name': user.name,
                     'group': user.group
                 }
-             },
-            'nimbbleUser': user,
+            },
+            'group_name': group,
             'activities': activities
         }

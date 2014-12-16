@@ -1,12 +1,5 @@
 {% extends "base.html" %}
-
-{% block header-links %}
-<li class="trackers {% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
-{% endblock %}
-
 {% block content %}
-
-
 <header class="header">
   <h1>
     Available trackers
@@ -43,5 +36,4 @@
     </div>
   </div>
 </div>
-
 {% endblock %}

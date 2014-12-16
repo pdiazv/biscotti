@@ -15,7 +15,7 @@ define(['d3'], function(d3){
 
         var dateEnter = date.enter()
             .append("div")
-              .attr("class", "date");
+              .attr("class", "card date");
 
         dateEnter.append("h2")
               .attr("class", "day")

@@ -1,11 +1,5 @@
 {% extends "base.html" %}
-
-{% block header-links %}
-<li class="{% firstof control.trackers %}"><a href="{% url webui:trackers %}">Trackers</a></li>
-{% endblock %}
-
 {% block content %}
-
 <div class="container">
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -14,5 +8,4 @@
         <h2>Trackers Loaded: {{ result.tracker_count }}</h2>
     </div>
 </div>
-
 {% endblock %}

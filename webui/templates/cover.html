@@ -1,20 +1,13 @@
 {% extends "base.html" %}
-
-{% block header-links %}
-  <li class="{% firstof control.login %}"><a href="{% url webui:login %}">Login</a></li>
-  <li class="{% firstof control.signup %}"><a href="{% url webui:signup %}">Signup</a></li>
-{% endblock %}
-
 {% block content %}
-  <header class="header">
-    <h1>Home</h1>
-  </header>
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-          Main
-        </div>
+<header class="header">
+  <h1>Home</h1>
+</header>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-12">
+        Main
       </div>
-  </div>
-
+    </div>
+</div>
 {% endblock %}

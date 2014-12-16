@@ -1,13 +1,7 @@
 {% extends "base.html" %}
-
 {% block css %}
 <link href="/static/css/signup.css" rel="stylesheet">
 {% endblock %}
-
-{% block header-links %}
-<li class="signup {% firstof control.signup %}"><a href="{% url webui:signup %}">Sign Up</a></li>
-{% endblock %}
-
 {% block content %}
   <header class="header">
     <h1>
