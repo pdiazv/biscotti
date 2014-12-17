@@ -197,7 +197,7 @@ header.header h1 small {
     padding: 0;
     width: 50px;
     height: 50px;
-    text-indent: -100%;
+    text-indent: -9999px;
     white-space: nowrap;
     overflow: hidden;
     background-position: center center!important;

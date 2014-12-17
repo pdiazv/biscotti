@@ -27,17 +27,17 @@
             <a href="{% url webui:main_employee %}">Home</a>
           </li>
           <li class="feed {% firstof control.group %}">
-            <a href="{% url webui:group %}">Feeds</a>
+            <a href="{% url webui:main_employee %}">Activity</a>
           </li>
           <li Class="stats {% firstof control.stats %}">
             <a href="{% url webui:stats %}">Stats</a>
           </li>
-          <li class="{% firstof control.trackers %}">
+          <li class="trackers {% firstof control.trackers %}">
             <a href="{% url webui:trackers %}">Trackers</a>
           </li>
           <li class="user">
             <div class="img-wrapper">
-              <div class="hex-badge small">50</div>
+              <!-- <div class="hex-badge small">50</div> -->
               <img class="profile medium" src="/static/images/128.png"></img>
             </div>
             <a href="{% url webui:user %}" class="employee">{{ control.user.name }}</a>
