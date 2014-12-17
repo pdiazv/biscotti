@@ -58,10 +58,13 @@ class StatsDataView(View):
         group = request.GET.get('group')
         data = []
         nimbbleFeed = feed.ActivityFeed()
+        goal = 1000
 
         if type == 'group':
+            goal = 600
             data = nimbbleFeed.activities_by_group(group, 800, 'stats')
         elif type == 'user':
+            goal = 150
             user = context.UserContext().get_user(long(group))
             data = nimbbleFeed.activities_by_user(user.key, 800, 'stats')
         else:
@@ -73,27 +76,16 @@ class StatsDataView(View):
 
 
         return HttpResponse(json.dumps({
-            'info': self.get_info(),
+            'info': self.get_info(goal),
             'values': data
         }, cls=DateTimeEncoder), content_type="application/json")
 
 
-    def get_info(self):
+    def get_info(self, goal):
         return {
             'start_date': '2014-11-01T00:00:00',
             'end_date': '2014-12-01T00:00:00',
-            'points':{
-                'label': 'Points',
-                'total': '9,375',
-                'difference': 5.8,
-                'increase': True,
-            },
-            'time':{
-                'label': 'Active Minutes',
-                'total': '3h48m',
-                'difference': 1.3,
-                'increase': True,
-            }
+            'goal': goal,
         }
 
     def get_data(self):

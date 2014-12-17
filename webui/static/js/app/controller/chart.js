@@ -78,7 +78,7 @@ define(['d3'], function(d3){
                   .data(data)
                 .enter().append("rect")
                   .attr("class", "bar")
-                  .classed('ui-over-goal', function(d){ return d.values >= 1000; })
+                  .classed('ui-over-goal', function(d){ return d.values >= info.goal; })
                   .attr("x", function(d) { return self.x(d.date); })
                   .attr("width", 30)
                   .attr("y", function(d) { return self.y(d.values); })

@@ -15,6 +15,7 @@ define(['d3'], function(d3){
     return {
         modify: function(data){
             return {
+                goal: data.info.goal,
                 startDate: new Date(data.info.start_date),
                 endDate: new Date(data.info.end_date),
                 infocards: [
