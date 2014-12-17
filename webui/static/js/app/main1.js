@@ -5,16 +5,16 @@ define(function (require) {
         Provider= require('./providers/activity')
         $elt = $('.js-stats');
 
-    var pointChart = new Demo($elt),
+    var demo = new Demo($elt),
         dynamic = new Dynamic($elt),
         provider = new Provider();
 
-    pointChart.init();
+    demo.init();
     dynamic.init();
 
     provider.requestData()
         .done(function(data){
-            pointChart.update(data);
+            demo.update(data);
             dynamic.update(data);
         });
 });

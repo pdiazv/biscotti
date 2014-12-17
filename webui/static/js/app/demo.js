@@ -3,7 +3,8 @@ define(function (require) {
         Chart = require('./controller/chart'),
         DataProvider = require('./providers/activity'),
         PointModifier = require('./modifiers/pointmodifier'),
-        InfoModifier = require('./modifiers/infomodifier');
+        InfoModifier = require('./modifiers/infomodifier'),
+        InfoCards = require('./controller/infocards');
 
 
     function Demo(elt){
@@ -13,7 +14,7 @@ define(function (require) {
     Demo.prototype = {
         init: function(){
             var paddingLeft = 100;
-
+            this.cards = new InfoCards(this.$elt);
             this.chart = new Chart();
             this.chart.init({
                 width: this.$elt.width() - paddingLeft,
@@ -27,6 +28,7 @@ define(function (require) {
                 info = InfoModifier.modify(data);
 
             this.chart.render(info, values)
+            this.cards.render(info);
         }
     }
 

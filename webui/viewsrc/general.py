@@ -6,6 +6,8 @@ class DefaultView(TemplateView):
 
     def get_context_data(self, **kwargs):
 
+        user = { 'name': 'sample user' }
+
         if 'user_id' not in self.request.session:
             user = context.UserContext().get_random_user()
 
@@ -15,6 +17,9 @@ class DefaultView(TemplateView):
                 user = context.UserContext().get_random_user()
 
             self.request.session['user_id'] = user.key.id()
+        else:
+            user_id = self.request.session['user_id']
+            user = context.UserContext().get_user(user_id)
         
         return {
             'control': { 

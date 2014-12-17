@@ -10,8 +10,6 @@ class LoadDataView(TemplateView):
     def get_context_data(self, **kwargs):
         source = sample_data.source
         result = context.DemoContext().parse_sample_data(source)
-        user_id = self.request.session['user_id']
-        user = context.UserContext().get_user(long(user_id))
         
         return {
             'control': { 
@@ -22,8 +20,8 @@ class LoadDataView(TemplateView):
                 'stats': 'hidden',
                 'trackers': 'hidden',
                 'user': {
-                    'name': user.name,
-                    'group': user.group
+                    'name': 'Admin User',
+                    'group': 'Admin group'
                 }
             },
             'result': result
@@ -36,7 +34,7 @@ class StatsTemplateView(TemplateView):
     def get_context_data(self, **kwargs):
         user_id = self.request.session['user_id']
         user = context.UserContext().get_user(long(user_id))
-        
+
         return {
             'control': {
                 'stats': 'active',

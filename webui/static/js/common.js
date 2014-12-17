@@ -12,6 +12,7 @@ requirejs.config({
     },
     shim:{
         'd3': { exports: 'd3' },
+        'handlebars': { exports: 'Handlebars' },
         'crossfilter': { exports: 'crossfilter' }
     }
 });
