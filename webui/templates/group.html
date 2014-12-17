@@ -1,4 +1,14 @@
 {% extends "base.html" %}
+
+{% block scripts %}
+    <script data-main="/static/js/stats" src="/static/js/lib/require.js"></script>
+{% endblock %}
+
+{% block css %}
+    {% load compressed %}
+    {% compressed_css 'stats' %}
+{% endblock %}
+
 {% block content %}
 <header class="header">
   <h1>
@@ -7,6 +17,16 @@
   </h1>
 </header>
 <div class="container-fluid">
+  <div class="js-stats-container" data-type="group" data-group="{{ group_name }}" data-load="demo">
+    <div class="row js-stats"></div>
+
+    <div class="js-sim-container ui-sim-container">
+        <div class="js-chart-container"></div>
+        <div class="js-weekly-indicator"></div>
+    </div>
+  </div>
+
+
   <div class="row">
     <div class="col-md-6 margin-top">
       <div class="card">

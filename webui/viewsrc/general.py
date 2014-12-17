@@ -126,6 +126,7 @@ class MainUserView(TemplateView):
                 }
              }, 
             'nimbbleUser': user,
+            'nimbbleId': user_id,
             'activities': activities
         }
 

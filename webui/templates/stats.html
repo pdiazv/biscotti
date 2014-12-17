@@ -15,16 +15,18 @@
     <div class="row ui-header">
         <h1>Stats View</h1>
     </div>
-    <div class="row js-stats">
-    </div>
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="js-sim-container ui-sim-container">
-        <div class="js-chart-container"></div>
-        <div class="js-dynamic-chart"></div>
-        <div class="js-weekly-indicator"></div>
-        <div class="js-dynamic-feed"></div>
-    </div>
+    <div class="js-stats-container" data-load="demo,dynamic">
 
+        <div class="row js-stats" data-stats="main">
+        </div>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="js-sim-container ui-sim-container">
+            <div class="js-chart-container"></div>
+            <div class="js-dynamic-chart"></div>
+            <div class="js-weekly-indicator"></div>
+            <div class="js-dynamic-feed"></div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

@@ -1,4 +1,15 @@
 {% extends "base.html" %}
+
+
+{% block scripts %}
+    <script data-main="/static/js/stats" src="/static/js/lib/require.js"></script>
+{% endblock %}
+
+{% block css %}
+    {% load compressed %}
+    {% compressed_css 'stats' %}
+{% endblock %}
+
 {% block content %}
 <div class="container-fluid">
   <div class="row">
@@ -27,6 +38,14 @@
       </div>
     </div>
     <div class="col-md-8 margin-top">
+      <div class="js-stats-container" data-type="user" data-group="{{ nimbbleId }}" data-load="demo">
+        <div class="row js-stats"></div>
+
+        <div class="js-sim-container ui-sim-container">
+            <div class="js-chart-container"></div>
+            <div class="js-weekly-indicator"></div>
+        </div>
+      </div>
       <div class="card">
         <ul class="feed">
           {% for activity in activities %}

@@ -8,7 +8,7 @@ define(['d3', 'handlebars'], function(d3, Handlebars){
     {{/each}}';
 
     var InfoCards = function($elt){
-        this.$elt = $elt;
+        this.$elt = $elt.find('.js-stats');
     };
 
     InfoCards.prototype.render = function(data){

@@ -1,20 +1,27 @@
 define(function (require) {
     var $ = require('jquery'),
-        Demo = require('./demo'),
-        Dynamic = require('./dynamic'),
         Provider= require('./providers/activity')
-        $elt = $('.js-stats');
+        $elt = $('.js-stats-container');
 
-    var demo = new Demo($elt),
-        dynamic = new Dynamic($elt),
-        provider = new Provider();
+    var provider = new Provider();
 
-    demo.init();
-    dynamic.init();
+    // append the path where the main modules are at.
+    var loadMe = ('./' + $elt.data('load').replace(',', ',./'));
+    var modules = loadMe.split(',');
 
-    provider.requestData()
-        .done(function(data){
-            demo.update(data);
-            dynamic.update(data);
-        });
+    require(modules, function(){
+        var simulations = [];
+        $.each(arguments, function(i, Simulation){
+            var demo = new Simulation($elt);
+            demo.init();
+
+            simulations.push(demo);
+        })
+
+        provider.requestData()
+            .done(function(data){
+                simulations.forEach(function(s){ s.update(data); });
+            });
+    });
+
 });
