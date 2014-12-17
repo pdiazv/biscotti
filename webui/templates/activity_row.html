@@ -1,6 +1,6 @@
 <!-- activity_row.html -->
-<li class="profile">
-  <img class="profile small" src="/static/images/128.png"></img>
+<li>
+  <img class="profile-image small" src="/static/images/128.png"></img>
   <h4 class="user"><a href="{% url webui:user activity.user.id %}">{{ activity.user.name }}</a>, </h4>
   <a href="{% url webui:group activity.user.group %}">{{ activity.user.group }}</a>
   <span class="date">- {{ activity.datetime }}</span>
