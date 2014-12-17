@@ -3,7 +3,7 @@ define(function (require) {
         Provider= require('./providers/activity')
         $elt = $('.js-stats-container');
 
-    var provider = new Provider();
+    var provider = new Provider($elt);
 
     // append the path where the main modules are at.
     var loadMe = ('./' + $elt.data('load').replace(',', ',./'));
@@ -23,5 +23,4 @@ define(function (require) {
                 simulations.forEach(function(s){ s.update(data); });
             });
     });
-
 });

@@ -54,12 +54,22 @@ class StatsDataView(View):
     http_method_names = ['get']
 
     def get(self, request, *args, **kwargs):
+        type = request.GET.get('type')
+        group = request.GET.get('group')
+        data = []
+        nimbbleFeed = feed.ActivityFeed()
 
-        data = feed.ActivityFeed().recent(
-            namespace='stats',
-            starting_date='11/1/2014',
-            end_date='11/30/2014',
-            limit=800)
+        if type == 'group':
+            data = nimbbleFeed.activities_by_group(group, 800, 'stats')
+        elif type == 'user':
+            user = context.UserContext().get_user(long(group))
+            data = nimbbleFeed.activities_by_user(user.key, 800, 'stats')
+        else:
+            data = nimbbleFeed.recent(
+                namespace='stats',
+                starting_date='11/1/2014',
+                end_date='11/30/2014',
+                limit=800)
 
 
         return HttpResponse(json.dumps({

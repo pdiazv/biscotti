@@ -1,19 +1,18 @@
 
 define(['jquery'], function($){
 
-    function DataProvider(){ };
+    function DataProvider($elt){
+        this.$elt = $elt;
+    };
 
     DataProvider.prototype = {
         requestData: function(){
-            var self = this;
-            $.get('/stats_data', function(result){
-                self.donecallback(result)
-            });
-            return this;
-        },
+            var data = {
+                type: this.$elt.data('type') || 'global',
+                group: this.$elt.data('group') || null,
+            };
 
-        done: function(callback){
-            this.donecallback = callback;
+            return $.get('/stats_data', data);
         }
     };
 
