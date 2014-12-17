@@ -192,6 +192,8 @@ ul.feed {
   list-style-type: none;
 }
 
+ul.list li.off-white { background: #f7f7f7; }
+
 ul.list li,
 ul.feed li {
   position: relative;
