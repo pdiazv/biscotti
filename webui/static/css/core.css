@@ -192,7 +192,10 @@ ul.feed {
   list-style-type: none;
 }
 
-ul.list li.off-white { background: #f7f7f7; }
+ul.list li.call-out { 
+  background: #f7f7f7; 
+  border-bottom: 1px solid #f3f3f3;
+}
 
 ul.list li,
 ul.feed li {
@@ -285,6 +288,18 @@ ul.stats li .value { font-weight: bold; }
   height: 4px;
   display: block;
   background: #e74c3c;
+}
+
+.card .call-out {
+  padding: 15px;
+  margin: 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.card .call-out h2 {
+  padding: 0;
+  margin: 0;
 }
 
 .card.stat { 
