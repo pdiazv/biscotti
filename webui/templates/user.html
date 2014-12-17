@@ -2,7 +2,31 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6 margin-top">
+    <div class="col-md-4 margin-top">
+      <div class="card profile">
+        <img class="profile-image medium" src="/static/images/128.png">
+        <div class="cover">
+          <img src="http://placeimg.com/1000/1000/nature"/>
+        </div>
+        <ul class="list">
+          <li class="off-white">
+            <h1>
+            {{ nimbbleUser.name }}
+              <small class="block">
+                <em>Can't stop won't stop</em>
+              </small>
+            </h1>
+          </li>
+          <li>
+            <h3>About me</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis, augue a aliquet sodales, lorem sem egestas neque, in sodales purus justo ut nisi. Phasellus nec varius sem. Curabitur ac sem libero. Donec sed justo feugiat, hendrerit nisi sed, commodo eros.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8 margin-top">
       <div class="card">
         <ul class="feed">
           {% for activity in activities %}
