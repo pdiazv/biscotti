@@ -12,9 +12,11 @@ define(function (require) {
 
     Demo.prototype = {
         init: function(){
+            var paddingLeft = 100;
+
             this.chart = new Chart();
             this.chart.init({
-                width: this.$elt.width(),
+                width: this.$elt.width() - paddingLeft,
                 containerSelector: '.js-chart-container',
                 weeklySelector: '.js-weekly-indicator'
             });

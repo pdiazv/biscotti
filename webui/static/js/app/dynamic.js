@@ -17,6 +17,8 @@ define(function (require) {
 
         update: function(data){
 
+            var margin = {left: 40, right: 50, paddingLeft: 100};
+
             data.values.forEach(function(d, i) {
                 d.index = i;
                 d.date = new Date(d.datetime);
@@ -35,7 +37,7 @@ define(function (require) {
                 .round(d3.time.day.round)
               .x(d3.time.scale()
                 .domain([info.startDate, info.endDate])
-                .rangeRound([40, this.$elt.width()-40-50]))
+                .rangeRound([40, this.$elt.width()-(margin.left + margin.right + margin.paddingLeft)]))
               .y(d3.scale.linear()
                 .range([40, 0]));
 

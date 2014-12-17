@@ -58,6 +58,7 @@ class StatsDataView(View):
     def get(self, request, *args, **kwargs):
 
         data = feed.ActivityFeed().recent(
+            namespace='stats',
             starting_date='11/1/2014',
             end_date='11/30/2014',
             limit=800)

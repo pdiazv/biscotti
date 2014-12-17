@@ -4,7 +4,7 @@ class ActivityFeed(object):
 
 
     def recent(self, *args, **kwargs):
-        cache_key = 'recent:global'
+        cache_key = 'recent:' + kwargs['namespace'] if 'namespace' in kwargs else 'global'
         nimbble_cache = cache.NimbbleCache()
         result = nimbble_cache.getItem(cache_key)
 
