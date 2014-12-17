@@ -58,13 +58,13 @@ class StatsDataView(View):
         group = request.GET.get('group')
         data = []
         nimbbleFeed = feed.ActivityFeed()
-        goal = 1000
+        goal = [950,1000,1050,1120,1165,1250,1300][random.randint(0, 6)]
 
         if type == 'group':
-            goal = 600
+            goal = [520,550,575,580,600,620][random.randint(0, 5)]
             data = nimbbleFeed.activities_by_group(group, 800, 'stats')
         elif type == 'user':
-            goal = 150
+            goal = [120,125,130,140,155,160][random.randint(0,5)]
             user = context.UserContext().get_user(long(group))
             data = nimbbleFeed.activities_by_user(user.key, 800, 'stats')
         else:
