@@ -74,13 +74,14 @@ define(['d3'], function(d3){
                 .attr('dy', 4);
 
             var self = this;
+            var barWidth = this.x.range()[1] > 1000 ? 30 : 15;
             this.svg.selectAll(".bar")
                   .data(data)
                 .enter().append("rect")
                   .attr("class", "bar")
                   .classed('ui-over-goal', function(d){ return d.values >= info.goal; })
                   .attr("x", function(d) { return self.x(d.date); })
-                  .attr("width", 15)
+                  .attr("width", barWidth)
                   .attr("y", function(d) { return self.y(d.values); })
                   .attr("height", function(d) { return self.height - self.y(d.values); });
 
