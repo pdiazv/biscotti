@@ -1,16 +1,24 @@
 
-.bar {
-  fill: #d6d6d6;
+.card svg { width: 100%; }
+
+.bar { 
+  fill: #364053; 
+  transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
 }
 
-.bar:hover {
-  fill: brown;
-}
+.bar:hover { fill: #e74c3c;}
 
 .axis {
-  font: 16px sans-serif;
-  font-weight: bold;
-  fill: #818181;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+  fill: #666;
 }
 
 .axis path,
@@ -19,52 +27,44 @@
   shape-rendering: crispEdges;
 }
 
-.x.axis path {
-  display: none;
-}
+.x.axis path { display: none; }
 
 .tick.minor line{
-    stroke: #ccc;
-    stroke-width: 2;
-    stroke-dasharray: 5,5;
+  stroke: #ecf2f6;
+  stroke-width: 1;
+  stroke-dasharray: 0,0;
 }
 
-.ui-over-goal{
-    fill: #98cc2d;
-}
-
-
-.ui-stat{
-    padding: 20px;
-    margin: 5px;
-    border: 2px solid #ccc;
-    background: #FFF;
-}
-
-.ui-stat-value{
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.ui-stat-change{
-    font-size: 20px;
-    padding-left: 15px;
-}
-
-.ui-stat-change.positive{
-    color: #46B466;
-}
-
-.ui-stat-change.negative{
-    color: #c93744;
-}
+.ui-over-goal{ fill: #1ab394; }
 
 .brush rect.extent {
-  fill: steelblue;
-  fill-opacity: .125;
+  fill: #e74c3c;
+  fill-opacity: .25;
 }
 
 .brush .resize path {
   fill: #eee;
   stroke: #666;
 }
+
+.stat-box { padding: 20px; }
+
+.stat-box h1,
+.stat-box h3 {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.stat-box h1 small { display: block; }
+
+.stat-box h3 {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.stat-box .positive{ color: #1ab394; }
+.stat-box .negative{ color: #c93744; }
+

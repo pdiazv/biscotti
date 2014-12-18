@@ -16,19 +16,10 @@
     <small>Showing activity for {{ group_name }}</small>
   </h1>
 </header>
+<!-- <div class="js-stats"></div> -->
 <div class="container-fluid">
-  <div class="js-stats-container" data-type="group" data-group="{{ group_name }}" data-load="demo">
-    <div class="row js-stats"></div>
-
-    <div class="js-sim-container ui-sim-container">
-        <div class="js-chart-container"></div>
-        <div class="js-weekly-indicator"></div>
-    </div>
-  </div>
-
-
   <div class="row">
-    <div class="col-md-6 margin-top">
+    <div class="col-md-5 margin-top">
       <div class="card">
         <ul class="feed">
           {% for activity in activities %}
@@ -37,6 +28,16 @@
         </ul>
       </div>
     </div>
+    <div data-type="group" data-group="{{ group_name }}" data-load="demo" class="js-stats-container col-md-7">
+      <div class="row js-stats">
+      </div>
+      <div class="card margin-top js-sim-container">
+        <div class="js-chart-container padding"></div>
+        <div class="js-weekly-indicator call-out-top"></div>
+      </div>
+    </div>
   </div>
 </div>
+
+
 {% endblock %}

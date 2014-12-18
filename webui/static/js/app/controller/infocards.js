@@ -1,9 +1,11 @@
 define(['d3', 'handlebars'], function(d3, Handlebars){
     var hb = Handlebars;
     var cardTemplate = '{{#each cards}}\
-    <div class="col-md-3 ui-stat">\
-        <div class="ui-stat-value">{{total}}<span class="ui-stat-change positive">{{deviation}}%</span></div>\
-        <div class="ui-stat-unit">{{label}}</div>\
+    <div class="col-md-4 margin-top">\
+      <div class="card stat-box">\
+        <h1>{{total}}<small class="ui-stat-change positive">{{deviation}}%</small></h1>\
+        <h3 class="ui-stat-unit">{{label}}</h3>\
+      </div>\
     </div>\
     {{/each}}';
 
