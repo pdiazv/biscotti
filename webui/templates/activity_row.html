@@ -3,7 +3,7 @@
   <img class="profile-image small" src="/static/images/{{ activity.user.name.split|join:"_" }}.jpg"></img>
   <h4 class="user"><a href="{% url webui:user activity.user.id %}">{{ activity.user.name }}</a>, </h4>
   <a href="{% url webui:group activity.user.group %}">{{ activity.user.group }}</a>
-  <span class="date">- {{ activity.datetime }}</span>
+  <span class="date">- {{ activity.datetime|date:"D N m, Y" }}</span>
   <ul class="stats">
     <li>
       <div class="value">{{ activity.type }}</div>
@@ -14,7 +14,7 @@
       <div class="name">Distance</div>
     </li>
     <li>
-      <div class="value">{{ activity.duration }}</div>
+      <div class="value">{{ activity.duration|date:"f" }}</div>
       <div class="name">Duration</div>
     </li>
   </ul>
