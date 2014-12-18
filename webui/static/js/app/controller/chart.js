@@ -6,13 +6,13 @@ define(['d3'], function(d3){
     Chart.prototype = {
 
         init: function(info){
-            var margin = {top: 20, right: 50, bottom: 30, left: 40},
+            var margin = {top: 20, right: 0, bottom: 30, left: 40},
                 width = info.width - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
 
             this.height = height;
             this.x = d3.time.scale()
-                .rangeRound([margin.left, width]);
+                .rangeRound([margin.left, info.width]);
 
             this.y = d3.scale.linear()
                 .range([height, 0]);
@@ -80,7 +80,7 @@ define(['d3'], function(d3){
                   .attr("class", "bar")
                   .classed('ui-over-goal', function(d){ return d.values >= info.goal; })
                   .attr("x", function(d) { return self.x(d.date); })
-                  .attr("width", 30)
+                  .attr("width", 15)
                   .attr("y", function(d) { return self.y(d.values); })
                   .attr("height", function(d) { return self.height - self.y(d.values); });
 
