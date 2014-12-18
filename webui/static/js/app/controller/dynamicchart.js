@@ -91,7 +91,9 @@ define(['d3'], function(d3){
                 d;
             while (++i < n) {
               d = groups[i];
-              path.push("M", x(d.key), ",", height, "V", y(getValue(d.value)), "h9V", height);
+              var day = new Date(d.key);
+              day.setHours(23);
+              path.push("M", x(day), ",", height, "V", y(getValue(d.value)), "h9V", height);
             }
             return path.join("");
           }
