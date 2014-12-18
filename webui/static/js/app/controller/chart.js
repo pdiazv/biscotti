@@ -85,6 +85,12 @@ define(['d3'], function(d3){
                   .attr("y", function(d) { return self.y(d.values); })
                   .attr("height", function(d) { return self.height - self.y(d.values); });
 
+            this.svg.append('line')
+                .attr('class', 'ui-goal')
+                .attr('x1', 5).attr('x2', this.x.range()[1]-25)
+                .attr('y1', this.y(info.goal)).attr('y2', this.y(info.goal));
+
+
             return this;
         }
     };

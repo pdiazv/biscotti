@@ -37,6 +37,7 @@
 }
 
 .ui-over-goal{ fill: #1ab394; }
+.ui-goal { stroke-width: 1px; stroke: #1ab394; stroke-dasharray: 5,5; }
 
 .brush rect.extent {
   fill: #e74c3c;
