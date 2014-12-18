@@ -68,3 +68,14 @@
 .stat-box .positive{ color: #1ab394; }
 .stat-box .negative{ color: #c93744; }
 
+.card.date { margin-top: 20px; }
+
+
+.card.date h2.day { 
+  padding: 15px;
+  margin: 0;
+  display: block;
+  background: #f7f7f7;
+  border-bottom: 1px solid #f3f3f3;
+}
+

@@ -13,8 +13,8 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4 margin-top">
-      <div class="card profile">
+    <div class="col-md-5">
+      <div class="card profile margin-top">
         <img class="profile-image medium" src="/static/images/128.png">
         <div class="cover">
           <img src="http://placeimg.com/1000/1000/nature"/>
@@ -36,22 +36,19 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="col-md-8 margin-top">
-      <div class="js-stats-container" data-type="user" data-group="{{ nimbbleId }}" data-load="demo">
-        <div class="row js-stats"></div>
-
-        <div class="js-sim-container ui-sim-container">
-            <div class="js-chart-container"></div>
-            <div class="js-weekly-indicator"></div>
-        </div>
-      </div>
-      <div class="card">
+      <div class="card margin-top">
         <ul class="feed">
           {% for activity in activities %}
             {% include "activity_row.html" %}
           {% endfor %}
         </ul>
+      </div>
+    </div>
+    <div class="js-stats-container col-md-7" data-type="user" data-group="{{ nimbbleId }}" data-load="demo">
+      <div class="row js-stats"></div>
+      <div class="card margin-top js-sim-container">
+        <div class="js-chart-container padding"></div>
+        <div class="js-weekly-indicator call-out-top"></div>
       </div>
     </div>
   </div>
