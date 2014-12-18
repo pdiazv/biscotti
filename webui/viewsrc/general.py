@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView
 from demo import sample_data
+import logging
 
 class DefaultView(TemplateView):
     template_name = 'cover.html'
@@ -7,6 +8,8 @@ class DefaultView(TemplateView):
     def get_context_data(self, **kwargs):
 
         user = { 'name': 'sample user' }
+
+        logging.debug('request:user-id' + self.request.session['user_id'])
 
         if 'user_id' not in self.request.session:
             user = context.UserContext().get_random_user()

@@ -13,7 +13,7 @@ define(['d3'], function(d3){
             round;
 
         axis.ticks(d3.time.day)
-            .tickFormat(function(d){ return d3.time.format('%a')(d)[0]; });
+            .tickFormat(function(d){ return ''; });//d3.time.format('%a')(d)[0]; });
 
         function chart(div) {
           var width = x.range()[1],
