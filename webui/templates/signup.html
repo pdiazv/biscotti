@@ -2,10 +2,21 @@
 {% block css %}
 <link href="/static/css/signup.css" rel="stylesheet">
 {% endblock %}
+{% block navigation %}
+  <li class="logo">
+    <a href="#">Home</a>
+  </li>
+  <li class="{% firstof control.login %}">
+    <a href="{% url webui:login %}">login</a>
+  </li>
+  <li class="{% firstof control.signup %}">
+    <a href="{% url webui:signup %}">signup</a>
+  </li>
+{% endblock %}
 {% block content %}
   <header class="header">
     <h1>
-      Please sign in
+      {{ auth_label }}
       <small>Welcome to the nimbble demo.</small>
     </h1>
   </header>
@@ -16,12 +27,17 @@
             <form role="form" action="{% url webui:add_user %}" method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-              <input type="text" id="inputName" name="userName" class="form-control" placeholder="Name" required="">
+              <input type="text" id="inputName" name="userName" class="form-control" placeholder="Name" required="" autofocus="">
             </fieldset>
             <fieldset class="form-group">
-              <input type="email" id="inputEmail" name="userEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+              <input type="email" id="inputEmail" name="userEmail" class="form-control" placeholder="Email address" required="">
             </fieldset>
-            <button class="btn btn-lg btn-primary btn-block btn-ghost" type="submit">Sign up</button>
+            {% if control.signup %}
+            <fieldset class="form-group">
+              <input type="text" id="inputGroup" name="userGroup" class="form-control" placeholder="Department" required="">
+            </fieldset>
+            {% endif %}
+            <button class="btn btn-lg btn-primary btn-block btn-ghost" type="submit">{{label}}</button>
         </form>
       </div>
       </div>

@@ -10,8 +10,18 @@ class GoogleLoginView(TemplateView):
         return {
             'control': { 'login': 'active' },
             'auth_url': users.create_login_url(success_url),
-            'auth_label': 'Login with Google'
+            'label': 'Log in',
+            'auth_label': 'Please log in'
         }
+
+
+class GoogleLogoutView(View):
+
+    def get(self, request, *arg, **kwargs):
+        request.session['user_id'] = None
+        request.session.flush()
+
+        return redirect('webui:login')
 
 
 from django.shortcuts import redirect

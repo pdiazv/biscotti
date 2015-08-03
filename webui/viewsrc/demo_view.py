@@ -1,7 +1,6 @@
 from django.views.generic import TemplateView, View
 from demo import sample_data
 from repository import context
-from django.shortcuts import redirect
 
 
 class LoadDataView(TemplateView):

@@ -15,6 +15,7 @@
             <tr>
               <th>Active</th>
               <th>Name</th>
+              <th>Sync</th>
               <th>Sample</th>
             </tr>
           </thead>
@@ -23,6 +24,7 @@
                 <tr>
                   <td>{{ tracker.active|yesno:'yes,no' }}</td>
                   <td><a href="{{ tracker.auth_url }}">{{ tracker.name }}</a></td>
+                  <td><a href="{{ tracker.sync_url }}">sync</a></td>
                   {% if tracker.active %}
                       <td><a href="{{ tracker.sample_url }}">sample</a></td>
                   {% else %}

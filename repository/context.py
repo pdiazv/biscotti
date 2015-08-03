@@ -85,6 +85,16 @@ class UserContext(object):
 
 class ActivityContext(object):
 
+    def add(self, user_key, activity):
+        nimbble_activity = NimbbleActivity.get_by_id(activity['source_id'], parent=user_key)
+
+        if nimbble_activity is None:
+            nimbble_activity = NimbbleActivity(id=activity['source_id'], parent=user_key)
+
+        nimbble_activity.populate(**activity)
+        nimbble_activity.put()
+
+
     def recent(self, *args, **kwargs):
 
         end_date = datetime.today()
@@ -97,7 +107,6 @@ class ActivityContext(object):
 
         query = NimbbleActivity.query()
         query.filter(NimbbleActivity.datetime >= starting_date and NimbbleActivity.datetime <= end_date)
-
 
         limit = kwargs['limit'] if 'limit' in kwargs else 15
 
@@ -129,7 +138,7 @@ class UserCtxManager(object):
             nnum += 1
 
     def add(self, *args, **kwargs):
-        existing = NimbbleUser.query().filter(NimbbleUser.name == kwargs['name']).get()
+        existing = NimbbleUser.query().filter(NimbbleUser.name == kwargs['name'] and NimbbleUser.email == kwargs['email']).get()
 
         if existing:
             return existing.key

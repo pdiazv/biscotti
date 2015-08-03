@@ -4,7 +4,11 @@ class SimpleSignupView(TemplateView):
     template_name = 'signup.html'
 
     def get_context_data(self, **kwargs):
-        return { 'control': { 'signup': 'active' } }
+        return {
+            'control': { 'signup': 'active' },
+            'label': 'Sign up',
+            'auth_label': 'Please sign up'
+        }
 
 
 from repository import context
@@ -15,9 +19,15 @@ class SimpleAddUserView(View):
     def post(self, request, *args, **kwargs):
         data = request.POST
 
+        name, email = data['userName'].strip(), data['userEmail'].strip()
+
+        if name == '' or email == '':
+            return redirect('webui:signup')
+
         user_id = context.UserContext().add_user({
-            'name':data['userName'],
-            'email': data['userEmail'],
+            'name': name,
+            'email': email,
+            'group': data['userGroup'].strip()
         })
         request.session['user_id'] = user_id
         return redirect('webui:main_employee')
@@ -35,5 +45,3 @@ class SimpleAddActivityView(View):
         context.DemoContext().add_activity(user_id, activity)
 
         return redirect('webui:main_employee')
-
-

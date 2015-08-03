@@ -3,10 +3,12 @@ from webui.viewsrc import general, auth, simple, demo_view
 default = general.DefaultView.as_view()
 main_employee = general.MainEmployeeView.as_view()
 google_login = auth.GoogleLoginView.as_view()
+google_logout = auth.GoogleLogoutView.as_view()
 trackers = general.TrackersView.as_view()
 
 strava_auth = auth.StravaTokenExchangeView.as_view()
 tracker_view = general.SimpleTrackerView.as_view()
+sync_view = general.SyncTrackerView.as_view()
 user_view = general.MainUserView.as_view()
 group_view = general.GroupView.as_view()
 

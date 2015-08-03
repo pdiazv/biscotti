@@ -23,6 +23,12 @@ class StravaTracker(object):
 
         return data_url
 
+    def get_sync_url(self, user_id):
+        sync_url = reverse('{0}:{1}'.format(conf.auth_namespace, conf.sync_view), kwargs={'tracker_name': 'strava', 'user_id': user_id})
+
+        return sync_url
+
+
 
     def sample_data(self, user_id):
         return StravaSampleDataProvider().get_data(user_id)
@@ -45,6 +51,17 @@ class StravaTracker(object):
 
 
 class StravaSampleDataProvider(object):
+
+    def get_activities(self, user_id):
+        nimbble_tracker = context.UserContext().get_tracker('strava', user_id)
+
+        client = Client(nimbble_tracker.token)
+        activities = client.get_activities()
+
+        return activities
+
+
+
     def get_data(self, user_id):
         nimbble_tracker = context.UserContext().get_tracker('strava', user_id)
 

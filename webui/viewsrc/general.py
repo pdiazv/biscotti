@@ -1,4 +1,5 @@
-from django.views.generic import TemplateView
+from business.services import SyncService
+from django.views.generic import TemplateView, View
 from demo import sample_data
 
 class DefaultView(TemplateView):
@@ -26,7 +27,7 @@ class DefaultView(TemplateView):
                 'login': 'hidden',
                 'signup': 'hidden',
                 'home': 'active',
-                'user': {'name': user.name, 'group': user.group } 
+                'user': {'name': user.name, 'group': user.group, 'points': user.points }
             }
         }
 
@@ -46,7 +47,8 @@ class TrackersView(TemplateView):
                 'trackers': 'active', 
                 'user': {
                     'name': user.name, 
-                    'group': user.group 
+                    'group': user.group,
+                    'points': user.points
                 }
             },
             'trackers': trackers,
@@ -69,7 +71,8 @@ class SimpleTrackerView(TemplateView):
                 'tracker': 'active',
                 'user': {
                     'name': user.name,
-                    'group': user.group
+                    'group': user.group,
+                    'points': user.points
                 }
             },
             'athlete_template': 'trackers/{0}_athlete.html'.format(name),
@@ -79,23 +82,42 @@ class SimpleTrackerView(TemplateView):
             'activities': tracker['activities']
         }
 
+class SyncTrackerView(View):
+    http_method_names = ['get']
+
+    def get(self, request, *args, **kwargs):
+
+        SyncService().sync(kwargs['tracker_name'], long(kwargs['user_id']))
+
+        return redirect('webui:trackers')
+
+
 from business import feed
+from django.shortcuts import redirect
+
 class MainEmployeeView(TemplateView):
     template_name = 'main.html'
+
+    def dispatch(self, request, *args, **kwargs):
+
+        if not 'user_id' in request.session:
+            return redirect('webui:login')
+
+        return super(MainEmployeeView, self).dispatch(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
         recent = feed.ActivityFeed().recent()
         user_id = self.request.session['user_id']
+
         user = context.UserContext().get_user(user_id)
         
         return {
-            'control': { 
-                'login': 'hidden',
-                'signup': 'hidden',
+            'control': {
                 'home': 'active',
                 'user': {
                     'name': user.name,
-                    'group': user.group
+                    'group': user.group,
+                    'points': user.points,
                 }
              },
             'group_name': 'All Departments',
@@ -122,7 +144,8 @@ class MainUserView(TemplateView):
                 'home': 'active',
                 'user': {
                     'name': session_user.name,
-                    'group': session_user.group
+                    'group': session_user.group,
+                    'points': session_user.points
                 }
              }, 
             'nimbbleUser': user,
@@ -148,7 +171,8 @@ class GroupView(TemplateView):
                 'group': 'active',
                 'user': {
                     'name': user.name,
-                    'group': user.group
+                    'group': user.group,
+                    'points': user.points
                 }
             },
             'group_name': group,

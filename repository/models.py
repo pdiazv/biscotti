@@ -1,4 +1,5 @@
 #from enum import Enum
+import math
 from google.appengine.ext import ndb
 
 class Activity(ndb.Model):
@@ -15,11 +16,18 @@ class NimbbleUser(ndb.Model):
     email = ndb.StringProperty()
     group = ndb.StringProperty()
     pic = ndb.StringProperty()
+    points = ndb.FloatProperty()
     created_date = ndb.DateTimeProperty(auto_now_add=True)
 
     @classmethod
     def delete_all(cls):
         ndb.delete_multi(cls.query().fetch(keys_only=True))
+
+    def updateScore(self):
+        activities = NimbbleActivity.query(ancestor=self.key, projection=[NimbbleActivity.points]).fetch()
+        self.points = math.sqrt(sum([activity.points for activity in activities]))
+        self.put()
+
 
 
 class NimbbleTracker(ndb.Model):
@@ -35,15 +43,16 @@ class NimbbleTracker(ndb.Model):
     def add_all(cls, trackers):
         ndb.put_multi(trackers)
 
+
 class NimbbleActivity(ndb.Model):
     datetime = ndb.DateTimeProperty(required=True)
     type = ndb.StringProperty(required=True)   #run-bike
     source = ndb.StringProperty(required=True) #strava-runtastics
+    source_id = ndb.StringProperty()
     distance = ndb.FloatProperty()
-    duration = ndb.TimeProperty()
+    duration = ndb.FloatProperty()
     points = ndb.FloatProperty()
     data = ndb.JsonProperty()
-
 
     def serialize(self):
         user = self.key.parent().get()

@@ -31,7 +31,8 @@ class TrackerManager(object):
             'name': tracker_name,
             'active': tracker_name in user_trackers,
             'auth_url': self.get_auth_url(tracker_name, user_id),
-            'sample_url': self.get_sample_url(tracker_name, user_id)
+            'sample_url': self.get_sample_url(tracker_name, user_id),
+            'sync_url': self.get_sync_url(tracker_name, user_id)
         }
 
 
@@ -45,6 +46,12 @@ class TrackerManager(object):
     def get_sample_url(self, tracker_name, user_id):
         if tracker_name == 'strava':
             return strava.StravaTracker().get_data_url()
+
+        return '#'
+
+    def get_sync_url(self, tracker_name, user_id):
+        if tracker_name == 'strava':
+            return strava.StravaTracker().get_sync_url(user_id)
 
         return '#'
 
