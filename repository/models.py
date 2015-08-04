@@ -15,7 +15,7 @@ class NimbbleUser(ndb.Model):
     name = ndb.StringProperty()
     email = ndb.StringProperty()
     group = ndb.StringProperty()
-    pic = ndb.StringProperty()
+    picture = ndb.StringProperty()
     points = ndb.FloatProperty()
     created_date = ndb.DateTimeProperty(auto_now_add=True)
 
@@ -49,6 +49,7 @@ class NimbbleActivity(ndb.Model):
     type = ndb.StringProperty(required=True)   #run-bike
     source = ndb.StringProperty(required=True) #strava-runtastics
     source_id = ndb.StringProperty()
+    source_url = ndb.StringProperty()
     distance = ndb.FloatProperty()
     duration = ndb.FloatProperty()
     points = ndb.FloatProperty()
@@ -58,7 +59,6 @@ class NimbbleActivity(ndb.Model):
         user = self.key.parent().get()
 
         act_dic = self.to_dict()
-        #act_dic['duration'] = self.duration.timedelta()
         act_dic['user'] = user.to_dict()
         act_dic['user']['id'] = user.key.id()
 

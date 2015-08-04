@@ -19,7 +19,9 @@ class SimpleAddUserView(View):
     def post(self, request, *args, **kwargs):
         data = request.POST
 
+        isSignup = 'signUp' in data
         name, email = data['userName'].strip(), data['userEmail'].strip()
+        group = data['userGroup'].strip() if 'userGroup' in data else ''
 
         if name == '' or email == '':
             return redirect('webui:signup')
@@ -27,8 +29,12 @@ class SimpleAddUserView(View):
         user_id = context.UserContext().add_user({
             'name': name,
             'email': email,
-            'group': data['userGroup'].strip()
-        })
+            'group': group
+        }, isSignup)
+
+        if user_id is None:
+            return redirect('webui:signup')
+
         request.session['user_id'] = user_id
         return redirect('webui:main_employee')
 

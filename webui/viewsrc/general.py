@@ -2,37 +2,49 @@ from business.services import SyncService
 from django.views.generic import TemplateView, View
 from demo import sample_data
 
-class DefaultView(TemplateView):
+class NimbbleTemplateView(TemplateView):
+
+    DefaultPicture = '/static/images/128.png'
+
+    def get_user(self):
+        if 'user_id' not in self.request.session:
+            return None
+
+        user_id = self.request.session['user_id']
+        return context.UserContext().get_user(user_id)
+
+    def get_user_control(self, user):
+        return {
+            'name': user.name,
+            'group': user.group,
+            'points': user.points,
+            'picture': user.picture if user.picture is not None else self.DefaultPicture
+        }
+
+
+class DefaultView(NimbbleTemplateView):
     template_name = 'cover.html'
 
+    def dispatch(self, request, *args, **kwargs):
+
+        if not 'user_id' in request.session:
+            return redirect('webui:login')
+
+        return super(DefaultView, self).dispatch(request, *args, **kwargs)
+
+
     def get_context_data(self, **kwargs):
-
-        user = { 'name': 'sample user' }
-
-        if 'user_id' not in self.request.session:
-            user = context.UserContext().get_random_user()
-
-            if user is None:
-                data = sample_data.source
-                context.DemoContext().parse_sample_data(data)
-                user = context.UserContext().get_random_user()
-
-            self.request.session['user_id'] = user.key.id()
-        else:
-            user_id = self.request.session['user_id']
-            user = context.UserContext().get_user(user_id)
+        user = self.get_user()
         
         return {
-            'control': { 
-                'login': 'hidden',
-                'signup': 'hidden',
+            'control': {
                 'home': 'active',
-                'user': {'name': user.name, 'group': user.group, 'points': user.points }
+                'user': self.get_user_control(user)
             }
         }
 
 from business import manager
-class TrackersView(TemplateView):
+class TrackersView(NimbbleTemplateView):
     template_name = 'trackers.html'
 
     def get_context_data(self, **kwargs):
@@ -41,21 +53,15 @@ class TrackersView(TemplateView):
         trackers = manager.TrackerManager().list(user_id)
 
         return {
-            'control': { 
-                'login': 'hidden',
-                'signup': 'hidden',
+            'control': {
                 'trackers': 'active', 
-                'user': {
-                    'name': user.name, 
-                    'group': user.group,
-                    'points': user.points
-                }
+                'user': self.get_user_control(user)
             },
             'trackers': trackers,
         }
 
 
-class SimpleTrackerView(TemplateView):
+class SimpleTrackerView(NimbbleTemplateView):
     template_name = 'tracker.html'
 
     def get_context_data(self, **kwargs):
@@ -65,15 +71,9 @@ class SimpleTrackerView(TemplateView):
         tracker = manager.TrackerManager().sample_data(name, user_id)
 
         return {
-            'control': { 
-                'login': 'hidden',
-                'signup': 'hidden',
+            'control': {
                 'tracker': 'active',
-                'user': {
-                    'name': user.name,
-                    'group': user.group,
-                    'points': user.points
-                }
+                'user': self.get_user_control(user)
             },
             'athlete_template': 'trackers/{0}_athlete.html'.format(name),
             'data_template': 'trackers/{0}_data.html'.format(name),
@@ -86,20 +86,17 @@ class SyncTrackerView(View):
     http_method_names = ['get']
 
     def get(self, request, *args, **kwargs):
-
         SyncService().sync(kwargs['tracker_name'], long(kwargs['user_id']))
-
         return redirect('webui:trackers')
 
 
 from business import feed
 from django.shortcuts import redirect
 
-class MainEmployeeView(TemplateView):
+class MainEmployeeView(NimbbleTemplateView):
     template_name = 'main.html'
 
     def dispatch(self, request, *args, **kwargs):
-
         if not 'user_id' in request.session:
             return redirect('webui:login')
 
@@ -107,18 +104,12 @@ class MainEmployeeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         recent = feed.ActivityFeed().recent()
-        user_id = self.request.session['user_id']
-
-        user = context.UserContext().get_user(user_id)
+        user = self.get_user()
         
         return {
             'control': {
                 'home': 'active',
-                'user': {
-                    'name': user.name,
-                    'group': user.group,
-                    'points': user.points,
-                }
+                'user': self.get_user_control(user)
              },
             'group_name': 'All Departments',
             'recent': recent
@@ -126,54 +117,39 @@ class MainEmployeeView(TemplateView):
 
 
 from repository import context
-class MainUserView(TemplateView):
+class MainUserView(NimbbleTemplateView):
     template_name = 'user.html'
 
     def get_context_data(self, **kwargs):
-        user_id = self.request.session['user_id']
-        session_user = context.UserContext().get_user(long(user_id))
+        session_user = self.get_user()
         if 'user_id' in kwargs:
             user_id = kwargs['user_id']
         user = context.UserContext().get_user(long(user_id))
         activities = feed.ActivityFeed().activities_by_user(user.key)
 
         return {
-            'control': { 
-                'login': 'hidden',
-                'signup': 'hidden',
+            'control': {
                 'home': 'active',
-                'user': {
-                    'name': session_user.name,
-                    'group': session_user.group,
-                    'points': session_user.points
-                }
+                'user': self.get_user_control(session_user)
              }, 
             'nimbbleUser': user,
             'nimbbleId': user_id,
             'activities': activities
         }
 
-class GroupView(TemplateView):
+class GroupView(NimbbleTemplateView):
     template_name = 'group.html'
 
     def get_context_data(self, **kwargs):
-        user_id = self.request.session['user_id']
-        user = context.UserContext().get_user(long(user_id))
-        group = user.group
-        if 'group' in kwargs:
-            group = kwargs['group']
+        user = self.get_user()
+        group = kwargs['group'] if 'group' in kwargs else user.group
+
         activities = feed.ActivityFeed().activities_by_group(group)
 
         return {
-            'control': { 
-                'login': 'hidden',
-                'signup': 'hidden',
+            'control': {
                 'group': 'active',
-                'user': {
-                    'name': user.name,
-                    'group': user.group,
-                    'points': user.points
-                }
+                'user': self.get_user_control(user)
             },
             'group_name': group,
             'activities': activities

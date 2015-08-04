@@ -11,7 +11,7 @@ class SyncService(object):
             return;
 
         user = context.UserCtxManager().get(user_id)
-        #StravaSyncService().sync(user)
+        StravaSyncService().sync(user)
 
         user.updateScore()
 
@@ -36,6 +36,7 @@ class StravaSyncService(object):
             'distance': self.convert_to_miles(sv_activity['distance']),
             'duration': self.convert_to_hours(sv_activity['moving_time']),
             'source_id': sv_activity['external_id'],
+            'source_url': 'https://www.strava.com/activities/{0}'.format(sv_activity['id']),
             'points': calc.calculate(sv_activity)
         }
 

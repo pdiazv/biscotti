@@ -1,13 +1,13 @@
 <!-- activity_row.html -->
 <li>
-  <img class="profile-image small" src="/static/images/{{ activity.user.name.split|join:"_" }}.jpg"></img>
+  <img class="profile-image small" src="{{ activity.user.picture }}"></img>
   <h4 class="user"><a href="{% url webui:user activity.user.id %}">{{ activity.user.name }}</a>, </h4>
   <a href="{% url webui:group activity.user.group %}">{{ activity.user.group }}</a>
   <span class="date">- {{ activity.datetime|date:"D N m, Y" }}</span>
   <ul class="stats">
     <li>
       <div class="value">{{ activity.type }}</div>
-      <div class="name"><a href="#">{{ activity.source }}</a></div>
+      <div class="name"><a href="{{ activity.source_url }}" target="_blank">{{ activity.source }}</a></div>
     </li>
     <li>
       <div class="value">{{ activity.distance|floatformat:3 }}</div>

@@ -65,9 +65,9 @@ class UserContext(object):
     def get_random_user(self):
         return UserCtxManager().get_random_user()
         
-    def add_user(self, user):
-        key = UserCtxManager().add(**user)
-        return key.id()
+    def add_user(self, user, signup):
+        key = UserCtxManager().add(signup, **user)
+        return key.id() if key is not None else None
 
     def get_tracker(self, name, user_id):
         user = self.get_user(user_id)
@@ -80,6 +80,11 @@ class UserContext(object):
     def add_tracker(self, user_id, tracker):
         user = self.get_user(user_id)
         return TrackerCtxManager().add(user.key, tracker)
+
+    def update_pic(self, user_id, picture_url):
+        user = self.get_user(user_id)
+        user.picture = picture_url
+        user.put()
 
 
 
@@ -137,11 +142,14 @@ class UserCtxManager(object):
                 return u
             nnum += 1
 
-    def add(self, *args, **kwargs):
+    def add(self, signup, **kwargs):
         existing = NimbbleUser.query().filter(NimbbleUser.name == kwargs['name'] and NimbbleUser.email == kwargs['email']).get()
 
         if existing:
             return existing.key
+
+        if not signup:
+            return None
 
         user = NimbbleUser()
         user.populate(**kwargs)

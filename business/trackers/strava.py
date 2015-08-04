@@ -23,15 +23,16 @@ class StravaTracker(object):
 
         return data_url
 
+
     def get_sync_url(self, user_id):
         sync_url = reverse('{0}:{1}'.format(conf.auth_namespace, conf.sync_view), kwargs={'tracker_name': 'strava', 'user_id': user_id})
 
         return sync_url
 
 
-
     def sample_data(self, user_id):
         return StravaSampleDataProvider().get_data(user_id)
+
 
     def add_tracker(self, user_id, code):
         client = Client()
@@ -42,6 +43,8 @@ class StravaTracker(object):
 
         client.access_token = token
         athlete = client.get_athlete()
+
+        context.UserContext().update_pic(user_id, athlete['profile_medium'])
 
         return context.UserContext().add_tracker(user_id, {
             'name': 'strava',

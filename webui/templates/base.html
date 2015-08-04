@@ -36,7 +36,7 @@
           <li class="user">
             <div class="img-wrapper">
               <div class="hex-badge small">{{ control.user.points|floatformat:0 }}</div>
-              <img class="profile-image medium" src="/static/images/128.png"></img>
+              <img class="profile-image medium" src="{{ control.user.picture }}"></img>
             </div>
             <a href="{% url webui:user %}" class="employee">{{ control.user.name }}</a>
             <a href="{% url webui:group %}" class="dept">{{ control.user.group }}</a>
