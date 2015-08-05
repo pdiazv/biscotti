@@ -31,6 +31,10 @@ class StravaTokenExchangeView(View):
     http_method_names = ['get']
 
     def get(self, request, *args, **kwargs):
+
+        if 'error' in request.GET:
+            return redirect('webui:trackers')
+
         code = request.GET.get('code', '')
         user_id = request.session['user_id']
 

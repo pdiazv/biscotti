@@ -52,6 +52,7 @@ class NimbbleActivity(ndb.Model):
     source_url = ndb.StringProperty()
     distance = ndb.FloatProperty()
     duration = ndb.FloatProperty()
+    duration_str = ndb.StringProperty()
     points = ndb.FloatProperty()
     data = ndb.JsonProperty()
 

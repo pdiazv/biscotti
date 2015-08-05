@@ -3,18 +3,18 @@
   <img class="profile-image small" src="{{ activity.user.picture }}"></img>
   <h4 class="user"><a href="{% url webui:user activity.user.id %}">{{ activity.user.name }}</a>, </h4>
   <a href="{% url webui:group activity.user.group %}">{{ activity.user.group }}</a>
-  <span class="date">- {{ activity.datetime|date:"D N m, Y" }}</span>
+  <span class="date">- {{ activity.datetime|date:"D N d, Y" }}</span>
   <ul class="stats">
     <li>
       <div class="value">{{ activity.type }}</div>
       <div class="name"><a href="{{ activity.source_url }}" target="_blank">{{ activity.source }}</a></div>
     </li>
     <li>
-      <div class="value">{{ activity.distance|floatformat:3 }}</div>
+      <div class="value">{{ activity.distance|floatformat:1 }} mi</div>
       <div class="name">Distance</div>
     </li>
     <li>
-      <div class="value">{{ activity.duration|floatformat:2 }}</div>
+      <div class="value">{{ activity.duration_str }}</div>
       <div class="name">Duration</div>
     </li>
   </ul>

@@ -34,7 +34,8 @@ class StravaSyncService(object):
             'type': sv_activity['type'],
             'source': 'strava',
             'distance': self.convert_to_miles(sv_activity['distance']),
-            'duration': self.convert_to_hours(sv_activity['moving_time']),
+            'duration': sv_activity['moving_time'],
+            'duration_str': self.get_duration_str(sv_activity['moving_time']),
             'source_id': sv_activity['external_id'],
             'source_url': 'https://www.strava.com/activities/{0}'.format(sv_activity['id']),
             'points': calc.calculate(sv_activity)
@@ -46,8 +47,12 @@ class StravaSyncService(object):
     def convert_to_miles(self, distance):
         return distance * 0.000621371
 
-    def convert_to_hours(self, time):
-        return time / 3600
+    def get_duration_str(self, time):
+        hours, rem_secs = time / 3600, time % 3600
+        mins, secs = rem_secs / 60, rem_secs % 60
+
+        return '{0:02d}:{1:02d}:{2:02d}'.format(hours, mins, secs)
+
 
 
 

@@ -41,7 +41,9 @@ class StatsTemplateView(TemplateView):
                 'login': 'hidden',
                 'user': {
                     'name': user.name,
-                    'group': user.group
+                    'group': user.group,
+                    'picture': user.picture,
+                    'points': user.points
                 }
             }
         }
@@ -69,8 +71,8 @@ class StatsDataView(View):
         else:
             data = nimbbleFeed.recent(
                 namespace='stats',
-                starting_date='11/1/2014',
-                end_date='11/30/2014',
+                starting_date='07/01/2015',
+                end_date='07/30/2015',
                 limit=800)
 
 
@@ -82,8 +84,8 @@ class StatsDataView(View):
 
     def get_info(self, goal):
         return {
-            'start_date': '2014-11-01T00:00:00',
-            'end_date': '2014-12-01T00:00:00',
+            'start_date': '2015-07-01T00:00:00',
+            'end_date': '2015-07-30T00:00:00',
             'goal': goal,
         }
 

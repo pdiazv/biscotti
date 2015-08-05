@@ -35,6 +35,9 @@ class StravaTracker(object):
 
 
     def add_tracker(self, user_id, code):
+        if code is None or code is '':
+            return None
+
         client = Client()
         token = client.exchange_code_for_token(
             client_id=conf.strava['client_id'],
@@ -44,7 +47,7 @@ class StravaTracker(object):
         client.access_token = token
         athlete = client.get_athlete()
 
-        context.UserContext().update_pic(user_id, athlete['profile_medium'])
+        context.UserContext().update_pic(user_id, athlete['profile'])
 
         return context.UserContext().add_tracker(user_id, {
             'name': 'strava',

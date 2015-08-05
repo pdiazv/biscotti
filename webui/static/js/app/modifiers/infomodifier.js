@@ -10,7 +10,7 @@ define(['d3'], function(d3){
     var secondsToString = function(s){
         var h = (s / 3600) | 0;
         return d3.format(',.d')(h);
-    }
+    };
 
     var NumberConverter = {
         convert: function(label, field, values){
@@ -18,7 +18,7 @@ define(['d3'], function(d3){
                 label: label,
                 total: formatNumber(d3.sum(values, function(d){ return d[field]; })),
                 deviation: formatNumber(d3.deviation(values, function(d){ return d[field] || 0; })),
-            }
+            };
         }
     };
 
@@ -26,9 +26,9 @@ define(['d3'], function(d3){
         convert: function(label, field, values){
             return {
                 label: label,
-                total: secondsToString(d3.sum(values, function(d){ return toSeconds(d[field]); })),
+                total: secondsToString(d3.sum(values, function(d){ return d[field]; })),
                 deviation: 0,
-            }
+            };
         }
     };
 
@@ -43,7 +43,7 @@ define(['d3'], function(d3){
                     NumberConverter.convert('DISTANCE', 'distance', data.values),
                     TimeConverter.convert('DURATION', 'duration', data.values),
                 ]
-            }
+            };
         }
     };
 });
