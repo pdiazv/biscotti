@@ -1,5 +1,5 @@
 application: nimbble-demo
-version: 1
+version: 4
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -18,6 +18,11 @@ handlers:
 - url: /static
   static_dir: webui/static
   application_readable: True
+
+- url: /css
+  static_dir: webui/static/css
+  application_readable: True
+
 
 - url: /favicon.ico
   static_files: favicon.ico

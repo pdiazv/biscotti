@@ -49,6 +49,7 @@ class TrackersView(NimbbleTemplateView):
 
     def get_context_data(self, **kwargs):
         user_id = self.request.session['user_id']
+
         user = context.UserContext().get_user(user_id)
         trackers = manager.TrackerManager().list(user_id)
 
@@ -121,7 +122,7 @@ class MainUserView(NimbbleTemplateView):
     template_name = 'user.html'
 
     def get_context_data(self, **kwargs):
-        session_user = self.get_user()
+        user_id = self.request.session['user_id']
         if 'user_id' in kwargs:
             user_id = kwargs['user_id']
         user = context.UserContext().get_user(long(user_id))
@@ -130,7 +131,7 @@ class MainUserView(NimbbleTemplateView):
         return {
             'control': {
                 'home': 'active',
-                'user': self.get_user_control(session_user)
+                'user': self.get_user_control(self.get_user())
              }, 
             'nimbbleUser': user,
             'nimbbleId': user_id,

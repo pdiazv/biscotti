@@ -32,7 +32,7 @@ class StravaTokenExchangeView(View):
 
     def get(self, request, *args, **kwargs):
 
-        if 'error' in request.GET:
+        if 'errors' in request.GET:
             return redirect('webui:trackers')
 
         code = request.GET.get('code', '')

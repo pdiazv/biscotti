@@ -121,7 +121,7 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+#STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -223,7 +223,7 @@ PIPELINE_CSS = {
         'source_filenames': (
           'css/stats.css',
         ),
-        'output_filename': 'css/stats_final.css',
+        'output_filename': 'webui/static/css/stats_final.css',
     },
 }
 
