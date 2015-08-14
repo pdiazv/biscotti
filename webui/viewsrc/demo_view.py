@@ -51,6 +51,7 @@ class StatsTemplateView(TemplateView):
 import random
 from django.http import HttpResponse
 from business import feed
+from datetime import datetime, timedelta
 class StatsDataView(View):
     http_method_names = ['get']
 
@@ -69,10 +70,12 @@ class StatsDataView(View):
             user = context.UserContext().get_user(long(group))
             data = nimbbleFeed.activities_by_user(user.key, 800, 'stats')
         else:
+            today = datetime.now()
+            last_month = today - timedelta(days=30)
             data = nimbbleFeed.recent(
                 namespace='stats',
-                starting_date='07/01/2015',
-                end_date='07/30/2015',
+                starting_date= last_month.strftime('%m/%d/%Y'),
+                end_date=today.strftime('%m/%d/%Y'),
                 limit=800)
 
 
@@ -83,9 +86,12 @@ class StatsDataView(View):
 
 
     def get_info(self, goal):
+        today = datetime.now()
+        last_month = today - timedelta(days=30)
+
         return {
-            'start_date': '2015-07-01T00:00:00',
-            'end_date': '2015-07-30T00:00:00',
+            'start_date': last_month.strftime('%Y-%m-%dT00:00:00'), #'2015-07-01T00:00:00',
+            'end_date': today.strftime('%Y-%m-%dT00:00:00'),
             'goal': goal,
         }
 

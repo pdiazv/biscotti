@@ -23,6 +23,14 @@ define(['d3'], function(d3){
     };
 
     var TimeConverter = {
+        min_date: function(field, values){
+            return d3.min(values, function(d){ return d[field]; });
+        },
+
+        max_date: function(field, values){
+            return d3.min(values, function(d){ return d[field]; });
+        },
+
         convert: function(label, field, values){
             return {
                 label: label,
