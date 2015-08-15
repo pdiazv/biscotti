@@ -8,7 +8,7 @@ class SyncService(object):
     def sync(self, tracker_id, user_id):
 
         if tracker_id != 'strava':
-            return;
+            return
 
         user = context.UserCtxManager().get(user_id)
         StravaSyncService().sync(user)
@@ -20,11 +20,11 @@ class SyncService(object):
 class StravaSyncService(object):
 
     def sync(self, user):
-
         calc = StravaActivityCalculator()
         data = strava.StravaSampleDataProvider().get_activities(user.key.id())
 
-        [self.AddStravaActivity(user.key, calc, activity) for activity in data]
+        for activity in data:
+            self.AddStravaActivity(user.key, calc, activity)
 
 
     def AddStravaActivity(self, user_key, calc, sv_activity):
@@ -42,6 +42,7 @@ class StravaSyncService(object):
         }
 
         context.ActivityContext().add(user_key, activity)
+        return activity
 
 
     def convert_to_miles(self, distance):

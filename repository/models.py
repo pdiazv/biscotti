@@ -25,7 +25,7 @@ class NimbbleUser(ndb.Model):
 
     def updateScore(self):
         activities = NimbbleActivity.query(ancestor=self.key, projection=[NimbbleActivity.points]).fetch()
-        self.points = math.sqrt(sum([activity.points for activity in activities]))
+        self.points = sum([activity.points for activity in activities])
         self.put()
 
 
@@ -55,6 +55,12 @@ class NimbbleActivity(ndb.Model):
     duration_str = ndb.StringProperty()
     points = ndb.FloatProperty()
     data = ndb.JsonProperty()
+
+    def get_user_dic(self):
+        user = self.key.parent().get()
+        user_dic = user.to_dict()
+        user_dic['id'] = user.key.id()
+        return user_dic
 
     def serialize(self):
         user = self.key.parent().get()

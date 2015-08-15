@@ -95,17 +95,6 @@ class StatsDataView(View):
             'goal': goal,
         }
 
-    def get_data(self):
-        return [
-            { 'datetime': '2014-11-01T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-11-02T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-11-03T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-11-04T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-11-15T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-11-26T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-            { 'datetime': '2014-11-29T00:00:00', 'points': random.randint(400, 1500), 'active': random.randint(100, 150) },
-        ]
-
 import json
 import decimal
 

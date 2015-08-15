@@ -105,6 +105,7 @@ class MainEmployeeView(NimbbleTemplateView):
 
     def get_context_data(self, **kwargs):
         recent = feed.ActivityFeed().recent()
+        leaderboard = feed.ActivityFeed().recent_leaderboard()
         user = self.get_user()
         
         return {
@@ -113,7 +114,8 @@ class MainEmployeeView(NimbbleTemplateView):
                 'user': self.get_user_control(user)
              },
             'group_name': 'All Departments',
-            'recent': recent
+            'recent': recent,
+            'leaderboard': leaderboard
         }
 
 

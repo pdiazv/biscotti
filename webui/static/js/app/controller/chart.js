@@ -51,7 +51,7 @@ define(['d3'], function(d3){
 
         render: function(info, data){
             this.x.domain([info.startDate, info.endDate]);
-            this.y.domain([0, d3.max(data, function(d) { return d.values+100; })]);
+            this.y.domain([0, d3.max(data, function(d) { return d.values+1; })]);
 
             this.svg.append("g")
                   .attr("class", "x axis")
